@@ -1,0 +1,15 @@
+# Downloads and local recovery copies, never project source.
+/.release_assets/
+/.local_history/
+/downloads/
+__pycache__/
+*.pyc
+.venv/
+venv/
+node_modules/
+*.aux
+*.nav
+*.snm
+*.synctex.gz
+.env
+.env.*
