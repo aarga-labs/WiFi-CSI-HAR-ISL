@@ -1,0 +1,49 @@
+diff --git a/components/espectre/csi_manager.cpp b/components/espectre/csi_manager.cpp
+index 9a59fd9..eb3c67c 100644
+--- a/components/espectre/csi_manager.cpp
++++ b/components/espectre/csi_manager.cpp
+@@ -143,12 +143,43 @@ void CSIManager::process_packet(wifi_csi_info_t* data) {
+     return;
+   }
+   
+-  // Process CSI packet through detector
++  // Process CSI packet through detector (before export, so state is available)
+   const bool should_measure = (packets_total_++ % 1000 == 0);
+   int64_t start_us = should_measure ? esp_timer_get_time() : 0;
+   
+   detector_->process_packet(csi_data, csi_len, selected_subcarriers_, NUM_SUBCARRIERS);
+ 
++  // --- Raw CSI Export with Motion Label ---
++  // Format: CSI_DATA,<timestamp_ms>,<rssi>,<channel>,<MOTION|IDLE>,<movement_score>,[amp0 amp1 ... amp63]
++  // Prints amplitudes (sqrt(I²+Q²)) instead of raw I/Q to fit in ESP_LOGI buffer (~512 bytes)
++  // Throttled to every 100th packet (~1/sec) to make the terminal readable
++  {
++    static uint32_t csi_export_counter = 0;
++    if (++csi_export_counter % 100 == 0) {
++      int64_t now_us = esp_timer_get_time();
++      int32_t ts_ms = static_cast<int32_t>(now_us / 1000);
++      int8_t rssi = data->rx_ctrl.rssi;
++      uint8_t channel = data->rx_ctrl.channel;
++      const char* state_str = (detector_->get_state() == MotionState::MOTION) ? "MOTION" : "IDLE";
++      float score = detector_->get_motion_metric();
++
++      int num_sc = static_cast<int>(csi_len / 2);  // 64 for HT20
++      char csi_str[1024]; // Increased buffer size to accommodate phase
++      int pos = snprintf(csi_str, sizeof(csi_str), "CSI_DATA,%ld,%d,%u,%s,%.4f,[",
++                         (long)ts_ms, (int)rssi, (unsigned)channel, state_str, score);
++      for (int i = 0; i < num_sc && pos < (int)sizeof(csi_str) - 8; i++) {
++        // Espressif CSI: [Q, I] per subcarrier
++        float Q = static_cast<float>(csi_data[i * 2]);
++        float I = static_cast<float>(csi_data[i * 2 + 1]);
++        int amp = static_cast<int>(std::sqrt(I * I + Q * Q));
++        int phase_deg = static_cast<int>(std::atan2(Q, I) * 180.0f / M_PI);
++        pos += snprintf(csi_str + pos, sizeof(csi_str) - pos, "%d:%d ", amp, phase_deg);
++      }
++      snprintf(csi_str + pos, sizeof(csi_str) - pos, "]");
++      ESP_LOGI(TAG, "%s", csi_str);
++    }
++  }
++  
+   // Handle periodic callback (or game mode which needs every packet)
+   packets_processed_++;
+   const bool should_publish = packets_processed_ >= publish_rate_;
