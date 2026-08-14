@@ -1,0 +1,399 @@
+<title>Reading the Pilot Data</title>
+<style>
+:root {
+  color-scheme: light;
+  --paper:#f6f4ef; --surface:#ffffff; --surface-2:#faf9f5;
+  --ink:#181a1f; --ink2:#454b56; --muted:#82889a;
+  --rule:#e2ded3; --rule-strong:#cac5b6;
+  --accent:#1f7a8c; --accent-ink:#0d5560; --accent-soft:#e6f1f2;
+  --warn:#a8551f; --warn-soft:#f7ece2;
+  --good:#2f7d52; --good-soft:#e8f3ec;
+  --bad:#b0392f; --bad-soft:#faeae7;
+  --shadow:0 1px 2px rgba(24,26,31,.04), 0 6px 20px -14px rgba(24,26,31,.30);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --paper:#111318; --surface:#181b21; --surface-2:#15171c;
+    --ink:#eef0f3; --ink2:#aeb4c2; --muted:#7a8092;
+    --rule:#282c34; --rule-strong:#383e49;
+    --accent:#4fb2c2; --accent-ink:#8fd1dd; --accent-soft:#152b2f;
+    --warn:#e0925c; --warn-soft:#2a1d14;
+    --good:#5cb989; --good-soft:#132821;
+    --bad:#e0776a; --bad-soft:#2a1815;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 6px 20px -14px rgba(0,0,0,.7);
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --paper:#111318; --surface:#181b21; --surface-2:#15171c;
+  --ink:#eef0f3; --ink2:#aeb4c2; --muted:#7a8092;
+  --rule:#282c34; --rule-strong:#383e49;
+  --accent:#4fb2c2; --accent-ink:#8fd1dd; --accent-soft:#152b2f;
+  --warn:#e0925c; --warn-soft:#2a1d14;
+  --good:#5cb989; --good-soft:#132821;
+  --bad:#e0776a; --bad-soft:#2a1815;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 6px 20px -14px rgba(0,0,0,.7);
+}
+
+* { box-sizing:border-box; }
+body {
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,
+    Helvetica,Arial,sans-serif;
+  font-size:16px; line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+.mono, code, th, td, .tree, .tag {
+  font-family:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,
+    "Liberation Mono",monospace;
+  font-variant-numeric:tabular-nums;
+}
+
+.wrap { max-width:760px; margin:0 auto; padding:0 24px 88px; }
+.measure { max-width:68ch; }
+
+header.top {
+  border-bottom:1px solid var(--rule-strong);
+  padding:52px 0 26px; margin-bottom:38px;
+}
+.eyebrow {
+  font-size:11px; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--muted); font-weight:600;
+}
+h1 {
+  font-size:clamp(30px,5.4vw,42px); line-height:1.08; margin:14px 0 0;
+  letter-spacing:-.02em; font-weight:700; text-wrap:balance;
+}
+.standfirst {
+  font-size:17px; line-height:1.55; color:var(--ink2);
+  margin:16px 0 0; max-width:58ch;
+}
+
+section { margin:0 0 46px; }
+.head {
+  display:flex; align-items:baseline; gap:12px;
+  border-bottom:1px solid var(--rule); margin-bottom:20px;
+}
+h2 {
+  font-size:14px; font-weight:700; letter-spacing:.01em; margin:0;
+  padding-bottom:9px;
+}
+.head .kind {
+  font-size:10px; letter-spacing:.12em; text-transform:uppercase;
+  color:var(--accent); font-weight:700; padding-bottom:9px; white-space:nowrap;
+}
+h3 {
+  font-size:17px; font-weight:650; letter-spacing:-.01em;
+  margin:28px 0 10px;
+}
+p { margin:0 0 14px; }
+.measure p:last-child { margin-bottom:0; }
+a { color:var(--accent-ink); }
+
+/* file tree */
+.tree {
+  background:var(--surface-2); border:1px solid var(--rule);
+  border-radius:4px; padding:16px 18px; font-size:12.5px; line-height:1.85;
+  color:var(--ink2); overflow-x:auto; box-shadow:var(--shadow);
+}
+.tree .dir { color:var(--accent-ink); font-weight:600; }
+.tree .n { color:var(--ink); }
+.tree .c { color:var(--muted); }
+
+/* tag / pill */
+.tag {
+  display:inline-block; font-size:10.5px; padding:1px 7px; border-radius:3px;
+  background:var(--accent-soft); color:var(--accent-ink); font-weight:600;
+  letter-spacing:.02em;
+}
+
+/* tables */
+.tablewrap { overflow-x:auto; margin:0 0 6px; }
+table { border-collapse:collapse; width:100%; font-size:13px; }
+caption {
+  text-align:left; font-size:12.5px; color:var(--muted);
+  padding-bottom:10px; line-height:1.5; font-family:ui-sans-serif,system-ui,sans-serif;
+}
+th, td {
+  text-align:left; padding:8px 12px 8px 0; border-bottom:1px solid var(--rule);
+  vertical-align:baseline;
+}
+thead th {
+  font-size:10px; letter-spacing:.08em; text-transform:uppercase;
+  color:var(--muted); font-weight:700; border-bottom:1px solid var(--rule-strong);
+  font-family:ui-sans-serif,system-ui,sans-serif;
+}
+tbody th {
+  font-weight:600; font-family:ui-sans-serif,system-ui,sans-serif;
+  color:var(--ink);
+}
+td.dim { color:var(--muted); }
+tr.hi td, tr.hi th { background:var(--accent-soft); }
+td.ok { color:var(--good); }
+td.warn { color:var(--warn); }
+
+/* sample row card */
+.samplecard {
+  background:var(--surface); border:1px solid var(--rule);
+  border-radius:4px; box-shadow:var(--shadow); padding:16px 18px;
+  margin:16px 0 22px; overflow-x:auto;
+}
+.samplecard .row { font-size:12px; color:var(--ink2); white-space:pre; }
+.samplecard .k { color:var(--accent-ink); }
+
+/* checklist */
+.checklist { display:flex; flex-direction:column; gap:1px; margin:6px 0 0;
+  background:var(--rule); border:1px solid var(--rule); border-radius:4px; overflow:hidden; }
+.check {
+  display:flex; gap:12px; align-items:flex-start; background:var(--surface);
+  padding:11px 16px;
+}
+.check .mark {
+  flex:none; width:20px; height:20px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  font-size:12px; font-weight:800; margin-top:1px;
+  font-family:ui-monospace,monospace;
+}
+.check.ok .mark { background:var(--good-soft); color:var(--good); }
+.check.mid .mark { background:var(--warn-soft); color:var(--warn); }
+.check.bad .mark { background:var(--bad-soft); color:var(--bad); }
+.check .t { font-size:14.5px; line-height:1.5; color:var(--ink2); }
+.check .t b { color:var(--ink); font-weight:650; }
+
+.note {
+  border-left:2px solid var(--warn); background:var(--warn-soft);
+  padding:14px 18px; margin:22px 0; border-radius:0 4px 4px 0;
+  font-size:14.5px; line-height:1.55;
+}
+.note.ok { border-left-color:var(--good); background:var(--good-soft); }
+.note b { font-weight:650; }
+
+.stats {
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:1px; background:var(--rule); border:1px solid var(--rule);
+  border-radius:4px; overflow:hidden; margin:16px 0 4px;
+}
+.stat { background:var(--surface); padding:15px 16px 17px; }
+.stat-v { font-size:24px; line-height:1.1; font-weight:700; letter-spacing:-.01em; }
+.stat-l { font-size:11px; color:var(--muted); margin-top:6px; line-height:1.4; }
+
+ul { margin:0 0 14px; padding-left:1.1em; }
+li { margin-bottom:7px; }
+li::marker { color:var(--muted); }
+
+footer {
+  border-top:1px solid var(--rule-strong); padding-top:18px; margin-top:10px;
+  font-size:12px; color:var(--muted);
+}
+@media (max-width:560px) {
+  body { font-size:15px; }
+  .wrap { padding:0 16px 64px; }
+}
+</style>
+
+<div class="wrap">
+
+<header class="top">
+  <div class="eyebrow">USRP N210 CSI pilot &middot; reference memo</div>
+  <h1>Reading the Pilot Data</h1>
+  <p class="standfirst">What's actually in <code>data/pilot/</code>, how the CSV
+  rows are laid out, and what the project's own comparative analysis against
+  three published WiFi-sensing datasets concluded.</p>
+</header>
+
+<section>
+  <div class="head"><span class="kind">Contents</span><h2>What's in the folder</h2></div>
+  <div class="measure">
+  <p>Three subjects were recorded &mdash; Rishiikesh and Amrith in one room
+  (env&nbsp;A), Gowreesh in another (env&nbsp;B) &mdash; each doing four
+  activities: <code>walk</code>, <code>mixed</code> (a mix of motions),
+  <code>stand</code>, <code>sit</code>. That's <b>12 raw captures</b>, one CSV
+  per (subject, activity).</p>
+  </div>
+
+  <div class="tree">
+<span class="dir">data/pilot/</span>
+  <span class="n">P01_action_&lt;subject&gt;_&lt;date&gt;_&lt;activity&gt;.csv</span>   <span class="c"># 6 files &mdash; walk / mixed</span>
+  <span class="n">P01_noaction_&lt;subject&gt;_&lt;date&gt;_&lt;activity&gt;.csv</span> <span class="c"># 6 files &mdash; stand / sit</span>
+  <span class="n">*_check.png</span>                                    <span class="c"># 1 QA plot per capture</span>
+  <span class="dir">windows/</span><span class="c">action|noaction/</span><span class="n">*.npy</span>              <span class="c"># segmented 2s windows, rishiikesh+amrith</span>
+  <span class="dir">windows_gowreesh/</span><span class="c">action|noaction/</span><span class="n">*.npy</span>    <span class="c"># same, gowreesh &mdash; kept separate</span>
+  <span class="n">hybrid_model_test-&lt;subject&gt;.pt</span>              <span class="c"># trained CNN&ndash;GRU&ndash;Attention weights</span>
+  <span class="n">hybrid_model_test-&lt;subject&gt;_confusion.csv</span>   <span class="c"># 2&times;2 action/noaction confusion matrix</span>
+  </div>
+
+  <p class="measure" style="margin-top:18px">The label is split across two
+  things: <b>class</b> (<code>action</code> = person moving,
+  <code>noaction</code> = person present but still &mdash; not "empty room")
+  comes from the filename prefix; <b>activity</b>
+  (<code>walk</code>/<code>mixed</code>/<code>stand</code>/<code>sit</code>) is
+  the finer label used for the 4-way analysis. Presence is held constant across
+  both classes on purpose, so a model can't cheat by learning occupancy instead
+  of motion.</p>
+</section>
+
+<section>
+  <div class="head"><span class="kind">Format</span><h2>What's inside a CSV</h2></div>
+  <div class="measure">
+  <p>Every row is one received packet: a timestamp plus the complex channel
+  coefficient for each of the 52 OFDM subcarriers, as real/imaginary pairs.
+  106 columns total.</p>
+  </div>
+
+  <div class="samplecard">
+    <div class="row"><span class="k">Packet,Timestamp_us,SC0_Re,SC0_Im,SC1_Re,SC1_Im, ... ,SC51_Re,SC51_Im</span>
+0,1784270337545698,0.0174189,-0.0112355,0.0180293,-0.0141979, ... </div>
+  </div>
+
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th>Field</th><th>Meaning</th></tr></thead>
+    <tbody>
+      <tr><th>Packet</th><td class="dim">sequence number assigned by the sniffer, 0-based</td></tr>
+      <tr><th>Timestamp_us</th><td class="dim">capture-clock time in microseconds, not synced to any other device</td></tr>
+      <tr><th>SC<i>k</i>_Re / SC<i>k</i>_Im</th><td class="dim">real / imaginary part of subcarrier <i>k</i>'s channel estimate, <i>k</i> = 0&hellip;51</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="stat-v">2.462&nbsp;GHz</div><div class="stat-l">channel 11, 20&nbsp;MHz</div></div>
+    <div class="stat"><div class="stat-v">52</div><div class="stat-l">OFDM subcarriers, single antenna</div></div>
+    <div class="stat"><div class="stat-v">51&ndash;78&nbsp;Hz</div><div class="stat-l">measured packet rate (mean 66.4&nbsp;Hz)</div></div>
+    <div class="stat"><div class="stat-v">amplitude&nbsp;only</div><div class="stat-l">phase is unusable &mdash; see below</div></div>
+  </div>
+
+  <p class="measure" style="margin-top:18px">The USRP N210 is <b>passively
+  sniffing</b> an existing MacBook&nbsp;&harr;&nbsp;Android hotspot link, not
+  driving its own synchronized transmission. That's why only amplitude
+  (<code>hypot(Re, Im)</code>) is trustworthy: with no shared clock to the two
+  real endpoints, phase is scrambled by carrier/sampling frequency offset and
+  discarded. Every downstream script computes amplitude before doing anything
+  else. Each file also carries exactly one truncated final row (Ctrl+C landed
+  mid-write) &mdash; drop it, it's cosmetic, not a data-quality problem.</p>
+</section>
+
+<section>
+  <div class="head"><span class="kind">Derived files</span><h2>Windows and model outputs</h2></div>
+  <div class="measure">
+  <p>The raw CSVs get cut into fixed-length training examples. Each
+  <code>windows/action|noaction/*.npy</code> file is one 2-second segment,
+  shaped <code>(52, 200)</code> &mdash; 52 subcarriers &times; 200 timesteps
+  &mdash; amplitude only, one array per repetition. <code>windows_gowreesh/</code>
+  holds Gowreesh's segments separately: his data was captured after the
+  comparative analysis below was run and the model was trained, so neither one
+  currently includes him (see the caveat at the end).</p>
+  <p>The <code>.pt</code> files are trained weights for a CNN&ndash;GRU&ndash;Attention
+  model, one checkpoint per leave-one-subject-out test split; the matching
+  <code>_confusion.csv</code> is that split's 2&times;2 action/no-action
+  confusion matrix (rows = true, columns = predicted).</p>
+  </div>
+</section>
+
+<section>
+  <div class="head"><span class="kind">Comparative analysis</span><h2>Did we collect it correctly?</h2></div>
+  <div class="measure">
+  <p>Before scaling up, the team ran the 8 original captures (Rishiikesh +
+  Amrith, before Gowreesh's room was added) against three published WiFi-sensing
+  datasets that bracket this setup from different directions &mdash; full
+  writeup in <a href="analysis/comparative_analysis.pdf">comparative_analysis.pdf</a>.</p>
+  </div>
+
+  <div class="tablewrap">
+  <table>
+    <caption>All reference figures are the authors' published specifications, not re-measured.</caption>
+    <thead><tr><th></th><th>Ours (pilot)</th><th>ARIL</th><th>UT-HAR</th><th>Widar 3.0</th></tr></thead>
+    <tbody>
+      <tr><th>Radio</th><td>USRP N210, passive sniff</td><td>USRP N210 &times;2, controlled</td><td>Intel 5300 NIC</td><td>Intel 5300, controlled</td></tr>
+      <tr><th>Subcarriers</th><td>52</td><td>52</td><td>30</td><td>30</td></tr>
+      <tr><th>Streams (links &times; ant.)</th><td>52 (1 SISO)</td><td>52 (1 SISO)</td><td>90</td><td>540 (18 links)</td></tr>
+      <tr><th>Packet rate</th><td>51&ndash;78&nbsp;Hz</td><td>not reported</td><td>1000&nbsp;Hz</td><td>1000&nbsp;Hz</td></tr>
+      <tr><th>Uses phase</th><td class="warn">no (unsynced)</td><td class="warn">no (discarded)</td><td class="warn">no</td><td class="ok">yes &mdash; DFS/BVP</td></tr>
+      <tr><th>Subjects / domains</th><td>2 / 1</td><td>6 / 16 positions</td><td>1 / n/r</td><td>16 / 75</td></tr>
+      <tr><th>Labelled samples</th><td>322</td><td>1,394</td><td>4,477</td><td>258,000</td></tr>
+      <tr class="hi"><th>Test split</th><td class="ok">leave-one-subject-out</td><td class="warn">every 5th sample</td><td class="warn">random</td><td class="ok">cross-domain</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>The headline finding</h3>
+  <p class="measure">The model reached <b>98.4% leave-one-subject-out
+  accuracy</b> on action-vs-no-action &mdash; but a single hand-picked number
+  (mean per-window motion energy, one scalar) classifies <b>99.1%</b> of the
+  same windows with one threshold. The task is genuinely separable
+  (walking/mixed produce 4.2&times; more motion energy than
+  standing/sitting, and you can see the class difference by eye in the raw
+  traces) but <i>too easy in its binary form</i> to say anything about whether
+  the model or the features are good. The pilot validates the collection
+  pipeline; it doesn't validate the model.</p>
+
+  <h3>Two other measured results</h3>
+  <ul class="measure">
+    <li><b>Packet rate is fine for this task, but the segmenter's default wasn't.</b>
+    Actual rate is 51&ndash;78&nbsp;Hz (mean 66.4), comfortably above the
+    18&nbsp;Hz where the action/no-action spectra stop being distinguishable
+    (1.4&ndash;1.9&times; headroom). But <code>segment_all_pilot.py</code> ran
+    with its default <code>--rate 100</code> assumption against 66&nbsp;Hz data,
+    silently dropping any 2s window that didn't clear a 100&nbsp;pkt threshold
+    &mdash; 13% of windows (48 of 370) lost. Re-running with <code>--rate 50</code>
+    recovers them with no new capture needed.</li>
+    <li><b>52 subcarriers act like about 4 independent ones.</b> Neighbouring
+    subcarriers are correlated at mean |r| = 0.38&ndash;0.45 during motion, so
+    the effective rank of the 52-wide covariance is roughly 3.5&ndash;4.2 during
+    action and 5.6&ndash;25.7 during no-action. A moving body imposes one
+    dominant channel perturbation that most subcarriers see together.</li>
+  </ul>
+
+  <h3>Honest scorecard</h3>
+  <div class="checklist">
+    <div class="check ok"><span class="mark">&#10003;</span>
+      <span class="t"><b>Hardware &amp; front-end</b> &mdash; matches ARIL spec-for-spec; amplitude-only was the correct call given no phase sync, independently confirmed by ARIL discarding phase too despite having GPS sync.</span></div>
+    <div class="check ok"><span class="mark">&#10003;</span>
+      <span class="t"><b>Class design</b> &mdash; person present in both classes forces the model to learn motion, not occupancy; a harder and more useful problem than the trivial version.</span></div>
+    <div class="check ok"><span class="mark">&#10003;</span>
+      <span class="t"><b>Evaluation protocol</b> &mdash; leave-one-subject-out is the strictest split of the four datasets compared (UT-HAR: random; ARIL: every 5th sample, same session).</span></div>
+    <div class="check mid"><span class="mark">~</span>
+      <span class="t"><b>Rate stability &amp; window yield</b> &mdash; per-second rate dips to 11&ndash;55&nbsp;pkt/s and gaps up to 464&nbsp;ms; recoverable by fixing the segmenter's rate assumption, not a hardware fault.</span></div>
+    <div class="check mid"><span class="mark">~</span>
+      <span class="t"><b>Subcarrier redundancy</b> &mdash; 52 recorded, &asymp;4 effective dimensions during motion; not free extra data the way a naive per-subcarrier model would assume.</span></div>
+    <div class="check bad"><span class="mark">&#10007;</span>
+      <span class="t"><b>Task difficulty</b> &mdash; 99.1% from one scalar means the binary accuracy number proves the pipeline works, not that the model is good.</span></div>
+    <div class="check bad"><span class="mark">&#10007;</span>
+      <span class="t"><b>Scale &amp; diversity</b> &mdash; 322 samples, 2 subjects, 1 room, 1 day is 4&ndash;800&times; smaller and far less diverse than any reference dataset; no subject or domain diversity to confirm the result generalises.</span></div>
+    <div class="check bad"><span class="mark">&#10007;</span>
+      <span class="t"><b>Spatial resolution</b> &mdash; single-antenna SISO means no antenna-pair phase difference is available even in principle, so Doppler/BVP-style features (what Widar 3.0 uses) are structurally out of reach here.</span></div>
+  </div>
+
+  <div class="note ok">
+    <b>Verdict: the collection method is sound.</b> Front-end design, the
+    amplitude-only decision, class definitions and evaluation protocol all hold
+    up against published practice. The pilot was a throwaway sanity check and
+    it did its job &mdash; it does not show the model, features, or 66&nbsp;Hz
+    rate will survive a real multi-class task.
+  </div>
+</section>
+
+<section>
+  <div class="head"><span class="kind">Caveat</span><h2>What's changed since that analysis</h2></div>
+  <div class="measure">
+  <p>The comparative analysis above covers the original <b>8-capture, 2-subject</b>
+  dataset (Rishiikesh + Amrith, one room). Gowreesh's 4 captures (a second room,
+  env&nbsp;B) were added afterward and are <b>not</b> reflected in that PDF, the
+  trained <code>.pt</code> checkpoints, or the <code>_confusion.csv</code> files
+  &mdash; his windows sit in a separate <code>windows_gowreesh/</code> folder.
+  Re-running the same comparison with all three subjects, and re-training with
+  Gowreesh included, would be the natural next step before treating either
+  result as final.</p>
+  </div>
+</section>
+
+<footer>
+  Sources: <code>data/pilot/*.csv</code>, <code>windows*/</code>,
+  <code>hybrid_model_test-*</code>, and
+  <code>analysis/comparative_analysis.pdf</code> (measured
+  17&ndash;20&nbsp;July&nbsp;2026). Comparative figures for ARIL, UT-HAR and
+  Widar&nbsp;3.0 are the authors' published specifications, not re-measured.
+</footer>
+
+</div>
