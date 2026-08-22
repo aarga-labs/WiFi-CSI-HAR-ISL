@@ -1,0 +1,65 @@
+{
+  "pipeline_requirement": {
+    "rate_hz": 50,
+    "window_s": 2,
+    "samples_per_window": 100,
+    "source": "Action_NoAction_imgfi.ipynb (RATE=50, WINDOW_SECONDS=2)"
+  },
+  "captures": [
+    {
+      "label": "1-channel parked (pilot)",
+      "file": "P01_action_amrith_20260717_walk.csv",
+      "rows": 6707,
+      "duration_s": 91.8,
+      "rate_hz": 73.04,
+      "gap_ms_median": 11.4,
+      "gap_ms_p95": 29.0,
+      "gap_ms_max": 187.5,
+      "channels": null,
+      "windows_total": 46,
+      "windows_usable": 43,
+      "windows_usable_pct": 93.5,
+      "samples_per_window_median": 155,
+      "amp_mean": 0.05907,
+      "motion_energy": 0.02633
+    },
+    {
+      "label": "1-channel parked (pilot)",
+      "file": "P01_action_gowreesh_20260721_walk.csv",
+      "rows": 5130,
+      "duration_s": 89.3,
+      "rate_hz": 57.43,
+      "gap_ms_median": 15.2,
+      "gap_ms_p95": 32.9,
+      "gap_ms_max": 213.6,
+      "channels": null,
+      "windows_total": 45,
+      "windows_usable": 40,
+      "windows_usable_pct": 88.9,
+      "samples_per_window_median": 116,
+      "amp_mean": 0.08463,
+      "motion_energy": 0.03502
+    },
+    {
+      "label": "3-channel hopping",
+      "file": "3ch_test_20260813_001142.csv",
+      "rows": 4141,
+      "duration_s": 1707.4,
+      "rate_hz": 2.43,
+      "gap_ms_median": 89.2,
+      "gap_ms_p95": 1108.5,
+      "gap_ms_max": 55623.4,
+      "channels": {
+        "11": 1242,
+        "6": 1434,
+        "1": 1465
+      },
+      "windows_total": 854,
+      "windows_usable": 0,
+      "windows_usable_pct": 0.0,
+      "samples_per_window_median": 1,
+      "amp_mean": 0.23606,
+      "motion_energy": 0.10873
+    }
+  ]
+}
