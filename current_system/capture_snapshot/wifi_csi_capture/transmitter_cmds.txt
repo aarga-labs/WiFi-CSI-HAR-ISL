@@ -1,0 +1,151 @@
+=====================================================================
+ TRANSMITTER (TX) — USRP N210 #1 at 192.168.10.9
+ Two-USRP WiFi CSI capture. Every command, in order.
+ Repo root below is written as $REPO. Set it once per terminal:
+
+     REPO=~/adhikkesh/FYP/wifi_csi_capture
+=====================================================================
+
+What this side does
+-------------------
+This laptop builds IEEE 802.11 frames in GNU Radio and sends them
+through the USRP. packet_generator.py feeds the flowgraph over TCP
+(localhost:52001).
+
+  - Flowgraph        : $REPO/transmitter/gr-ieee802-11/examples/wifi_tx_multi_hop.py
+  - Packet generator : $REPO/transmitter/gr-ieee802-11/examples/packet_generator.py
+  - Frame addresses  : TA 02:00:00:00:00:01  ->  RA 02:00:00:00:00:02
+  - 20 MS/s, BPSK 1/2, TX gain 30 dB by default (set TX_GAIN), 100-byte payload (128-byte frames)
+  - Settings from environment variables:
+        TX_CHANNEL = 1 | 3 | 6 | 11   (park on one channel; unset = hops 1/6/11 every 0.5 s)
+        TX_GAIN    = TX gain in dB, 0-31.5 (default 30; at home use 15, see below)
+        PPS        = packets per second (default 80)
+        LABEL      = text stored inside each packet (default "walking")
+        PAYLOAD_SIZE = bytes (default 100)
+  - For data collection ALWAYS use TX_CHANNEL=1 and PPS=200
+    (the receiver in this repo listens only on channel 1).
+
+
+---------------------------------------------------------------------
+0. ONE-TIME INSTALL (skip if GNU Radio + UHD already work)
+---------------------------------------------------------------------
+Ubuntu 22.04:
+    sudo apt update && sudo apt upgrade -y
+    sudo apt install -y gnuradio gnuradio-dev libuhd-dev uhd-host \
+                        cmake g++ git libboost-all-dev pybind11-dev
+    sudo uhd_images_downloader
+
+Check:
+    uhd_config_info --version
+    gnuradio-companion --version
+
+
+---------------------------------------------------------------------
+1. NETWORK (laptop <-> USRP, direct Ethernet cable)
+---------------------------------------------------------------------
+    ip link                                       # find the ethernet name (eno1, enp2s0, ...)
+    sudo ip addr add 192.168.10.1/24 dev <iface>
+    sudo ip link set <iface> up
+    ping -c 3 192.168.10.9
+    uhd_find_devices                              # must list addr: 192.168.10.9
+(Both laptops use 192.168.10.1 locally — fine, they are separate cables.)
+
+
+---------------------------------------------------------------------
+2. BUILD + INSTALL  (gr-foo first, then gr-ieee802-11)
+---------------------------------------------------------------------
+gr-foo (needed for the packet padding block):
+    cd $REPO/transmitter/gr-foo
+    rm -rf build                                   # only if an old/copied build folder exists
+    mkdir build && cd build
+    cmake ..
+    make -j$(nproc)
+    sudo make install
+    sudo ldconfig
+
+gr-ieee802-11 — ONLY on a laptop that is used ONLY as transmitter:
+    cd $REPO/transmitter/gr-ieee802-11
+    rm -rf build
+    mkdir build && cd build
+    cmake ..
+    make -j$(nproc)
+    sudo make install
+    sudo ldconfig
+
+!! If this laptop is ALSO the receiver: SKIP the gr-ieee802-11 build above.
+   It installs under the same name and overwrites the receiver's CSI version.
+   Install receiver/gr-ieee802-11 instead (see receiver_cmds.txt, step 2);
+   it contains every block the transmitter needs.
+
+
+---------------------------------------------------------------------
+3. ONE-TIME: LET PYTHON + LINKER FIND /usr/local  (instead of exporting)
+---------------------------------------------------------------------
+    SP=$(python3 -c "import site; print(site.getsitepackages()[0])")
+    echo /usr/local/lib/python3.14/site-packages | sudo tee "$SP/usr-local.pth"
+    echo /usr/local/lib | sudo tee /etc/ld.so.conf.d/usr-local.conf
+    sudo ldconfig
+(Use your Python version in the path: python3 --version.)
+
+Temporary alternative (current terminal only):
+    export PYTHONPATH=/usr/local/lib/python3.14/site-packages:$PYTHONPATH
+    export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+
+
+---------------------------------------------------------------------
+4. VERIFY
+---------------------------------------------------------------------
+    python3 -c "import ieee802_11; print('ieee802_11 ok')"
+    python3 -c "import foo; print('foo ok')"
+    ls $REPO/transmitter/gr-ieee802-11/examples/wifi_phy_hier.py      # must exist
+
+If wifi_phy_hier.py is missing, regenerate it:
+    cd $REPO/transmitter/gr-ieee802-11/examples
+    grcc wifi_phy_hier.grc -o .
+
+
+---------------------------------------------------------------------
+5. START  (start this first and leave it running all day)
+---------------------------------------------------------------------
+Terminal A — flowgraph, parked on channel 1:
+    cd $REPO/transmitter/gr-ieee802-11/examples
+    TX_GAIN=15 TX_CHANNEL=1 python3 wifi_tx_multi_hop.py
+Expected:  "PARKED on Channel 1 (2412 MHz) — not hopping, TX gain 15.0 dB"
+(1 Oct, home room, ~12 ft link: TX gain 30 overloaded the receiver above RX gain 6 dB.
+ TX gain 15 moves the receiver's best gain into the middle of its range. Keep the same
+ TX_GAIN for the whole dataset; if you change it, re-run gain_sweep.sh.)
+(a small Qt window opens)
+
+Terminal B — packet generator, 200 packets per second:
+    cd $REPO/transmitter/gr-ieee802-11/examples
+    PPS=200 LABEL=session python3 packet_generator.py
+Expected:  "Connected — sending 200 pkt/s, 100-byte payload, LABEL=session"
+           then "Sent N packets ..." once per second.
+
+Keep both running for the whole recording session.
+
+
+---------------------------------------------------------------------
+6. STOP
+---------------------------------------------------------------------
+    Terminal B: Ctrl+C   (packet generator first)
+    Terminal A: Ctrl+C or close the Qt window
+
+
+---------------------------------------------------------------------
+7. TROUBLESHOOTING
+---------------------------------------------------------------------
+uhd_find_devices finds nothing
+    -> step 1 not done, wrong interface, or cable.
+ModuleNotFoundError: ieee802_11 / foo
+    -> step 2 build/install skipped, or step 3 path fix missing.
+ModuleNotFoundError: wifi_phy_hier
+    -> run from the examples folder, or regenerate it (step 4).
+packet_generator.py hangs at connect
+    -> Terminal A is not running yet, or another packet_generator is already connected.
+Console prints "Synced hop -> Channel ..." lines
+    -> you forgot TX_CHANNEL=1; the receiver will miss about 2/3 of packets. Restart with TX_CHANNEL=1.
+uhd_usrp_sink address error
+    -> the USRP is not at 192.168.10.9 (check uhd_find_devices).
+Receiver sees only a few rows per second
+    -> check PPS=200 here and TX_CHANNEL=1; then the receiver's CPU (receiver_cmds.txt step 7).
