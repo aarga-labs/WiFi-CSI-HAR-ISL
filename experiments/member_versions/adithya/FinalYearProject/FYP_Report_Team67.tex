@@ -1,0 +1,163 @@
+\documentclass[11pt, a4paper]{article}
+
+% --- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{times}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{array}
+
+% --- Amrita Colors ---
+\definecolor{amritaMaroon}{HTML}{A4123F}
+
+% --- Title & Section Formatting ---
+\titlespacing*{\section}{0pt}{10pt}{3pt}
+\titleformat{\section}{\large\bfseries\color{amritaMaroon}}{\thesection}{1em}{}
+\titlespacing*{\subsection}{0pt}{5pt}{2pt}
+\titleformat{\subsection}{\normalsize\bfseries\color{amritaMaroon}}{\thesubsection}{0.5em}{}
+
+\pagestyle{empty}
+
+\begin{document}
+
+% ==========================================
+% HEADER 
+% ==========================================
+\noindent
+\begin{minipage}{\textwidth}
+    \centering
+    {\Large \textbf{\textcolor{amritaMaroon}{
+    AMRITA VISHWA VIDYAPEETHAM \\
+    SCHOOL OF COMPUTING \\
+    DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING \\
+    }}} 
+    \vspace{0.15cm}
+    {\large \textbf{Multi-User Smart Home Activity Recognition with Federated Learning}} \\
+    \vspace{0.08cm}
+    23CSE399 -- Project Phase 1 (Panel Review 1) \\
+    \today
+\end{minipage}
+
+\vspace{0.25cm}
+\hrule
+\vspace{0.2cm}
+
+% --- Team & Guide Details ---
+\noindent
+\begin{center}
+    \small
+    \renewcommand{\arraystretch}{1.3}
+    \setlength{\tabcolsep}{4pt}
+    \begin{tabular}{|l|p{3.2cm}|p{3.8cm}|p{2.3cm}|c|}
+        \hline
+        \multicolumn{2}{|c|}{\textbf{Team Members}} & \textbf{Guide} & \textbf{Project Type} & \textbf{Marks} \\ 
+        \hline
+        \small CB.SC.U4CSE23101 & \small Adhikesh S K & \multirow{5}{=}{\raggedright \small \textbf{Dr. Nalinadevi K} \newline \textit{Associate Prof, CSE}} & \multirow{5}{=}{\raggedright \small \textbf{Type 3} \newline Research + Implementation} & \multirow{5}{*}{\textbf{\huge / 5}} \\ 
+        \cline{1-2}
+        \small CB.SC.U4CSE23105 & \small Amrith B &  &  &  \\ 
+        \cline{1-2}
+        \small CB.SC.U4CSE23102 & \small Aditya Ajay &  &  &  \\ 
+        \cline{1-2}
+        \small CB.SC.U4CSE23XXX & \small Member 4 &  &  &  \\
+        \cline{1-2}
+        \small CB.SC.U4CSE23XXX & \small Member 5 &  &  &  \\ 
+        \hline
+    \end{tabular}
+\end{center}
+\vspace{0.15cm}
+
+% ==========================================
+% MAIN CONTENT
+% ==========================================
+
+\section{Problem Definition \& Research Gap}
+
+\textbf{Core Problem:} Current smart home systems cannot personalize to individual residents while maintaining privacy. Existing ambient-sensor datasets (CASAS: 2000+ hours) cannot identify which user performed an activity---the \textit{data association problem}. Wearable-based systems (Opportunity: 20 hours) exist only in labs with unrealistically dense sensor networks. Federated learning in multi-resident homes has never been validated on data with explicit user identification. Additionally, optimal sensor placement for edge-device training remains unexplored in the smart home context.
+
+\textbf{Research Questions:}
+\begin{itemize}[noitemsep, topsep=0pt, leftmargin=*]
+    \item Can we create a dataset with explicit multi-user identification using minimal wearables that enables practical federated learning?
+    \item What is the minimal wearable sensor configuration for accurate activity recognition on resource-constrained edge devices?
+    \item How can privacy-preserving federated learning improve personalization without centralizing raw sensor data?
+\end{itemize}
+
+\section{Literature Review \& Dataset Analysis}
+
+\subsection{Member 1 -- CASAS Dataset (Ambient Sensors)}
+
+\textbf{Key Finding:} CASAS is the gold standard for ambient sensing (2000+ hours across 18 apartments, 84\% accuracy). However, it suffers from the \textit{critical data association gap}: motion sensors cannot identify which resident triggered them, making true user-specific personalization impossible. Papers (Cook et al. 2013) demonstrate activity recognition works, but multi-resident scenario (Singla et al. 2010) shows accuracy drops to 60.6\% when residents overlap spatially due to inability to distinguish ``Who did What.''
+
+\textbf{Architecture Insight:} Three-layer design (Physical: sensors; Middleware: Zigbee; Application: SVM-based AR). Streaming recognition (Krishnan \& Cook 2014) with sliding windows achieves real-time performance but struggles with concurrent multi-user activities.
+
+\subsection{Member 2 -- ARAS Dataset (Multi-Resident Ambient)}
+
+\textbf{Key Finding:} ARAS (2 houses, 30 days each, 27 activities) is explicitly multi-resident but has the \textit{same fundamental limitation}: ``ambient sensors are anonymous.'' Liang et al. (2021) confirms that distinguishing residents requires complex probabilistic modeling of historical habits, not real-time capability. GRU models achieve 88\% accuracy, but this assumes non-overlapping activities.
+
+\textbf{Critical Gap Identified:} ``Once single-person AR is applied to multi-person environments, it fails to identify different residents' activities.'' ARAS provides no explicit user identifiers---cannot distinguish if motion in living room is Resident A or B.
+
+\subsection{Member 3 -- Opportunity Dataset (Wearables)}
+
+\textbf{Key Finding:} Opportunity (4 subjects, 27 hours, 72 sensors per person) is unrealistically over-instrumented: motion jacket + 12 limb accelerometers + foot IMUs. Chavarriaga et al. (2013) show 27,000+ atomic activities with excellent benchmarking capability, but the sensor configuration is laboratory-grade, not deployable to real homes.
+
+\textbf{Smart Living Gap (Diraco et al. 2023):} Opportunity fails on four axes: (1) Over-instrumented (15+ sensors vs. practical 1--2 wearables), (2) Single lab ``home'' with scripted routines (vs. multi-home diversity), (3) Short-term recordings (vs. weeks-months required for personalization), (4) No explicit multi-resident context.
+
+\subsection{Member 4 -- UCI-HAR \& UniMiB-SHAR (Smartphone-Based)}
+
+\textbf{Key Finding:} UCI-HAR (30 subjects, 6 activities, waist-worn phone) and UniMiB-SHAR (30 subjects, 25 classes including 8 fall types) both smartphone-centric with fixed/variable placement. TCN-GRU hybrid achieves 97.25\% (UCI-HAR) and 93.51\% (UniMiB-SHAR) accuracy with only 0.18M parameters---excellent for edge devices.
+
+\textbf{Critical Issues:} (1) Fall detection confuses phone drops with falls (acceleration signature identical), (2) Stationary activities (sitting, standing, lying) difficult to distinguish, (3) Subject recognition with missing sensor data drops to 75.87\% accuracy, (4) No multi-resident scenarios, no smart home context, purely lab-based.
+
+\subsection{Member 5 -- WiFi-HAR \& Kastrons (Non-Wearable Sensing)}
+
+\textbf{Key Finding:} WiFi-HAR via CSI (Channel State Information) detects 7 activities without cameras using WiFi signals; Raspberry Pi implementation democratizes hardware beyond obsolete Intel 5300 NIC. DeepConvLSTM achieves 87\% accuracy with 11 ADL classes (cooking, brushing teeth, etc.). CSI-Bench (461 hours, 35 users, 26 environments) handles multi-user but struggles: accuracy drops to ~60\% when 3+ people move concurrently.
+
+\textbf{Multi-User Weakness:} WIMANS benchmark shows WiFi models can \textit{identify} users but cannot reliably \textit{distinguish activities} in multi-user scenarios---the activity recognition accuracy collapses under concurrent movement.
+
+\section{Dataset Comparison \& Identified Gaps}
+
+\begin{table}[H]
+\centering
+\small
+\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{|l|c|c|c|c|c|}
+\hline
+\textbf{Property} & \textbf{CASAS} & \textbf{ARAS} & \textbf{Opportunity} & \textbf{UCI-HAR} & \textbf{WiFi-HAR} \\
+\hline
+Multi-User ID & \ding{55} (Anonymous) & \ding{55} (Anonymous) & \ding{55} (Single) & \ding{55} & \ding{55} \\
+\hline
+Real Homes & \checkmark & \checkmark & \ding{55} (Lab) & \ding{55} (Lab) & \ding{55} (Lab) \\
+\hline
+Wearable + Ambient & \ding{55} & \ding{55} & \checkmark (Over-instrumented) & \ding{55} (Phone) & \ding{55} \\
+\hline
+Federated Ready & \ding{55} & \ding{55} & \ding{55} & \ding{55} & \ding{55} \\
+\hline
+Data Volume & 2000+ h & 60 h & 25 h & <10 h & 461 h \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{Proposed Solution}
+
+\textbf{Multi-Layer Architecture:} (1) \textbf{Layer 1 -- Ambient:} Motion, door, temperature sensors for context (replicate ARAS/CASAS). (2) \textbf{Layer 2 -- Wearable:} Minimal IMU devices (3--5 sensors per person) with unique identifiers (smartwatch, wristband) solving ``Who'' problem. (3) \textbf{Layer 3 -- Federated:} Local model training per home, encrypted global aggregation, no raw data sharing. 
+
+\textbf{Novel Contribution:} \textit{First dataset} combining explicit multi-user identification + real homes + wearable + ambient + federated-learning-ready design. Enable personalization by isolating per-resident behavior while preserving privacy.
+
+\section{Current Status \& Plan}
+
+\textbf{Status:} Literature survey complete (50+ papers analyzed across all dataset types); problem statement formalized; team roles assigned; hardware selection in progress.
+
+\textbf{Next Steps:} (1) Weeks 9--12: Finalize hardware kits and data collection protocol; (2) Weeks 13--28: Deploy in 3--4 real homes, collect 500+ hours with 3--5 residents per home; (3) Weeks 29--40: Annotate dataset with explicit user--activity--timestamp labels; (4) Weeks 41--48: Implement federated learning framework and evaluate personalization gains; (5) Weeks 49--52: Finalize documentation and submit.
+
+% --- REFERENCES ---
+\vspace{0.15cm}
+\renewcommand{\refname}{\normalsize References}
+\bibliographystyle{IEEEtran}
+\bibliography{ref}
+
+\end{document}
