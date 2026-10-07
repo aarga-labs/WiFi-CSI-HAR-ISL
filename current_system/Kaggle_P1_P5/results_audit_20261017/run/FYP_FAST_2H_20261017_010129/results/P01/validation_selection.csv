@@ -1,0 +1,3 @@
+candidate,validation_pid,score,best_epoch
+residual4,P04,0.29776667850971755,24
+multiscale4,P04,0.2712208571656881,8
