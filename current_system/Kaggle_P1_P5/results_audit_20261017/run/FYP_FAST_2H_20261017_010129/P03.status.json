@@ -1,0 +1,8 @@
+{
+  "pid": "P03",
+  "status": "complete",
+  "exit_code": 0,
+  "seconds": 74.2,
+  "last_phase": "fold completed",
+  "log": "/kaggle/working/FYP_FAST_2H_20261017_010129/P03.log"
+}

@@ -1,0 +1,14 @@
+[JOB] /kaggle/working/FYP_FAST_2H_20261017_010129/results/deployment_all5/seed_17: 12 epochs maximum, 32 batches/epoch
+[EPOCH] seed_17/residual4 1/12 loss=4.3201 val=None elapsed=1.9s
+[EPOCH] seed_17/residual4 2/12 loss=3.6165 val=None elapsed=0.4s
+[EPOCH] seed_17/residual4 3/12 loss=3.2376 val=None elapsed=0.4s
+[EPOCH] seed_17/residual4 4/12 loss=2.9749 val=None elapsed=0.4s
+[EPOCH] seed_17/residual4 5/12 loss=2.7186 val=None elapsed=0.4s
+[EPOCH] seed_17/residual4 6/12 loss=2.5211 val=None elapsed=0.4s
+[EPOCH] seed_17/residual4 7/12 loss=2.3743 val=None elapsed=0.4s
+[EPOCH] seed_17/residual4 8/12 loss=2.2485 val=None elapsed=0.4s
+[EPOCH] seed_17/residual4 9/12 loss=2.1304 val=None elapsed=0.4s
+[EPOCH] seed_17/residual4 10/12 loss=2.0267 val=None elapsed=0.4s
+[EPOCH] seed_17/residual4 11/12 loss=2.0026 val=None elapsed=0.4s
+[EPOCH] seed_17/residual4 12/12 loss=2.0118 val=None elapsed=0.4s
+[ALL-FIVE MODEL SAVED] /kaggle/working/FYP_FAST_2H_20261017_010129/results/deployment_all5

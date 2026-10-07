@@ -1,0 +1,22 @@
+{
+  "out": "/kaggle/working/FYP_FAST_2H_20261017_010129/results",
+  "streams": "/kaggle/working/FYP_FAST_2H_20261017_010129/cache/prepared_streams.joblib",
+  "fingerprint": "f01651df3c4b758f3cbec5dd742669b4f0605a9f11c24162aecd662949dede62",
+  "cfg": {
+    "epochs": 28,
+    "patience": 4,
+    "min_epochs": 8,
+    "steps_per_epoch": 32,
+    "batch_size": 256,
+    "lr": 0.001,
+    "weight_decay": 0.01,
+    "seed": 17,
+    "tree_estimators": 300
+  },
+  "pid": "P04",
+  "spec_path": "/kaggle/working/FYP_FAST_2H_20261017_010129/P04.json",
+  "progress": "/kaggle/working/FYP_FAST_2H_20261017_010129/P04.progress.json",
+  "deadline": 1792200511.079247,
+  "max_job_seconds": 1440,
+  "gpu": 0
+}
