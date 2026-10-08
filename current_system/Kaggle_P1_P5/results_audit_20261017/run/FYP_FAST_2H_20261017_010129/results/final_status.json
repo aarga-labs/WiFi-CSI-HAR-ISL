@@ -1,0 +1,10 @@
+[
+  {
+    "pid": "FINAL",
+    "status": "complete",
+    "exit_code": 0,
+    "seconds": 18.0,
+    "last_phase": "deployment refit completed",
+    "log": "/kaggle/working/FYP_FAST_2H_20261017_010129/FINAL.log"
+  }
+]
