@@ -1,0 +1,57 @@
+{
+  "arch": {
+    "name": "residual4",
+    "kind": "residual",
+    "seconds": 4
+  },
+  "epochs": 12,
+  "tau": 0.49999999999999994,
+  "action_tree_weight": 0.0,
+  "classes": [
+    "walk",
+    "sitstand",
+    "pickup",
+    "lightswitch",
+    "drink",
+    "answerphone",
+    "eat",
+    "wipetable",
+    "tvremote",
+    "fall",
+    "chop_food",
+    "stir_pot",
+    "HELLO",
+    "THANKYOU",
+    "LAMP",
+    "FAN",
+    "TELEVISION",
+    "COOK",
+    "WATER",
+    "HOT",
+    "HUNGRY",
+    "TOILET",
+    "CALL",
+    "HELP",
+    "PAIN",
+    "ACCIDENT"
+  ],
+  "fs": 50,
+  "training_participants": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05"
+  ],
+  "dataset": "f01651df3c4b758f3cbec5dd742669b4f0605a9f11c24162aecd662949dede62",
+  "completed_evaluation_folds": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05"
+  ],
+  "evaluation_status": "complete",
+  "validation": "All-five deployment refit has no independent accuracy score.",
+  "inference": "Offline centered windows; continuous CNN inference; tree fusion only for isolated windows."
+}
