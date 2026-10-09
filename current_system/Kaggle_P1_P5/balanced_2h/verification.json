@@ -1,0 +1,20 @@
+{
+  "training_executed_locally": false,
+  "gpu_execution": "not run; requires Kaggle",
+  "all_three_architectures_forward_and_checkpoint_roundtrip": "passed",
+  "all_five_steps_per_epoch": 246,
+  "draw_budget_scales_with_dataset": "passed",
+  "participant_split_separation": "passed",
+  "weak_signal_relative_augmentation": "passed",
+  "role_head_combination": "passed",
+  "selection_and_refit_learning_rate_horizon": "passed",
+  "raw_reference_checkpoint_compatibility": "passed",
+  "local_training_guard": "passed",
+  "notebook_syntax_embedded_sources": "passed",
+  "watchdog": "same tested runner as fast notebook; independent process termination and expired-deadline skipping verified previously",
+  "maximum_fit_count": 51,
+  "source_sha256": "b8d0d9831a61915cd46e8e293f7f0a348af53a6b701a9de1126f5e28eebdc5b1",
+  "notebook_schema": "passed",
+  "fake_fit_orchestration": "passed; 39 fake fits, no real fitting",
+  "dataset_discovery_missing_and_ambiguous_inputs": "six targeted cases passed"
+}
