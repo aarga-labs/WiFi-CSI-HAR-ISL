@@ -1,0 +1,18 @@
+{
+  "n_true": 36,
+  "n_pred": 57,
+  "detected": 25,
+  "identified": 11,
+  "intent_correct": 7,
+  "false_on_routine": 4,
+  "routine_seconds": 170.74,
+  "detection_precision": 0.43859649122807015,
+  "detection_recall": 0.6944444444444444,
+  "detection_f1": 0.5376344086021505,
+  "identity_precision": 0.19298245614035087,
+  "identity_recall": 0.3055555555555556,
+  "identity_f1": 0.23655913978494625,
+  "intent_e2e": 0.19444444444444445,
+  "false_commands_per_routine_hour": 84.33876068876654,
+  "tau": 0.5999999999999999
+}
