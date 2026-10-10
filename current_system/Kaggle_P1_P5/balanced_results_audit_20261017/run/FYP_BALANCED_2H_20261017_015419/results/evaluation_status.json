@@ -1,0 +1,42 @@
+[
+  {
+    "pid": "P02",
+    "status": "complete",
+    "exit_code": 0,
+    "seconds": 1091.4,
+    "last_phase": "fold completed",
+    "log": "/kaggle/working/FYP_BALANCED_2H_20261017_015419/P02.log"
+  },
+  {
+    "pid": "P01",
+    "status": "complete",
+    "exit_code": 0,
+    "seconds": 1357.7,
+    "last_phase": "fold completed",
+    "log": "/kaggle/working/FYP_BALANCED_2H_20261017_015419/P01.log"
+  },
+  {
+    "pid": "P03",
+    "status": "complete",
+    "exit_code": 0,
+    "seconds": 710.9,
+    "last_phase": "fold completed",
+    "log": "/kaggle/working/FYP_BALANCED_2H_20261017_015419/P03.log"
+  },
+  {
+    "pid": "P04",
+    "status": "complete",
+    "exit_code": 0,
+    "seconds": 640.8,
+    "last_phase": "fold completed",
+    "log": "/kaggle/working/FYP_BALANCED_2H_20261017_015419/P04.log"
+  },
+  {
+    "pid": "P05",
+    "status": "complete",
+    "exit_code": 0,
+    "seconds": 474.5,
+    "last_phase": "fold completed",
+    "log": "/kaggle/working/FYP_BALANCED_2H_20261017_015419/P05.log"
+  }
+]
