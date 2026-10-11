@@ -1,0 +1,10 @@
+__pycache__/
+validation/cache/
+*.pt
+*.joblib
+*.zip
+*.part
+
+# Two retained deployment checkpoints: portable with the repository.
+!/balanced_results_audit_20261017/run/FYP_BALANCED_2H_20261017_015419/results/deployment_all5/models/normalized4/seed_17/best.pt
+!/balanced_results_audit_20261017/run/FYP_BALANCED_2H_20261017_015419/results/deployment_all5/models/normalized4/seed_29/best.pt
