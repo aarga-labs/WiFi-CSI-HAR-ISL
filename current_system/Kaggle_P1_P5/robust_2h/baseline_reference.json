@@ -1,0 +1,72 @@
+{
+  "name": "FYP_BALANCED_2H_20261017_015419",
+  "dataset": "f01651df3c4b758f3cbec5dd742669b4f0605a9f11c24162aecd662949dede62",
+  "events": 1534,
+  "event_ids_sha256": "6d6407f44d9057ce65f518f00a9aed7f76bcad761b3d8f39e182a541c4585211",
+  "summary": [
+    {
+      "split": "isolated",
+      "type": "activity",
+      "mean_f1": 0.502294148782432,
+      "sd_f1": 0.0841145544785871,
+      "participants": 5,
+      "events": 628
+    },
+    {
+      "split": "isolated",
+      "type": "sign",
+      "mean_f1": 0.3323200776397995,
+      "sd_f1": 0.0296305464643273,
+      "participants": 5,
+      "events": 490
+    },
+    {
+      "split": "isolated_original_parts",
+      "type": "activity",
+      "mean_f1": 0.5304250454701405,
+      "sd_f1": 0.0726291286189167,
+      "participants": 5,
+      "events": 488
+    },
+    {
+      "split": "isolated_original_parts",
+      "type": "sign",
+      "mean_f1": 0.3654160438068,
+      "sd_f1": 0.0556403666728021,
+      "participants": 5,
+      "events": 350
+    },
+    {
+      "split": "isolated_seated",
+      "type": "activity",
+      "mean_f1": 0.1939172697050848,
+      "sd_f1": 0.0876035655165751,
+      "participants": 2,
+      "events": 140
+    },
+    {
+      "split": "isolated_seated",
+      "type": "sign",
+      "mean_f1": 0.1995313675709518,
+      "sd_f1": 0.065264149453516,
+      "participants": 2,
+      "events": 140
+    },
+    {
+      "split": "stories_oracle_boundaries",
+      "type": "activity",
+      "mean_f1": 0.523659281650661,
+      "sd_f1": 0.1354685699724965,
+      "participants": 5,
+      "events": 208
+    },
+    {
+      "split": "stories_oracle_boundaries",
+      "type": "sign",
+      "mean_f1": 0.247111975326261,
+      "sd_f1": 0.0761250961173636,
+      "participants": 5,
+      "events": 208
+    }
+  ]
+}
