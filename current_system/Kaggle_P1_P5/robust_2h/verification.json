@@ -1,0 +1,22 @@
+{
+  "checks": [
+    "20 fixed cross-fit splits; outer test excluded; distinct seeds; nine-minute training allocations",
+    "finite CPU forward, two conditional distributions and synthetic loss gradients; zero optimizer updates",
+    "augmentation preserves weak-signal scale and moving-average weights update correctly",
+    "equal person, source and event mass despite different window counts",
+    "resident-bank windows match ordinary extraction without fitting or using a GPU",
+    "deployment checkpoint round-trip preserves model outputs and class order",
+    "confidence rejection removes ambiguous commands without shrinking measured routine time",
+    "all 20 inner workers preserve split separation and save matching outer predictions using fake fits",
+    "incomplete ensembles cannot silently receive completed test scores",
+    "notebook schema, code syntax and all embedded sources match checked files"
+  ],
+  "count": 10,
+  "local_training": false,
+  "optimizer_updates": 0,
+  "gpu_run_verified": false,
+  "notebook_sha256": "6ef8fb6a6ef50d8dd31982d6e3ef077e5169f69f1e2e1459d75c988e91e21ce2",
+  "synthetic_result_archive_integration": "passed: five ensembles, metrics, figures, deployment reload, CRC, mismatched-baseline refusal",
+  "real_metadata_check": "passed: 26398 P1-P3 training windows; finite weights; equal state sampling mass; no fitting",
+  "cpu_autocast_check": "passed: finite outputs; 242158 parameters"
+}
