@@ -1,0 +1,5 @@
+pid,mode,posture,trial,label,type,intent,home_action,context,script_id,run,step,t_start_us,t_end_us,source,note
+P01,baseline,,,clap_x3,sync,,,,,,,1790923589617110,1790923589617110,keypress,start
+P01,baseline,standing,1,stand_still,idle,I0,none,isolated,,,,1790923592117868,1790923652118627,cue,
+P01,baseline,standing,2,sit_still,idle,I0,none,isolated,,,,1790923656619605,1790923716620318,cue,
+P01,baseline,,,clap_x3,sync,,,,,,,1790923793611248,1790923793611248,keypress,end
