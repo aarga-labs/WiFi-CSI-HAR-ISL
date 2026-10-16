@@ -1,0 +1,23 @@
+{
+  "completed_test_participants": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05"
+  ],
+  "evaluation_complete": true,
+  "all_five_model_ready": true,
+  "elapsed_minutes": 41.18,
+  "runtime_measured_on_this_run": true,
+  "report_status": [
+    {
+      "pid": "REPORT",
+      "status": "complete",
+      "exit_code": 0,
+      "seconds": 18.0,
+      "last_phase": "worker startup",
+      "log": "/kaggle/working/FYP_BALANCED_2H_20261017_015419/REPORT.log"
+    }
+  ]
+}
