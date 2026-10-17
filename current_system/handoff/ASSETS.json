@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "repository": "aarga-labs/FYP",
+  "repository_visibility": "private",
+  "release_tag": "handoff-2026-10-19",
+  "release_url": "https://github.com/aarga-labs/FYP/releases/tag/handoff-2026-10-19",
+  "assets": {
+    "dataset": {
+      "name": "FYP_Phase1_P01_P05_verified.zip",
+      "bytes": 901985586,
+      "sha256": "74259c5718d512ffa9cd3bdf63f150badcd6887e0cd2b35f780602e6e13a165c",
+      "purpose": "Real selected P1\u2013P5 raw CSI, annotations, receiver logs and per-file hashes; no full phone videos",
+      "archive_top_levels": [
+        "phase1"
+      ]
+    },
+    "balanced_checkpoints": {
+      "name": "FYP_BALANCED_2H_20261017_015419_checkpoints_and_results.zip",
+      "bytes": 223701478,
+      "sha256": "ef5da6338cddb7923d7321e48fb68a42c8268c5d938b2c0a156e848d0f33c02d",
+      "purpose": "Retained completed run: full model/optimizer checkpoints, histories, results and code",
+      "archive_top_levels": [
+        "results"
+      ]
+    },
+    "fast_checkpoints": {
+      "name": "FYP_FAST_2H_20261017_010129_checkpoints_and_results.zip",
+      "bytes": 125043665,
+      "sha256": "6b579207aa3fa7142813265b4ddaef3a6c6303e1362e0f2291d6cff7cb89c13d",
+      "purpose": "Earlier completed FAST run, preserved as historical diagnostic comparator",
+      "archive_top_levels": [
+        "results"
+      ]
+    },
+    "balanced_inference": {
+      "name": "Balanced_All5_Inference_Model.zip",
+      "bytes": 5897164,
+      "sha256": "c977055930346fcfc281f95a23485d2997c62f363c59b345de2af9c016d3cbae",
+      "purpose": "Compact retained all-five inference bundle; no new independent test score",
+      "archive_top_levels": [
+        "Balanced_All5_Model"
+      ]
+    }
+  },
+  "notes": [
+    "Raw dataset is intentionally not a normal Git blob.",
+    "Use your own authenticated GitHub account; no access token is stored.",
+    "A git pull supplies the paper evidence and two small retained inference weight files.",
+    "Generated preprocessing caches can be rebuilt, and private chat/venv data are not release assets."
+  ]
+}
