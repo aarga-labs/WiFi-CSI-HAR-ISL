@@ -1,0 +1,72 @@
+{
+  "id": "amrith_activity",
+  "source": "/home/adhikkesh/adhikkesh/FYP_Others/Amrith/Activity-Detection-System",
+  "refs": [
+    "refs/heads/main af17a27f9bbdbf030bfd0cb218231ffe40845409",
+    "refs/remotes/origin/HEAD af17a27f9bbdbf030bfd0cb218231ffe40845409",
+    "refs/remotes/origin/main af17a27f9bbdbf030bfd0cb218231ffe40845409"
+  ],
+  "commits": [
+    {
+      "oid": "af17a27f9bbdbf030bfd0cb218231ffe40845409",
+      "parents": "47f9a8618709ac96bf382c901954b498a4511a2f",
+      "author_date": "2026-07-22T11:15:27+05:30",
+      "committer_date": "2026-07-22T11:15:27+05:30",
+      "author": "Gowreesh1905",
+      "subject": "rp model added"
+    },
+    {
+      "oid": "47f9a8618709ac96bf382c901954b498a4511a2f",
+      "parents": "f72082ea7001d78ff6cf4cf7890e8c2f9677102a",
+      "author_date": "2026-07-22T11:14:00+05:30",
+      "committer_date": "2026-07-22T11:14:00+05:30",
+      "author": "Gowreesh1905",
+      "subject": "recurrence plot based model code"
+    },
+    {
+      "oid": "f72082ea7001d78ff6cf4cf7890e8c2f9677102a",
+      "parents": "593101a42fc61fd6b271060eaf732b4d34130eac",
+      "author_date": "2026-07-22T01:34:02+05:30",
+      "committer_date": "2026-07-22T01:34:02+05:30",
+      "author": "Rishiikesh",
+      "subject": "feat : Add new files and update copyright information"
+    },
+    {
+      "oid": "593101a42fc61fd6b271060eaf732b4d34130eac",
+      "parents": "ee9a5b0004fd3f0d50cd566ac368cd904253aad9",
+      "author_date": "2026-07-21T22:41:30+05:30",
+      "committer_date": "2026-07-21T22:41:30+05:30",
+      "author": "Amrith B",
+      "subject": "Update README.md"
+    },
+    {
+      "oid": "ee9a5b0004fd3f0d50cd566ac368cd904253aad9",
+      "parents": "ef97941876bda38ff8909fef2cef512c1dd6605b",
+      "author_date": "2026-07-21T22:38:28+05:30",
+      "committer_date": "2026-07-21T22:38:28+05:30",
+      "author": "AMRITH03",
+      "subject": "feat : added config files for gnuradio and intial setup"
+    },
+    {
+      "oid": "ef97941876bda38ff8909fef2cef512c1dd6605b",
+      "parents": "",
+      "author_date": "2026-07-21T21:32:07+05:30",
+      "committer_date": "2026-07-21T21:32:07+05:30",
+      "author": "Amrith B",
+      "subject": "Initial commit"
+    }
+  ],
+  "remotes": [
+    "remote.origin.url git@github.com:AMRITH03/Activity-Detection-System.git"
+  ],
+  "bundle": {
+    "local_path": ".local_history/amrith_activity.bundle",
+    "bytes": 79889563,
+    "sha256": "32b06c4e78805e3813dfbf0e9c07cf3beb2051b8e34565317fcc13edb1d41a68",
+    "verified": true,
+    "published": true,
+    "reason": "Original refs preserved for private team transfer; configured reachable-text credential scan had zero hits. See documented scan/privacy/licence limits.",
+    "included_in_private_release_asset": "FYP_Verified_Original_Git_Histories_20261020.zip",
+    "publication_location": "private release archive FYP_Verified_Original_Git_Histories_20261020.zip"
+  }
+}

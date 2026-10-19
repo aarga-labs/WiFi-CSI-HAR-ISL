@@ -1,0 +1,122 @@
+{
+  "date": "2026-10-20",
+  "histories": [
+    {
+      "id": "current_fyp",
+      "source": "/home/adhikkesh/adhikkesh/FYP",
+      "bundle": {
+        "local_path": ".local_history/current_fyp.bundle",
+        "bytes": 72839147,
+        "sha256": "d1e88209229a6483df48dd57f0f6e557b2101df56926606708b55433e1dec758",
+        "verified": true,
+        "published": true,
+        "reason": "Original refs preserved in verified private archive; see history_security_scan.json and delivery.json for scope.",
+        "publication_location": "private release archive FYP_Verified_Original_Git_Histories_20261020.zip"
+      }
+    },
+    {
+      "id": "wifi_capture",
+      "source": "/home/adhikkesh/adhikkesh/FYP/wifi_csi_capture",
+      "bundle": {
+        "local_path": ".local_history/wifi_capture.bundle",
+        "bytes": 382369,
+        "sha256": "22862eae814c893d7fe3d2c0cc48b0a3f2ec03b694d650d37a82eb7c0bbe8834",
+        "verified": true,
+        "published": true,
+        "reason": "Original refs preserved in verified private archive; see history_security_scan.json and delivery.json for scope.",
+        "publication_location": "private release archive FYP_Verified_Original_Git_Histories_20261020.zip"
+      }
+    },
+    {
+      "id": "amrith_activity",
+      "source": "/home/adhikkesh/adhikkesh/FYP_Others/Amrith/Activity-Detection-System",
+      "bundle": {
+        "local_path": ".local_history/amrith_activity.bundle",
+        "bytes": 79889563,
+        "sha256": "32b06c4e78805e3813dfbf0e9c07cf3beb2051b8e34565317fcc13edb1d41a68",
+        "verified": true,
+        "published": true,
+        "reason": "Original refs preserved in verified private archive; see history_security_scan.json and delivery.json for scope.",
+        "publication_location": "private release archive FYP_Verified_Original_Git_Histories_20261020.zip"
+      }
+    },
+    {
+      "id": "phase1_baseline",
+      "source": "/home/adhikkesh/adhikkesh/FYP_Others/Adithya Ajay/SignFi-CNN",
+      "bundle": {
+        "local_path": ".local_history/phase1_baseline.bundle",
+        "bytes": 1082068,
+        "sha256": "b52fd319eb8f7dc730730027c4fca2313dc58e667cc02beadaa9e9957d407988",
+        "verified": true,
+        "published": true,
+        "reason": "Original refs preserved in verified private archive; see history_security_scan.json and delivery.json for scope.",
+        "publication_location": "private release archive FYP_Verified_Original_Git_Histories_20261020.zip"
+      }
+    },
+    {
+      "id": "three_channel_rishi",
+      "source": "/home/adhikkesh/adhikkesh/FYP_Others/Rishiikesh/usrp-projects/Three_Channel_Experiment",
+      "bundle": {
+        "local_path": ".local_history/three_channel_rishi.bundle",
+        "bytes": 741632,
+        "sha256": "c20a01d7e9aa725c7f247096d2da341a2917ac415d54c9e24f81146e634ee2ab",
+        "verified": true,
+        "published": true,
+        "reason": "Original refs preserved in verified private archive; see history_security_scan.json and delivery.json for scope.",
+        "publication_location": "private release archive FYP_Verified_Original_Git_Histories_20261020.zip"
+      }
+    },
+    {
+      "id": "receiver_team",
+      "source": "/home/adhikkesh/adhikkesh/FYP_Others/Rishiikesh/usrp-projects/Three_Channel_Receiver/USRP_HAR_Project",
+      "bundle": {
+        "local_path": ".local_history/receiver_team.bundle",
+        "bytes": 20735,
+        "sha256": "8b1b42a9def3b40864142a320a2338fa42d909d12f12c59b2051fe707c65a3cc",
+        "verified": true,
+        "published": true,
+        "reason": "Original refs preserved in verified private archive; see history_security_scan.json and delivery.json for scope.",
+        "publication_location": "private release archive FYP_Verified_Original_Git_Histories_20261020.zip"
+      }
+    },
+    {
+      "id": "usrp_library_snapshot",
+      "source": "/home/adhikkesh/adhikkesh/FYP_Others/Rishiikesh/usrp-projects/USRP_lib",
+      "bundle": {
+        "local_path": ".local_history/usrp_library_snapshot.bundle",
+        "bytes": 474,
+        "sha256": "cb2aa14d5055cf80b0261481a0614da93e37085e4ac0f8292b5689c4841d2b3f",
+        "verified": true,
+        "published": true,
+        "reason": "Original refs preserved in verified private archive; see history_security_scan.json and delivery.json for scope.",
+        "publication_location": "private release archive FYP_Verified_Original_Git_Histories_20261020.zip"
+      }
+    },
+    {
+      "id": "three_channel_september",
+      "source": "/home/adhikkesh/adhikkesh/FYP/_backup_git/Three_channel_Exp_dot_git",
+      "bundle": {
+        "local_path": ".local_history/three_channel_september.bundle",
+        "bytes": 910657,
+        "sha256": "d490f6a5d7233d528e90053ba06de2766649f11c8dfc35ebbc5157a5a3f23b0f",
+        "verified": true,
+        "published": true,
+        "reason": "Original refs preserved in verified private archive; see history_security_scan.json and delivery.json for scope.",
+        "publication_location": "private release archive FYP_Verified_Original_Git_Histories_20261020.zip"
+      }
+    },
+    {
+      "id": "receiver_september",
+      "source": "/home/adhikkesh/adhikkesh/FYP/_backup_git/receiver_dot_git",
+      "bundle": {
+        "local_path": ".local_history/receiver_september.bundle",
+        "bytes": 8239858,
+        "sha256": "fae0ae02d2ddb200ff15d474997f119a783cd3de959a2577e83e15aa4b03b883",
+        "verified": true,
+        "published": true,
+        "reason": "Original refs preserved in verified private archive; see history_security_scan.json and delivery.json for scope.",
+        "publication_location": "private release archive FYP_Verified_Original_Git_Histories_20261020.zip"
+      }
+    }
+  ]
+}

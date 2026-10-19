@@ -1,0 +1,72 @@
+{
+  "id": "receiver_team",
+  "source": "/home/adhikkesh/adhikkesh/FYP_Others/Rishiikesh/usrp-projects/Three_Channel_Receiver/USRP_HAR_Project",
+  "refs": [
+    "refs/heads/feature/channel-hopping edeab1c55c49146b40ddc370d72b79781ea3b162",
+    "refs/remotes/origin/HEAD edeab1c55c49146b40ddc370d72b79781ea3b162",
+    "refs/remotes/origin/feature/channel-hopping edeab1c55c49146b40ddc370d72b79781ea3b162"
+  ],
+  "commits": [
+    {
+      "oid": "edeab1c55c49146b40ddc370d72b79781ea3b162",
+      "parents": "cdcfa9f947e085cf77a17d047c90e6eb19aa8177",
+      "author_date": "2026-08-05T16:22:39+05:30",
+      "committer_date": "2026-08-05T16:31:05+05:30",
+      "author": "Ubuntu User",
+      "subject": "csv capture changes"
+    },
+    {
+      "oid": "cdcfa9f947e085cf77a17d047c90e6eb19aa8177",
+      "parents": "9c7c4a90171492fbf59f2aa15025afe8114e8f0c",
+      "author_date": "2026-08-05T16:14:40+05:30",
+      "committer_date": "2026-08-05T16:31:05+05:30",
+      "author": "Ubuntu User",
+      "subject": "refactor: Adapt receiver to Team67 C++ block and remove ZMQ dependency"
+    },
+    {
+      "oid": "9c7c4a90171492fbf59f2aa15025afe8114e8f0c",
+      "parents": "cb1ff90f5a4fe68afe5eb643bc062350e09d1743",
+      "author_date": "2026-08-05T12:52:57+05:30",
+      "committer_date": "2026-08-05T12:52:57+05:30",
+      "author": "Gowreesh B",
+      "subject": "Create README.md"
+    },
+    {
+      "oid": "cb1ff90f5a4fe68afe5eb643bc062350e09d1743",
+      "parents": "e08a15bf3ed5d2f2a2dfbb00d081e9dec2a2a08c",
+      "author_date": "2026-08-05T12:41:20+05:30",
+      "committer_date": "2026-08-05T12:41:20+05:30",
+      "author": "Ubuntu User",
+      "subject": "receiver_mod"
+    },
+    {
+      "oid": "e08a15bf3ed5d2f2a2dfbb00d081e9dec2a2a08c",
+      "parents": "36d65ef8fda8e7d4131369ce53c606045ff5b6c4",
+      "author_date": "2026-08-05T12:29:16+05:30",
+      "committer_date": "2026-08-05T12:29:16+05:30",
+      "author": "Ubuntu User",
+      "subject": "feat: implemented channel hopping and ZMQ CSI logging"
+    },
+    {
+      "oid": "36d65ef8fda8e7d4131369ce53c606045ff5b6c4",
+      "parents": "",
+      "author_date": "2026-08-05T12:26:34+05:30",
+      "committer_date": "2026-08-05T12:26:34+05:30",
+      "author": "Ubuntu User",
+      "subject": "Initial commit: imported base wifi_rx.grc flowgraph"
+    }
+  ],
+  "remotes": [
+    "remote.origin.url https://github.com/Gowreesh1905/USRP_HAR_Project.git"
+  ],
+  "bundle": {
+    "local_path": ".local_history/receiver_team.bundle",
+    "bytes": 20735,
+    "sha256": "8b1b42a9def3b40864142a320a2338fa42d909d12f12c59b2051fe707c65a3cc",
+    "verified": true,
+    "published": true,
+    "reason": "Original refs preserved for private team transfer; configured reachable-text credential scan had zero hits. See documented scan/privacy/licence limits.",
+    "included_in_private_release_asset": "FYP_Verified_Original_Git_Histories_20261020.zip",
+    "publication_location": "private release archive FYP_Verified_Original_Git_Histories_20261020.zip"
+  }
+}

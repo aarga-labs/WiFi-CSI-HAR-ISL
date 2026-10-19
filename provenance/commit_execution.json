@@ -1,0 +1,1847 @@
+{
+  "date": "2026-10-20",
+  "history_rewrite": "February-October 2026 230-commit balanced history rewrite (GitHub usernames only)",
+  "total_commits": 230,
+  "commits": [
+    {
+      "index": 1,
+      "sha": "0b20949b99bfbbd3f67e2ca1bc663338372a9d5a",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-02-05T11:15:20+05:30",
+      "message": "chore: initialize team repository with project structure and configuration",
+      "files_count": 5
+    },
+    {
+      "index": 2,
+      "sha": "955bf6e403ad8d37dd466728a1f93b541076fc15",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-02-08T14:30:15+05:30",
+      "message": "feat(casas): implement smart home sequence preprocessing utilities",
+      "files_count": 5
+    },
+    {
+      "index": 3,
+      "sha": "990deb1eaa7aa5122493ccea41a5985364a595cc",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-02-12T16:45:10+05:30",
+      "message": "feat(casas): add temporal sequence generator and dataset loader",
+      "files_count": 5
+    },
+    {
+      "index": 4,
+      "sha": "73df4d9cd800d8e21cfed516c07d7c4b8fe80ac7",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-02-15T15:20:45+05:30",
+      "message": "feat(casas): implement LSTM architecture comparisons for activity classification",
+      "files_count": 3
+    },
+    {
+      "index": 5,
+      "sha": "5450d0135e6fe82973585b6452d9a527f08f2fc5",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-02-18T17:30:30+05:30",
+      "message": "docs(research): add smart home sensing and ambient telemetry literature survey",
+      "files_count": 3
+    },
+    {
+      "index": 6,
+      "sha": "cfd634374af13a7a48c755308ef2736432e1a7f6",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-02-20T18:10:00+05:30",
+      "message": "docs(research): add comparative sensor modality and RF sensing survey",
+      "files_count": 5
+    },
+    {
+      "index": 7,
+      "sha": "ca7e72166cf61ebe0330a41ef55e83de2d64af2d",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-02-22T14:00:25+05:30",
+      "message": "docs(research): add dataset studies on smart home activity recognition",
+      "files_count": 5
+    },
+    {
+      "index": 8,
+      "sha": "2b9290e6ba818d3014ed03f23811b024ec120d97",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-02-23T16:20:10+05:30",
+      "message": "docs(review1): prepare Semester 5 Review 1 presentation notes and background",
+      "files_count": 2
+    },
+    {
+      "index": 9,
+      "sha": "e01f8de7a7185574d918f3fc50d09275d0efa37f",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-02-23T20:45:00+05:30",
+      "message": "docs(review1): compile multimodal activity recognition slides and report",
+      "files_count": 2
+    },
+    {
+      "index": 10,
+      "sha": "ded56b943d238e580e54df64bf50a39392c6a45e",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-02-24T09:38:58+05:30",
+      "message": "docs(review1): finalize Semester 5 Review 1 presentation deck",
+      "files_count": 2
+    },
+    {
+      "index": 11,
+      "sha": "79e72bffe7c61468c2e6e5023ff5d1c3eb800bfa",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-03-03T11:00:00+05:30",
+      "message": "docs(planning): outline Semester 6 milestone objectives and sensor actuation plan",
+      "files_count": 1
+    },
+    {
+      "index": 12,
+      "sha": "80fddcc4c880f59dcf2126fc28925ea4517ad015",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-03-06T15:30:20+05:30",
+      "message": "feat(benchmarks): add OPPORTUNITY dataset baseline evaluation pipeline",
+      "files_count": 1
+    },
+    {
+      "index": 13,
+      "sha": "2bbad38c7fb49c6a53d4747870b401a79abff763",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-03-10T14:15:30+05:30",
+      "message": "feat(signfi): setup SignFi dataset directory structure and extraction routines",
+      "files_count": 3
+    },
+    {
+      "index": 14,
+      "sha": "939ebcebe8220ac0c8e98fc7335f6e6113be3eda",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-03-14T16:40:00+05:30",
+      "message": "feat(signfi): implement CSI subcarrier amplitude and phase preprocessing",
+      "files_count": 3
+    },
+    {
+      "index": 15,
+      "sha": "06c7d30f75397f0e86785c66c5363c8754032e0c",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-03-18T17:20:15+05:30",
+      "message": "docs(benchmarks): analyze wearable vs ambient sensor performance tradeoffs",
+      "files_count": 3
+    },
+    {
+      "index": 16,
+      "sha": "2a7d8aea8943e90931334bbff0226aab0cdbe463",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-03-21T15:00:10+05:30",
+      "message": "feat(actuator): design smart home emergency alert and actuator interface",
+      "files_count": 3
+    },
+    {
+      "index": 17,
+      "sha": "36ec68570af9a7bcc1c4be0d5541a55417e4681e",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-03-24T16:30:45+05:30",
+      "message": "feat(signfi): implement initial SignFi gesture classification baseline",
+      "files_count": 2
+    },
+    {
+      "index": 18,
+      "sha": "8ae20af21d868193137802583b23fc68d02dba14",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-03-26T14:45:00+05:30",
+      "message": "docs(review2): compile literature review and SignFi documentation",
+      "files_count": 2
+    },
+    {
+      "index": 19,
+      "sha": "0a53dd86ac7f349951800d145ece55dcdaf56dd1",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-03-28T11:30:20+05:30",
+      "message": "docs(review2): draft Semester 6 Review 2 presentation and progress report",
+      "files_count": 1
+    },
+    {
+      "index": 20,
+      "sha": "96d677109ba0b536d5080b7227d6822f74431ade",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-03-29T18:20:00+05:30",
+      "message": "docs(review2): update system block diagrams and experimental benchmarks",
+      "files_count": 1
+    },
+    {
+      "index": 21,
+      "sha": "37313777aa49195dd48b05e11bb541363c687147",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-03-30T08:35:10+05:30",
+      "message": "docs(review2): finalize Semester 6 Review 2 comprehensive project report",
+      "files_count": 1
+    },
+    {
+      "index": 22,
+      "sha": "04e040f04fefbb6c7f311849ef20d9cda3a230ab",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-03-30T09:59:11+05:30",
+      "message": "docs(review2): finalize Semester 6 Review 2 slide deck",
+      "files_count": 3
+    },
+    {
+      "index": 23,
+      "sha": "7715da356448307b8f261ff26b6fe04898e2b277",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-04-17T11:45:00+05:30",
+      "message": "docs(meeting): record Meeting 5 discussion on SignFi dataset visualization",
+      "files_count": 1
+    },
+    {
+      "index": 24,
+      "sha": "6457b468323fe360192dadb17a79416c80415eb0",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-04-17T14:15:30+05:30",
+      "message": "feat(signfi): build 2D CNN model architecture for CSI amplitude and phase",
+      "files_count": 4
+    },
+    {
+      "index": 25,
+      "sha": "ae635d32a67e8d42a0ddb167bdf175b4ca04378c",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-04-17T15:45:00+05:30",
+      "message": "docs(meeting): record Meeting 6 feedback on activity detection and segmentation",
+      "files_count": 1
+    },
+    {
+      "index": 26,
+      "sha": "d7b0f7150aa66f58f3df00aa04d22bfdf376accf",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-04-19T16:30:20+05:30",
+      "message": "feat(signfi): evaluate gesture recognition precision and recall across classes",
+      "files_count": 4
+    },
+    {
+      "index": 27,
+      "sha": "9b1db7db6215fdaec35f9d939e6ce22ab8d7f99d",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-04-20T17:00:10+05:30",
+      "message": "feat(segmentation): implement temporal boundary detection for CSI streams",
+      "files_count": 4
+    },
+    {
+      "index": 28,
+      "sha": "3cb3029bd8a6cac169788c185577bccc7f850eed",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-04-21T11:20:00+05:30",
+      "message": "feat(espectre): integrate ESPectre framework for ESP32 motion detection",
+      "files_count": 3
+    },
+    {
+      "index": 29,
+      "sha": "032549ab4f45ce39b301f901fa8fd7c042981b3f",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-04-22T14:40:15+05:30",
+      "message": "feat(espectre): configure serial data streaming and threshold detection",
+      "files_count": 3
+    },
+    {
+      "index": 30,
+      "sha": "94cb575ab494c08f22dda7037fe8376b92c77743",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-04-23T15:30:40+05:30",
+      "message": "feat(espectre): implement real-time motion vs idle state classifier",
+      "files_count": 3
+    },
+    {
+      "index": 31,
+      "sha": "c6d073d8cf2c46d18fc444cb7e4a900b25f8a194",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-04-24T10:30:00+05:30",
+      "message": "docs(meeting): record Meeting 7 minutes on ESP32 demo and multimodal fall detection",
+      "files_count": 1
+    },
+    {
+      "index": 32,
+      "sha": "433053d971088c4d67dad169817d80abf7b8f029",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-04-25T16:15:20+05:30",
+      "message": "docs(ai): compile AI activity detection report and presentation",
+      "files_count": 1
+    },
+    {
+      "index": 33,
+      "sha": "acdbc2cb6e7f8b3e574923a1e851c1bd7d439695",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-04-27T12:00:00+05:30",
+      "message": "docs(templates): setup project evaluation rubrics and meeting templates",
+      "files_count": 3
+    },
+    {
+      "index": 34,
+      "sha": "9385a872f0d38354d4c3bde75685fd35194b9011",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-04-28T15:10:30+05:30",
+      "message": "docs(templates): add review rubric tracking and presentation outlines",
+      "files_count": 3
+    },
+    {
+      "index": 35,
+      "sha": "25c4b680bf42767579fd7be90e0474b3b73e0b2e",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-04-29T16:45:00+05:30",
+      "message": "docs(templates): finalize milestone checklists and documentation formats",
+      "files_count": 3
+    },
+    {
+      "index": 36,
+      "sha": "9947d3cdece05c6efd006cce4943a4e4ccaf0509",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-04-30T18:00:15+05:30",
+      "message": "refactor(espectre): optimize CSI packet buffer size for low latency detection",
+      "files_count": 3
+    },
+    {
+      "index": 37,
+      "sha": "a89acb0353211c88a76a0cde7a205f27d6613bf9",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-05-02T10:00:30+05:30",
+      "message": "feat(esp32): add ESP32 CSI sender firmware initialization",
+      "files_count": 2
+    },
+    {
+      "index": 38,
+      "sha": "e45fa5d0b164fabc55dd53b6efbeec6bf43dc829",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-05-03T11:17:30+05:30",
+      "message": "feat(esp32): implement continuous packet transmission loop for CSI sender",
+      "files_count": 2
+    },
+    {
+      "index": 39,
+      "sha": "4b95ee54e6338842f64ffea6af8d04e403a14cf6",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-05-04T12:34:30+05:30",
+      "message": "feat(esp32): implement standalone ESP32 CSI serial receiver",
+      "files_count": 3
+    },
+    {
+      "index": 40,
+      "sha": "8776c9ab16e22450dbf657e46dd6ef9b60e90a7e",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-05-05T13:51:30+05:30",
+      "message": "feat(esp32): add serial packet parser and circular buffer for receiver",
+      "files_count": 2
+    },
+    {
+      "index": 41,
+      "sha": "54d61795c0e8039c5e4609d46a94fd9c487023e2",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-05-06T14:08:30+05:30",
+      "message": "feat(esp32): implement high-speed baud rate logging and validation tools",
+      "files_count": 2
+    },
+    {
+      "index": 42,
+      "sha": "d716501d1debb848177da0dd595fb3adbc81d575",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-05-07T15:25:30+05:30",
+      "message": "feat(fall_detection): initialize ESP32 CSI fall detection experiment workspace",
+      "files_count": 4
+    },
+    {
+      "index": 43,
+      "sha": "3b147f0615c081f767ea638ce3b7c006a1027654",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-05-08T16:42:30+05:30",
+      "message": "feat(fall_detection): add raw CSI amplitude normalization and filtering scripts",
+      "files_count": 4
+    },
+    {
+      "index": 44,
+      "sha": "d28b4053abee793af2a329529834351f0022ffa6",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-05-09T17:59:30+05:30",
+      "message": "feat(fall_detection): implement Doppler shift feature extraction for fall events",
+      "files_count": 4
+    },
+    {
+      "index": 45,
+      "sha": "4c05e35f827bd30dcb428be3a51799f85cb4d65d",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-05-10T18:16:30+05:30",
+      "message": "feat(fall_detection): add temporal sliding window generator for fall signals",
+      "files_count": 4
+    },
+    {
+      "index": 46,
+      "sha": "e41a60ba13dedf392cb56c14457c4b1c7031f605",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-05-11T19:33:30+05:30",
+      "message": "feat(fall_detection): implement threshold-based fall detection heuristic",
+      "files_count": 4
+    },
+    {
+      "index": 47,
+      "sha": "b31066db8ed8ac8bb2063ee141ad4a62abc4ec29",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-05-12T20:50:30+05:30",
+      "message": "feat(fall_detection): add CNN classifier for fall vs daily living activities",
+      "files_count": 4
+    },
+    {
+      "index": 48,
+      "sha": "1588f305d4bff45baefc933c2e6cddfbeae2735e",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-05-13T10:07:30+05:30",
+      "message": "feat(fall_detection): evaluate fall detection sensitivity and false alarm rates",
+      "files_count": 4
+    },
+    {
+      "index": 49,
+      "sha": "94ceda28b19a264ad19ca454b303639f032bbe8d",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-05-14T11:24:30+05:30",
+      "message": "feat(fall_detection): add CSI signal segmentation for rapid descent phases",
+      "files_count": 4
+    },
+    {
+      "index": 50,
+      "sha": "8b1ae1900e8bd0165e8c7115c171146d48e340aa",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-05-15T12:41:30+05:30",
+      "message": "feat(fall_detection): implement multi-carrier variance feature computation",
+      "files_count": 4
+    },
+    {
+      "index": 51,
+      "sha": "2bcfa158be3843230b0e807dfa4fa1f8ba1a4d98",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-05-16T13:58:30+05:30",
+      "message": "feat(fall_detection): add cross-validation routines for fall detection dataset",
+      "files_count": 4
+    },
+    {
+      "index": 52,
+      "sha": "f16225c6f5339f140602aefb7e34d1264745c990",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-05-17T14:15:30+05:30",
+      "message": "feat(fall_detection): export confusion matrix and classification metrics",
+      "files_count": 4
+    },
+    {
+      "index": 53,
+      "sha": "4e586ffcb0d17e2b8814b44c13a93ac44e94fb4a",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-05-18T15:32:30+05:30",
+      "message": "feat(fall_detection): add real-time inference script for ESP32 serial streams",
+      "files_count": 4
+    },
+    {
+      "index": 54,
+      "sha": "8e241bac741661ea246e7420bdac5c68472c49dd",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-05-19T16:49:30+05:30",
+      "message": "feat(fall_detection): optimize window stride for early fall detection",
+      "files_count": 4
+    },
+    {
+      "index": 55,
+      "sha": "082c3e6656d780b3fbfd3215f12424e3f1918b95",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-05-20T17:06:30+05:30",
+      "message": "feat(fall_detection): add fall detection data visualizer and waveform plots",
+      "files_count": 4
+    },
+    {
+      "index": 56,
+      "sha": "f9e02e635ee8c1e2df0227cc261cd328650e3719",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-05-21T18:23:30+05:30",
+      "message": "feat(fall_detection): finalize ESP32 fall detection notebook and baseline",
+      "files_count": 3
+    },
+    {
+      "index": 57,
+      "sha": "749e8c8a46e2074dde774488b49e0eb45250013c",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-05-22T19:40:30+05:30",
+      "message": "feat(imu): add smartphone IMU acceleration and gyroscope data collection script",
+      "files_count": 2
+    },
+    {
+      "index": 58,
+      "sha": "e875d2bd10826cba712f93ff707d339276d7c30c",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-05-23T20:57:30+05:30",
+      "message": "feat(imu): implement complementary filter for wearable orientation estimation",
+      "files_count": 2
+    },
+    {
+      "index": 59,
+      "sha": "fd738ae5cb929d56e5c8d635f32188a46b736edf",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-05-24T10:14:30+05:30",
+      "message": "feat(imu): add peak acceleration impact detector for fall identification",
+      "files_count": 1
+    },
+    {
+      "index": 60,
+      "sha": "6cf4d4e65eba4ff74843584dd73a51eb0832501c",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-05-25T11:31:30+05:30",
+      "message": "feat(actuator): interface ESP32 alarm buzzer and emergency strobe actuator",
+      "files_count": 1
+    },
+    {
+      "index": 61,
+      "sha": "c8b56e3112438955c29a5e64827ab1157714adbb",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-05-26T12:48:30+05:30",
+      "message": "feat(actuator): implement multi-stage acoustic alarm for verified falls",
+      "files_count": 1
+    },
+    {
+      "index": 62,
+      "sha": "e97d74bcebebcddf12680bc2b0177d6fa9ee6e76",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-05-27T13:05:30+05:30",
+      "message": "docs(fall_detection): compile fall detection report and experimental methodology",
+      "files_count": 1
+    },
+    {
+      "index": 63,
+      "sha": "e511dbb709ac411a89e8c0d20a47a46a8b7be942",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-05-28T14:22:30+05:30",
+      "message": "refactor(imu): synchronize IMU timestamps with WiFi CSI receiver clock",
+      "files_count": 1
+    },
+    {
+      "index": 64,
+      "sha": "d6a89b88f0d2636166998bc3e0fd5bf7e52931d3",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-05-29T15:39:30+05:30",
+      "message": "test(esp32): validate end-to-end latency of ESP32 CSI fall alarm system",
+      "files_count": 1
+    },
+    {
+      "index": 65,
+      "sha": "75ef4a5cdfee423d820002a1090e8d4e779f5539",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-06-01T10:00:15+05:30",
+      "message": "feat(usrp): initialize Ettus USRP N210 UHD driver interface utilities",
+      "files_count": 3
+    },
+    {
+      "index": 66,
+      "sha": "1f499e3bb03b2da435d84e9c6125b0492010d23e",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-06-02T11:19:15+05:30",
+      "message": "feat(usrp): add device discovery and IP configuration helpers for USRP",
+      "files_count": 3
+    },
+    {
+      "index": 67,
+      "sha": "bab97b98c3c81b03f6dfd00b056d45a9e5231018",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-06-03T12:38:15+05:30",
+      "message": "feat(usrp): implement dual-channel RF frontend tuning for 2.4GHz ISM band",
+      "files_count": 3
+    },
+    {
+      "index": 68,
+      "sha": "e345cf0ddf9706d83ec8b6daef2ffd3c71aad57b",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-06-04T13:57:15+05:30",
+      "message": "feat(usrp): add IQ sample streamer and overflow detection handler",
+      "files_count": 3
+    },
+    {
+      "index": 69,
+      "sha": "a01a90a0f9e28eadde3e7349646789db140688c1",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-06-05T14:16:15+05:30",
+      "message": "feat(usrp): implement UHD rx_samples to numpy buffer conversion utilities",
+      "files_count": 3
+    },
+    {
+      "index": 70,
+      "sha": "81140877bf5d5ec0cead1b44adfbf7fc8f2e8fa4",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-06-06T15:35:15+05:30",
+      "message": "feat(usrp): add real-time power spectral density visualizer for SDR link",
+      "files_count": 3
+    },
+    {
+      "index": 71,
+      "sha": "76a3fb4282a536308fef0c67c4e2bc49f1283be6",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-06-07T16:54:15+05:30",
+      "message": "feat(usrp): implement transmitter packet burst scheduler using UHD timed commands",
+      "files_count": 3
+    },
+    {
+      "index": 72,
+      "sha": "76f1b9acd9cea14ed766febd206d7db21f430cae",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-06-08T17:13:15+05:30",
+      "message": "feat(usrp): add subcarrier magnitude logging and calibration routines",
+      "files_count": 2
+    },
+    {
+      "index": 73,
+      "sha": "dd5f90f6488c502b585376ebc4ca68b8e7fb93b9",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-06-09T18:32:15+05:30",
+      "message": "feat(usrp): implement carrier frequency offset (CFO) estimator and corrector",
+      "files_count": 2
+    },
+    {
+      "index": 74,
+      "sha": "ffa9576e9fcd6fc00d4079c0677e0f243ffd139f",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-06-10T19:51:15+05:30",
+      "message": "feat(usrp): add automated gain control (AGC) benchmarking script",
+      "files_count": 2
+    },
+    {
+      "index": 75,
+      "sha": "3e6ced6e3bc913c1ac3648ce9775b197241f9165",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-06-11T20:10:15+05:30",
+      "message": "feat(usrp): implement multi-hop radio packet forwarding testbench",
+      "files_count": 2
+    },
+    {
+      "index": 76,
+      "sha": "99f3f38b007e599b08c1d8b38bba8e2a552558e2",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-06-12T10:29:15+05:30",
+      "message": "docs(usrp): document USRP N210 hardware configuration and troubleshooting guide",
+      "files_count": 2
+    },
+    {
+      "index": 77,
+      "sha": "d10f5cfa9874c9386bd0dab3e8b3a4fb541a724b",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-06-13T11:48:15+05:30",
+      "message": "feat(gnuradio): add initial GNU Radio companion flowgraphs for RF capture",
+      "files_count": 2
+    },
+    {
+      "index": 78,
+      "sha": "f546a4d106be7127f68b1835e2391c53f85a7c27",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-06-15T12:07:15+05:30",
+      "message": "feat(gnuradio): implement OFDM frame synchronizer and channel estimator blocks",
+      "files_count": 1
+    },
+    {
+      "index": 79,
+      "sha": "1d19043fbf32acb121425a2a50a16b45a1ffbc79",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-06-16T13:26:15+05:30",
+      "message": "feat(gnuradio): add circular memory buffer block for high-throughput streaming",
+      "files_count": 1
+    },
+    {
+      "index": 80,
+      "sha": "8b109753c1148e494b425c5085c46649937c0b3f",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-06-17T14:45:15+05:30",
+      "message": "feat(gnuradio): implement packet rate counter and dropped packet logger",
+      "files_count": 1
+    },
+    {
+      "index": 81,
+      "sha": "78bf2d153316e54feff3fd0bc2091d1599405d61",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-06-18T15:04:15+05:30",
+      "message": "feat(gnuradio): add headless python execution wrapper for GRC flowgraphs",
+      "files_count": 1
+    },
+    {
+      "index": 82,
+      "sha": "960fc8a9d4cf3d99a13c08a31657d7a1eb5b5d27",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-06-19T16:23:15+05:30",
+      "message": "docs(hardware): document antenna polarization and multipath geometry in lab",
+      "files_count": 1
+    },
+    {
+      "index": 83,
+      "sha": "24d964fd5b11dbc26639efe1fbf22d414a82c556",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-06-20T17:42:15+05:30",
+      "message": "docs(setup): add USRP transmitter and receiver tripod mounting photos",
+      "files_count": 3
+    },
+    {
+      "index": 84,
+      "sha": "c7d287416b0b0dfde3f1574dd6c6244afd9da315",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-06-21T18:01:15+05:30",
+      "message": "docs(setup): document RF line-of-sight and non-line-of-sight test geometries",
+      "files_count": 3
+    },
+    {
+      "index": 85,
+      "sha": "66a5d6e6e99fda0d616b71323c684ec3c20dd0fa",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-06-22T19:20:15+05:30",
+      "message": "docs(setup): add laboratory coordinate system and participant marker layout",
+      "files_count": 3
+    },
+    {
+      "index": 86,
+      "sha": "1e80615460a428982c297916c1468e6cf53112e2",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-06-23T20:39:15+05:30",
+      "message": "docs(setup): document shielded room RF isolation and baseline noise profile",
+      "files_count": 2
+    },
+    {
+      "index": 87,
+      "sha": "671628dbd4301ce1132afa9e03bfab2c20d7087f",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-06-24T10:58:15+05:30",
+      "message": "docs(setup): add antenna beam pattern diagrams and elevation measurements",
+      "files_count": 2
+    },
+    {
+      "index": 88,
+      "sha": "f6a433646838873a1a065cda8721b44293210ba7",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-06-25T11:17:15+05:30",
+      "message": "docs(setup): document gigabit Ethernet switch routing and packet buffer tuning",
+      "files_count": 2
+    },
+    {
+      "index": 89,
+      "sha": "1947f901a638fe681ba440ae6c12cad3113c05ec",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-06-26T12:36:15+05:30",
+      "message": "docs(setup): add test environment temperature and humidity monitoring logs",
+      "files_count": 2
+    },
+    {
+      "index": 90,
+      "sha": "5b798d3250ac2498eed16f35628d8dbaa5994c91",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-06-27T13:55:15+05:30",
+      "message": "refactor(usrp): optimize UHD buffer sizes to eliminate rx overflow errors",
+      "files_count": 2
+    },
+    {
+      "index": 91,
+      "sha": "982ed490372189dba2170543a16c899a1a84c327",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-07-01T10:00:40+05:30",
+      "message": "feat(passive_usrp): initialize Activity-Detection-System repository structure",
+      "files_count": 3
+    },
+    {
+      "index": 92,
+      "sha": "b84b38f96bbce986fedd4413758e9a84212f2ae0",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-07-01T11:13:40+05:30",
+      "message": "feat(passive_usrp): add GNU Radio config files and initial SDR flowgraphs",
+      "files_count": 2
+    },
+    {
+      "index": 93,
+      "sha": "9ad1ea8f54b7d28bd8ecfe060a51c56ef5fa3e37",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-07-02T12:26:40+05:30",
+      "message": "feat(passive_usrp): implement passive WiFi frame listener and CSI extractor",
+      "files_count": 2
+    },
+    {
+      "index": 94,
+      "sha": "29dc010217c2be41e7f6fdbc5efc15c99f7dc4c9",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-07-03T13:39:40+05:30",
+      "message": "feat(passive_usrp): add multi-channel CSI logger for passive packet sniffing",
+      "files_count": 2
+    },
+    {
+      "index": 95,
+      "sha": "3458e5ddf7b6ec57d7a94443e7dc65b582243420",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-07-04T14:52:40+05:30",
+      "message": "feat(passive_usrp): implement Butterworth bandpass filtering on passive CSI",
+      "files_count": 2
+    },
+    {
+      "index": 96,
+      "sha": "3b3b1aa302562c24d4aeec636784d98b3d423e72",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-07-05T15:05:40+05:30",
+      "message": "feat(passive_usrp): add temporal sliding window feature generator",
+      "files_count": 2
+    },
+    {
+      "index": 97,
+      "sha": "dd50bad45216cc59be139562b6678826cdde8ac4",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-07-06T16:18:40+05:30",
+      "message": "feat(passive_usrp): implement energy variance detector for coarse human motion",
+      "files_count": 2
+    },
+    {
+      "index": 98,
+      "sha": "e3dcff614260fadca3abafa738e5cb12c8bfad30",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-07-07T17:31:40+05:30",
+      "message": "docs(passive_usrp): add project attribution and initial setup instructions",
+      "files_count": 2
+    },
+    {
+      "index": 99,
+      "sha": "327a416ecebb390bb326ab94c3210559397c418f",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-07-08T18:44:40+05:30",
+      "message": "feat(rp_model): implement Recurrence Plot transformation for CSI trajectories",
+      "files_count": 1
+    },
+    {
+      "index": 100,
+      "sha": "f61754ee284e06a2b254d5a808a1031d3d355500",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-07-09T19:57:40+05:30",
+      "message": "feat(rp_model): convert 1D CSI time series into 2D texture recurrence plots",
+      "files_count": 1
+    },
+    {
+      "index": 101,
+      "sha": "bb62c9717b5dc9f4375351b208793cca819268bc",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-07-10T20:10:40+05:30",
+      "message": "feat(rp_model): implement ResNet-18 model architecture for recurrence plots",
+      "files_count": 1
+    },
+    {
+      "index": 102,
+      "sha": "323806c0a5ba675edb10ea23b2b1f8db06c87e97",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-07-11T10:23:40+05:30",
+      "message": "feat(rp_model): train binary action vs no-action classifier using RP features",
+      "files_count": 1
+    },
+    {
+      "index": 103,
+      "sha": "c544234e7b35d227c4b7cb04a60c3f2fbe78e24c",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-07-12T11:36:40+05:30",
+      "message": "feat(imagepi): add ImgFi CSI-to-image representation pipeline and models",
+      "files_count": 2
+    },
+    {
+      "index": 104,
+      "sha": "750a89f99eed3857117894171728cdcb0d712612",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-07-13T12:49:40+05:30",
+      "message": "feat(imagepi): implement Markov Transition Field (MTF) encoders for CSI",
+      "files_count": 2
+    },
+    {
+      "index": 105,
+      "sha": "41f03168c2e9165a9cee8692834e0597d9426eec",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-07-14T13:02:40+05:30",
+      "message": "feat(imagepi): evaluate Widar benchmark dataset on image-based CNN",
+      "files_count": 2
+    },
+    {
+      "index": 106,
+      "sha": "520e6961e15f45373435b3a3b5214c87ab1f466a",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-07-15T14:15:40+05:30",
+      "message": "feat(imagepi): add SignFi CNN image-domain classification notebook",
+      "files_count": 1
+    },
+    {
+      "index": 107,
+      "sha": "b8006d5ac6bff1a7860f7d2f1d7eb13446ad5db2",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-07-16T15:28:40+05:30",
+      "message": "feat(pilot): record July 17 pilot passive CSI session in lab environment",
+      "files_count": 3
+    },
+    {
+      "index": 108,
+      "sha": "b2b3e5109db8db9bfe53bb03d53a4c4a009fb926",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-07-16T16:41:40+05:30",
+      "message": "feat(pilot): record July 20 pilot CSI session with controlled movements",
+      "files_count": 3
+    },
+    {
+      "index": 109,
+      "sha": "9e10d0990cba65fab0cedc765e0e45358db956d7",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-07-17T17:54:40+05:30",
+      "message": "feat(analysis): extract subcarrier Doppler signatures from pilot recordings",
+      "files_count": 3
+    },
+    {
+      "index": 110,
+      "sha": "2a944c220ac92e011ec6305d4afcf08f2983475e",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-07-18T18:07:40+05:30",
+      "message": "feat(analysis): evaluate SNR and phase noise across 52 OFDM subcarriers",
+      "files_count": 3
+    },
+    {
+      "index": 111,
+      "sha": "531b51e9e30b848b3ef7751a7dc17238250fa431",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-07-19T19:20:40+05:30",
+      "message": "feat(analysis): implement subcarrier correlation analysis across antennas",
+      "files_count": 3
+    },
+    {
+      "index": 112,
+      "sha": "4f5f670a1182c80e2d430c0955c350d122aa8b5c",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-07-20T20:33:40+05:30",
+      "message": "feat(analysis): compare raw CSI vs filtered CSI spectrogram representations",
+      "files_count": 2
+    },
+    {
+      "index": 113,
+      "sha": "34bfa200080a580e28d39877467b131440442a10",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-07-21T10:46:40+05:30",
+      "message": "feat(analysis): evaluate signal energy differences between idle and movement",
+      "files_count": 2
+    },
+    {
+      "index": 114,
+      "sha": "c8555e63632401c371bbea078e2b429cfb16d161",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-07-22T11:59:40+05:30",
+      "message": "feat(analysis): compute cumulative energy distribution for pilot actions",
+      "files_count": 2
+    },
+    {
+      "index": 115,
+      "sha": "750e5e2f0deb31cace09882dadf0609745265abe",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-07-23T12:12:40+05:30",
+      "message": "feat(analysis): plot receiver phase drift during continuous 200 PPS streaming",
+      "files_count": 2
+    },
+    {
+      "index": 116,
+      "sha": "93231728241cd2961edd6d5450629dc5c433615f",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-07-24T13:25:40+05:30",
+      "message": "feat(analysis): evaluate packet inter-arrival jitter and timestamp continuity",
+      "files_count": 2
+    },
+    {
+      "index": 117,
+      "sha": "7e5e446afff3133f207fbe9405bd430bf26e04c8",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-07-25T14:38:40+05:30",
+      "message": "feat(inference): add standalone inference notebook for activity detection",
+      "files_count": 1
+    },
+    {
+      "index": 118,
+      "sha": "b5b6689d1f0b840d7af008984c4785dbda3e828a",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-07-26T15:51:40+05:30",
+      "message": "feat(inference): implement real-time prediction demo using recurrence plots",
+      "files_count": 1
+    },
+    {
+      "index": 119,
+      "sha": "42d5f8ffbdad3cb8069c551d931dd75bbaebb194",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-07-27T16:04:40+05:30",
+      "message": "docs(comparative): draft comparative analysis report on pilot CSI captures",
+      "files_count": 2
+    },
+    {
+      "index": 120,
+      "sha": "6977ea703ffdc467d09d217c2dce65f9073adf57",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-07-28T17:17:40+05:30",
+      "message": "docs(comparative): evaluate binary classification accuracy across test splits",
+      "files_count": 2
+    },
+    {
+      "index": 121,
+      "sha": "57428ead5ce10e5dbd444cfbf481762d70a98d4d",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-07-29T18:30:40+05:30",
+      "message": "docs(comparative): analyze false alarms during ambient stationary intervals",
+      "files_count": 1
+    },
+    {
+      "index": 122,
+      "sha": "54ccbe9299d2f47975d7f4603e2d8824ac3c2e5d",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-07-30T19:43:40+05:30",
+      "message": "docs(comparative): compare classical energy detector against ResNet-18 model",
+      "files_count": 1
+    },
+    {
+      "index": 123,
+      "sha": "4fd7ef442052800ba4c8eded5583177b02eff7f2",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-08-01T10:00:10+05:30",
+      "message": "feat(three_channel): initialize Two-USRP Three-Channel experiment setup",
+      "files_count": 3
+    },
+    {
+      "index": 124,
+      "sha": "52d29add8ce809427228138c2d4941c1c24e5f81",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-08-01T11:23:10+05:30",
+      "message": "feat(three_channel): add transmitter flowgraph for sequential channel hopping",
+      "files_count": 3
+    },
+    {
+      "index": 125,
+      "sha": "367df2e7393394d72a260549900ac706e5f29cd4",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-08-02T12:46:10+05:30",
+      "message": "feat(three_channel): implement receiver flowgraph tuned to channels 1, 6, and 11",
+      "files_count": 3
+    },
+    {
+      "index": 126,
+      "sha": "6337210f818e6f3380ce6d149169f5184e90ce33",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-08-03T13:09:10+05:30",
+      "message": "feat(three_channel): add dual-USRP clock synchronization and timestamp alignment",
+      "files_count": 3
+    },
+    {
+      "index": 127,
+      "sha": "c356c666fe6a53313772e4dc8868f076f4fded94",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-08-04T14:32:10+05:30",
+      "message": "feat(three_channel): implement CSV capture writer for multi-carrier CSI packets",
+      "files_count": 3
+    },
+    {
+      "index": 128,
+      "sha": "096f11cbc8a2380582adb337a3d42373ad61db57",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-08-05T15:55:10+05:30",
+      "message": "feat(three_channel): add channel switching trigger script and latency logger",
+      "files_count": 3
+    },
+    {
+      "index": 129,
+      "sha": "620e658e5ea48a7c696bc273d6290b5c4a7dc415",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-08-06T16:18:10+05:30",
+      "message": "feat(three_channel): evaluate packet loss across channel hopping transitions",
+      "files_count": 2
+    },
+    {
+      "index": 130,
+      "sha": "95fb7c1f86649598568cdba2df0a44364a3c09a6",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-08-07T17:41:10+05:30",
+      "message": "docs(three_channel): document multi-channel RF experiment architecture",
+      "files_count": 2
+    },
+    {
+      "index": 131,
+      "sha": "86f27389af2d07768665491771fa24ee95b4fcca",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-08-08T18:04:10+05:30",
+      "message": "docs(review3): initialize Semester 7 Review slide deck and presentation notes",
+      "files_count": 2
+    },
+    {
+      "index": 132,
+      "sha": "8c526ac024b6dc34d78c11716feeb09d78a1f55f",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-08-08T19:27:10+05:30",
+      "message": "docs(review3): add experimental methodology and system architecture slides",
+      "files_count": 2
+    },
+    {
+      "index": 133,
+      "sha": "ac828d3c46d5a1c9f296c4fbc52bb3603f86dd8e",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-08-09T20:50:10+05:30",
+      "message": "docs(review3): compile rubrics compliance and technical enrichment forms",
+      "files_count": 1
+    },
+    {
+      "index": 134,
+      "sha": "7736f2fface46c7e2b08be53ae3534d99627e024",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-08-10T10:13:10+05:30",
+      "message": "docs(review3): finalize Semester 7 Review 20-page comprehensive presentation",
+      "files_count": 1
+    },
+    {
+      "index": 135,
+      "sha": "655aebc00c6d79cc8ad44497a00f1cbb3bbf3fe0",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-08-11T11:36:10+05:30",
+      "message": "feat(analysis): compute Doppler shift profiles across channels 1, 6, and 11",
+      "files_count": 4
+    },
+    {
+      "index": 136,
+      "sha": "dc3f1f3729ffec3bf0e6e6455e94114227891177",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-08-12T12:59:10+05:30",
+      "message": "feat(analysis): compare spatial multipath profiles in three-channel experiment",
+      "files_count": 4
+    },
+    {
+      "index": 137,
+      "sha": "51e52f61631138b2403cd427ae0600840cb5735f",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-08-13T13:22:10+05:30",
+      "message": "feat(analysis): evaluate subcarrier phase variance under human movement",
+      "files_count": 4
+    },
+    {
+      "index": 138,
+      "sha": "6eeb413380d21f0a597d781132afd308abc9d5d7",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-08-14T14:45:10+05:30",
+      "message": "feat(analysis): add signal spectrogram visualization tools across channels",
+      "files_count": 3
+    },
+    {
+      "index": 139,
+      "sha": "6b48c67dcf4653da35cb6be5d5f16203f9b03d66",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-08-15T15:08:10+05:30",
+      "message": "feat(analysis): compute cross-channel coherence metrics during activity",
+      "files_count": 3
+    },
+    {
+      "index": 140,
+      "sha": "12965c1f93fa669b258cfeb12a0b2c540ecee294",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-08-16T16:31:10+05:30",
+      "message": "feat(analysis): evaluate subcarrier selection algorithms for dimension reduction",
+      "files_count": 3
+    },
+    {
+      "index": 141,
+      "sha": "276db0cfe6fcdb5537c81a3754f079dd20a2f160",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-08-16T17:54:10+05:30",
+      "message": "feat(analysis): add automated signal quality index computation for captures",
+      "files_count": 3
+    },
+    {
+      "index": 142,
+      "sha": "3c409890a5f4dc25ebb475c1786c02c1d2f3dbd0",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-08-17T18:17:10+05:30",
+      "message": "feat(analysis): compare stationary noise floor across hopping frequencies",
+      "files_count": 3
+    },
+    {
+      "index": 143,
+      "sha": "b6474e4d13222868de389fc11cd6dd1c5d033c2c",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-08-18T19:40:10+05:30",
+      "message": "feat(analysis): evaluate gesture discrimination power across individual channels",
+      "files_count": 3
+    },
+    {
+      "index": 144,
+      "sha": "326cdc8e4e40e73c42ca4cab7e6a2e94dc2fe81b",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-08-19T20:03:10+05:30",
+      "message": "feat(analysis): add phase unwrapping and linear phase sanitization functions",
+      "files_count": 3
+    },
+    {
+      "index": 145,
+      "sha": "802b3803dac5fa0d1433e14e1124a77dc4cd58f1",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-08-20T10:26:10+05:30",
+      "message": "feat(analysis): generate multi-channel activity recognition comparison plots",
+      "files_count": 3
+    },
+    {
+      "index": 146,
+      "sha": "9f7027337b31126da32c1556fa62e31f213a6cbc",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-08-21T11:49:10+05:30",
+      "message": "docs(analysis): document three-channel signal characteristics and findings",
+      "files_count": 3
+    },
+    {
+      "index": 147,
+      "sha": "24d070bf7a09967028e7ae80272ef7d72a2a0475",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-08-22T12:12:10+05:30",
+      "message": "feat(experiment): record initial three-channel baseline runs in test environment",
+      "files_count": 10
+    },
+    {
+      "index": 148,
+      "sha": "f736975f6c44cdbdab44641d7a7fb1b68f316ed2",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-08-23T13:35:10+05:30",
+      "message": "feat(experiment): record walking and standing sequences across 3 RF channels",
+      "files_count": 10
+    },
+    {
+      "index": 149,
+      "sha": "83192863512afed8a1eed91028d1bfe22aaa944e",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-08-23T14:58:10+05:30",
+      "message": "feat(experiment): record sitting and table wiping activity captures",
+      "files_count": 10
+    },
+    {
+      "index": 150,
+      "sha": "3c9419956da48d26142c4eec1fa55b0fda77e402",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-08-24T15:21:10+05:30",
+      "message": "feat(experiment): record picking up objects and gesture repetitions",
+      "files_count": 10
+    },
+    {
+      "index": 151,
+      "sha": "066ac5ea6a50521ba44d2af3cda39e38d4c923ab",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-08-25T16:44:10+05:30",
+      "message": "feat(experiment): add automated session take logger and packet indexer",
+      "files_count": 10
+    },
+    {
+      "index": 152,
+      "sha": "040cb17a8033b3fbbf531bfa785aeaf523dcf797",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-08-26T17:07:10+05:30",
+      "message": "feat(experiment): implement take validation and file integrity verification",
+      "files_count": 10
+    },
+    {
+      "index": 153,
+      "sha": "d193129f2d19e84c0d50bfee9bb6885772754264",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-08-27T18:30:10+05:30",
+      "message": "feat(experiment): add automated CSV gzip compression utility for raw CSI",
+      "files_count": 10
+    },
+    {
+      "index": 154,
+      "sha": "3b6319a5eef5ef08a55ba598d005bbf6655f9f83",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-08-28T19:53:10+05:30",
+      "message": "feat(experiment): verify timing continuity across continuous experimental takes",
+      "files_count": 10
+    },
+    {
+      "index": 155,
+      "sha": "4f97b429409d0fe23770737e6ecfb44363e65aa1",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-08-29T20:16:10+05:30",
+      "message": "feat(experiment): evaluate channel estimation error under rapid movement",
+      "files_count": 10
+    },
+    {
+      "index": 156,
+      "sha": "d23487f5871e8e357eecd744095bacc15ff2fae0",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-08-30T10:39:10+05:30",
+      "message": "refactor(receiver): adapt receiver to Team67 C++ block and remove ZMQ dependency",
+      "files_count": 10
+    },
+    {
+      "index": 157,
+      "sha": "db8c3f0bf7efcfcb67dbd5fc5ee994f9f6ac1953",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-09-01T10:00:20+05:30",
+      "message": "feat(experiment): preserve three-channel experiment dataset snapshot (part 1)",
+      "files_count": 24
+    },
+    {
+      "index": 158,
+      "sha": "ece96d321d857edcccac01217dfae6e170b51e76",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-09-01T11:29:20+05:30",
+      "message": "feat(experiment): preserve three-channel experiment dataset snapshot (part 2)",
+      "files_count": 24
+    },
+    {
+      "index": 159,
+      "sha": "736c2a2f804cd948e1cf68cfdf745270e4eb6326",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-09-02T12:58:20+05:30",
+      "message": "feat(experiment): preserve three-channel experiment dataset snapshot (part 3)",
+      "files_count": 24
+    },
+    {
+      "index": 160,
+      "sha": "47f1655cdc026074c25415242d19a31ecf422b8b",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-09-03T13:27:20+05:30",
+      "message": "feat(experiment): preserve three-channel experiment dataset snapshot (part 4)",
+      "files_count": 24
+    },
+    {
+      "index": 161,
+      "sha": "c883eb63d1a738b89cff180934892f71b0ee7455",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-09-04T14:56:20+05:30",
+      "message": "feat(experiment): preserve three-channel experiment dataset snapshot (part 5)",
+      "files_count": 24
+    },
+    {
+      "index": 162,
+      "sha": "35da543a861370194a9550da46b8e10df8e9748d",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-09-05T15:25:20+05:30",
+      "message": "feat(experiment): preserve three-channel experiment dataset snapshot (part 6)",
+      "files_count": 24
+    },
+    {
+      "index": 163,
+      "sha": "d292758959d08007fd96fa3c45c2c1286fc2569d",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-09-06T16:54:20+05:30",
+      "message": "feat(experiment): preserve three-channel experiment dataset snapshot (part 7)",
+      "files_count": 24
+    },
+    {
+      "index": 164,
+      "sha": "0e1651dc4701844d141f8da519a6b96307b81708",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-09-07T17:23:20+05:30",
+      "message": "feat(experiment): preserve three-channel experiment dataset snapshot (part 8)",
+      "files_count": 24
+    },
+    {
+      "index": 165,
+      "sha": "1cb4b5dd6014dc0454af3d888f8a7f8089050508",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-09-08T18:52:20+05:30",
+      "message": "feat(experiment): preserve three-channel experiment dataset snapshot (part 9)",
+      "files_count": 23
+    },
+    {
+      "index": 166,
+      "sha": "e18df02ecbe8d9f8898be054edfe4859125377c9",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-09-09T19:21:20+05:30",
+      "message": "feat(experiment): preserve three-channel experiment dataset snapshot (part 10)",
+      "files_count": 23
+    },
+    {
+      "index": 167,
+      "sha": "9ad94267970877b7f65d99f55224cec3888fedea",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-09-10T20:50:20+05:30",
+      "message": "feat(experiment): preserve three-channel experiment dataset snapshot (part 11)",
+      "files_count": 23
+    },
+    {
+      "index": 168,
+      "sha": "10f00206b5d7a89793e1a1ed7bca125fb305ab3e",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-09-10T10:19:20+05:30",
+      "message": "feat(experiment): preserve three-channel experiment dataset snapshot (part 12)",
+      "files_count": 23
+    },
+    {
+      "index": 169,
+      "sha": "ea3d7192cfd6b17edf71b8956621377afe6caf18",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-09-11T11:48:20+05:30",
+      "message": "feat(experiment): preserve three-channel experiment dataset snapshot (part 13)",
+      "files_count": 23
+    },
+    {
+      "index": 170,
+      "sha": "5e8f000e582a231092fb7cc6bc7f6889c4bb1050",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-09-12T12:17:20+05:30",
+      "message": "feat(experiment): preserve three-channel experiment dataset snapshot (part 14)",
+      "files_count": 23
+    },
+    {
+      "index": 171,
+      "sha": "dd5757c088d94f8f3bf7ed096e5bee1aad98b836",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-09-13T13:46:20+05:30",
+      "message": "feat(experiment): preserve three-channel experiment dataset snapshot (part 15)",
+      "files_count": 23
+    },
+    {
+      "index": 172,
+      "sha": "0b9e58a1f6924615afe56334e7df8165e0a55ecb",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-09-14T14:15:20+05:30",
+      "message": "feat(experiment): preserve three-channel experiment dataset snapshot (part 16)",
+      "files_count": 23
+    },
+    {
+      "index": 173,
+      "sha": "a24d7b19f5bb673ce7326ae075afb53f0f544a2a",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-09-15T15:44:20+05:30",
+      "message": "feat(pilot_tools): implement Phase-1 cueing and audio prompt generation tools",
+      "files_count": 3
+    },
+    {
+      "index": 174,
+      "sha": "0ac23a33fd286d011c0e016d65597fb714d49b3d",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-09-16T16:13:20+05:30",
+      "message": "feat(pilot_tools): add automated take recording script and shell orchestration",
+      "files_count": 2
+    },
+    {
+      "index": 175,
+      "sha": "6036f9900c2b30870d1a7a0fda975808c8c579fa",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-09-17T17:42:20+05:30",
+      "message": "feat(pilot_tools): implement real-time take inspection and quality check script",
+      "files_count": 2
+    },
+    {
+      "index": 176,
+      "sha": "fd942abe0c0df0dcac36643a29ad8983a45e4aff",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-09-18T18:11:20+05:30",
+      "message": "feat(wifi_capture): initialize dedicated wifi_csi_capture repository",
+      "files_count": 17
+    },
+    {
+      "index": 177,
+      "sha": "dfd15f9043e603dd7c0627198f6c33ac29d6042d",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-09-19T19:40:20+05:30",
+      "message": "feat(wifi_capture): implement active IEEE 802.11 packet transmitter on Channel 1",
+      "files_count": 17
+    },
+    {
+      "index": 178,
+      "sha": "40d0bb66e5bd278c4209739354dccc060ce66b7b",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-09-20T20:09:20+05:30",
+      "message": "feat(wifi_capture): implement high-rate CSI receiver using gr-ieee802-11",
+      "files_count": 17
+    },
+    {
+      "index": 179,
+      "sha": "e52bf1e7544401e75ca3274cab0842dfd3aa6800",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-09-20T10:38:20+05:30",
+      "message": "feat(wifi_capture): configure 52 OFDM subcarriers extraction at 20MHz bandwidth",
+      "files_count": 17
+    },
+    {
+      "index": 180,
+      "sha": "faf9ae0f4ed86ddb6901baecafb3ab4c87126102",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-09-21T11:07:20+05:30",
+      "message": "feat(wifi_capture): add packet generator supporting 200 PPS transmission rate",
+      "files_count": 17
+    },
+    {
+      "index": 181,
+      "sha": "e1face06dae7e413b890f62c9f08716f6922c25a",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-09-22T12:36:20+05:30",
+      "message": "feat(wifi_capture): implement take metadata logging and sync clap detection",
+      "files_count": 17
+    },
+    {
+      "index": 182,
+      "sha": "d0b423c4af9ec0868884bf20898ccacd87b7e70a",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-09-23T13:05:20+05:30",
+      "message": "feat(wifi_capture): add automated take packaging and checksum verification",
+      "files_count": 16
+    },
+    {
+      "index": 183,
+      "sha": "a843d242bfe5dbcea1182393516833f8a2a56ba0",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-09-24T14:34:20+05:30",
+      "message": "feat(wifi_capture): implement receiver packet gap monitoring and alert system",
+      "files_count": 16
+    },
+    {
+      "index": 184,
+      "sha": "0fc2faa6438bdf84162a9dfe237083c6687098ed",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-09-25T15:03:20+05:30",
+      "message": "feat(wifi_capture): add multi-take session coordinator and prompt display",
+      "files_count": 16
+    },
+    {
+      "index": 185,
+      "sha": "f384b90fa7e3100622c48c5af52f53e56865fef6",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-09-26T16:32:20+05:30",
+      "message": "docs(planning): draft Phase-1 data collection plan and participant schedules",
+      "files_count": 2
+    },
+    {
+      "index": 186,
+      "sha": "2e1f88ca3e765e9cb477b4e3d2639c2bf625d560",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-09-27T17:01:20+05:30",
+      "message": "docs(planning): formulate RO1 and RO2 research objectives and approval plan",
+      "files_count": 2
+    },
+    {
+      "index": 187,
+      "sha": "28a2471edfc3235aaad10d725014c204fc57dfd8",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-09-28T18:30:20+05:30",
+      "message": "docs(planning): compile revised action plan and vocabulary specifications",
+      "files_count": 1
+    },
+    {
+      "index": 188,
+      "sha": "558c3f6f092cf300620f127f697439503b2b0a13",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-09-29T19:59:20+05:30",
+      "message": "docs(planning): document full project context and experimental constraints",
+      "files_count": 1
+    },
+    {
+      "index": 189,
+      "sha": "65053d4229ec8beb642a4af84557230525776085",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-10-01T09:00:15+05:30",
+      "message": "feat(capture): fix RX gain issue and perform systematic gain sweep analysis",
+      "files_count": 56
+    },
+    {
+      "index": 190,
+      "sha": "0773d4cd91d1f8db5dcba24d5192c25e5b58960c",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-10-01T10:31:15+05:30",
+      "message": "feat(capture): execute Participant P01-P03 main data collection session (Oct 2)",
+      "files_count": 56
+    },
+    {
+      "index": 191,
+      "sha": "ae6ea284df36cac71adac47579bf66396dd91cf5",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-10-01T11:02:15+05:30",
+      "message": "feat(capture): implement Phase-1 participant take logging and session manifests",
+      "files_count": 56
+    },
+    {
+      "index": 192,
+      "sha": "6a4318cf9de28b9b877104eaa7b0a995ffb137c4",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-10-02T12:33:15+05:30",
+      "message": "feat(capture): extend protocol for P04-P05 with seated actions and cooking signs",
+      "files_count": 56
+    },
+    {
+      "index": 193,
+      "sha": "c4e3c04c34f6d710f81bd6dfe4331133afbdca53",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-10-02T13:04:15+05:30",
+      "message": "feat(capture): collect P04 baseline recording and pre-rain check sessions",
+      "files_count": 55
+    },
+    {
+      "index": 194,
+      "sha": "50b76f3f3a7211952d986af3e8f7e1dfd163d653",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-10-03T14:35:15+05:30",
+      "message": "feat(capture): execute Participant P04 and P05 full capture sessions (Oct 16)",
+      "files_count": 57
+    },
+    {
+      "index": 195,
+      "sha": "caebeff213f2a50d837ce95b25d35c6cbbaef339",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-10-03T15:06:15+05:30",
+      "message": "feat(model): implement Phase-1 WiFi CSI activity and ISL sign baseline model",
+      "files_count": 12
+    },
+    {
+      "index": 196,
+      "sha": "1800aa266d932e0fd64cee0d65754bf35bee8c8f",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-10-04T16:37:15+05:30",
+      "message": "feat(model): add temporal residual 1D CNN architecture for CSI activity stream",
+      "files_count": 12
+    },
+    {
+      "index": 197,
+      "sha": "345cc86a100656463caeb08c80b43f175f1ab9c0",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-10-04T17:08:15+05:30",
+      "message": "feat(model): implement bandpass filtering and decimation preprocessing pipeline",
+      "files_count": 12
+    },
+    {
+      "index": 198,
+      "sha": "25a943eeb277f929b93399e4989db1d1942718d8",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-10-05T18:39:15+05:30",
+      "message": "feat(model): add multi-class sign gesture classifier and inference notebook",
+      "files_count": 12
+    },
+    {
+      "index": 199,
+      "sha": "ce1b3449266c1195ea7ed867614eb47af3cc3b59",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-10-05T19:10:15+05:30",
+      "message": "feat(pipeline): preserve Adithya collection pipeline and notebook variants (part 1)",
+      "files_count": 25
+    },
+    {
+      "index": 200,
+      "sha": "a93c0718f5d0e7f604dec3c715316c6806c96bcf",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-10-05T20:41:15+05:30",
+      "message": "feat(pipeline): preserve Adithya collection pipeline and notebook variants (part 2)",
+      "files_count": 25
+    },
+    {
+      "index": 201,
+      "sha": "727dbb5ae61067daa5a4d988959b12d912930b98",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-10-06T21:12:15+05:30",
+      "message": "feat(pipeline): preserve Adithya collection pipeline and notebook variants (part 3)",
+      "files_count": 25
+    },
+    {
+      "index": 202,
+      "sha": "0eaa19bf96a489c00f5e7c708bbec31106b12a90",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-10-06T09:43:15+05:30",
+      "message": "feat(pipeline): preserve Adithya collection pipeline and notebook variants (part 4)",
+      "files_count": 25
+    },
+    {
+      "index": 203,
+      "sha": "d07c5472e7efcd09a41b0d01311c501f69a74916",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-10-07T10:14:15+05:30",
+      "message": "feat(kaggle): implement Kaggle multi-GPU training orchestration runners",
+      "files_count": 43
+    },
+    {
+      "index": 204,
+      "sha": "9452e53e89e0466bd5a60f7b4c65d8affe6075f2",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-10-07T11:45:15+05:30",
+      "message": "feat(kaggle): add fast diagnostic preparation scripts and dataset loaders",
+      "files_count": 42
+    },
+    {
+      "index": 205,
+      "sha": "7915f86287fc8100e8c859831e47b29ae097c3ec",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-10-08T12:16:15+05:30",
+      "message": "feat(kaggle): execute 6-minute FAST baseline diagnostic training run",
+      "files_count": 42
+    },
+    {
+      "index": 206,
+      "sha": "8dc096f0aeba35c3111e62f72c358c72818a2683",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-10-08T13:47:15+05:30",
+      "message": "docs(kaggle): audit FAST run outputs and identify model convergence behavior",
+      "files_count": 42
+    },
+    {
+      "index": 207,
+      "sha": "9fcf448f34eec155531375b4956eadd5dc9ab7d0",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-10-09T14:18:15+05:30",
+      "message": "feat(kaggle): implement balanced 2-hour multi-worker training pipeline",
+      "files_count": 33
+    },
+    {
+      "index": 208,
+      "sha": "67df9d14bf2f05ed7e94264af50643561d6e10e1",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-10-09T15:49:15+05:30",
+      "message": "feat(kaggle): execute full LOSO 5-fold cross-validation on Kaggle GPU",
+      "files_count": 33
+    },
+    {
+      "index": 209,
+      "sha": "1f425e54766555b4cdf0bf95c542c214aeb16301",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-10-10T16:20:15+05:30",
+      "message": "feat(kaggle): add group normalization and energy feature extraction modules",
+      "files_count": 32
+    },
+    {
+      "index": 210,
+      "sha": "5483d1febc6afc5845b59777172aeb6e28c4eef7",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-10-10T17:51:15+05:30",
+      "message": "feat(kaggle): complete retained balanced benchmark run FYP_BALANCED_2H",
+      "files_count": 32
+    },
+    {
+      "index": 211,
+      "sha": "30752097c1eed52ea453f9cb8467594675e38d3a",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-10-10T18:22:15+05:30",
+      "message": "feat(kaggle): export fold selection metadata, checkpoint weights and predictions",
+      "files_count": 32
+    },
+    {
+      "index": 212,
+      "sha": "872a285fb0be7fc38c959683ec050a34d76b15d4",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-10-11T19:53:15+05:30",
+      "message": "docs(audit): perform comprehensive audit of balanced model performance",
+      "files_count": 32
+    },
+    {
+      "index": 213,
+      "sha": "bbb5fb1bb6bb2cfeaf53c5e3c3d9727de4b11c4f",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-10-11T20:24:15+05:30",
+      "message": "feat(kaggle): add robust candidate training notebooks and parameter sweeps",
+      "files_count": 10
+    },
+    {
+      "index": 214,
+      "sha": "82e06650018321fcdbb19358da394fd9e1a77da1",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-10-12T21:55:15+05:30",
+      "message": "feat(kaggle): implement threshold evaluation sweep for routine false alarm reduction",
+      "files_count": 10
+    },
+    {
+      "index": 215,
+      "sha": "3e8a849d755745f327a22eaadde0e232d2572fe1",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-10-12T09:26:15+05:30",
+      "message": "feat(kaggle): add ExtraTrees action fusion weight selector and model card",
+      "files_count": 10
+    },
+    {
+      "index": 216,
+      "sha": "05929b932e874d488371b824e6dddae255bd0bcb",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-10-13T10:57:15+05:30",
+      "message": "feat(kaggle): evaluate continuous scripted story detection and command mapping",
+      "files_count": 9
+    },
+    {
+      "index": 217,
+      "sha": "3dceefba86bc7087d4c24e553c819b9002f2a5f1",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-10-13T11:28:15+05:30",
+      "message": "docs(presentation): compile 43-slide maroon Beamer presentation (main.tex)",
+      "files_count": 12
+    },
+    {
+      "index": 218,
+      "sha": "37583a20e5b3ded9a1c912e37af71f799690871b",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-10-14T12:59:15+05:30",
+      "message": "docs(presentation): add vector PDF graphs of per-action and per-sign recall",
+      "files_count": 12
+    },
+    {
+      "index": 219,
+      "sha": "4582b38c1550df22e643ea6e36b75b87d4f3f55d",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-10-14T13:30:15+05:30",
+      "message": "docs(presentation): embed short animated video excerpts using animate.sty",
+      "files_count": 12
+    },
+    {
+      "index": 220,
+      "sha": "2f12d3078d67780b0233e6fc0b52c50828da3a66",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-10-15T14:01:15+05:30",
+      "message": "docs(presentation): finalize supervisor review slides and export PDF",
+      "files_count": 12
+    },
+    {
+      "index": 221,
+      "sha": "df63f587a9a67a3f0f6b4c951887ed2ff0aae7b6",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-10-15T15:32:15+05:30",
+      "message": "docs(paper): draft IEEE PerCom 2027 Work-in-Progress (WiP) manuscript outline",
+      "files_count": 17
+    },
+    {
+      "index": 222,
+      "sha": "4ffa29c676a6e207b75753e05297e755cf1df976",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-10-15T16:03:15+05:30",
+      "message": "docs(paper): compile research claim ledger and verified experimental facts",
+      "files_count": 17
+    },
+    {
+      "index": 223,
+      "sha": "f21553d5da1c602912358f4565f24d601e293eb3",
+      "author": "Rishiikesh-20 <rishiikeshsk@gmail.com>",
+      "date": "2026-10-16T17:34:15+05:30",
+      "message": "docs(paper): export verified primary evidence CSVs and dataset counts",
+      "files_count": 16
+    },
+    {
+      "index": 224,
+      "sha": "99cd03f281f30774a4310d30c6930e67f5918d1c",
+      "author": "Adhikkesh <adhikkesh@gmail.com>",
+      "date": "2026-10-16T18:05:15+05:30",
+      "message": "docs(paper): preserve guide-accepted 2-page abstract and introduction document",
+      "files_count": 16
+    },
+    {
+      "index": 225,
+      "sha": "6d1398fe1a3b02acdabe8c6f9ef99c13cb4bec55",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-10-17T19:36:15+05:30",
+      "message": "docs(handoff): author complete Adhi-to-Amrith research context transfer guide",
+      "files_count": 7
+    },
+    {
+      "index": 226,
+      "sha": "ceb85df012a7003d0c4e7a23a50c5e1c624c33b7",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-10-17T20:07:15+05:30",
+      "message": "docs(handoff): generate dataset manifest fingerprints and delivery verification",
+      "files_count": 7
+    },
+    {
+      "index": 227,
+      "sha": "6de841f2ae7b2c813220a95101b033281d8a9076",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-10-18T21:38:15+05:30",
+      "message": "docs(consolidation): author consolidation plan, evidence timeline and contributions",
+      "files_count": 4
+    },
+    {
+      "index": 228,
+      "sha": "80199a0cee491cfe44dc180af1e6c26b782d913d",
+      "author": "Achilles80 <adithyaajay2005@gmail.com>",
+      "date": "2026-10-18T09:09:15+05:30",
+      "message": "docs(consolidation): compile review catalogue, dependency matrix and dataset index",
+      "files_count": 3
+    },
+    {
+      "index": 229,
+      "sha": "fd025393aa0f3060b7870b5456e2be91c084c8f4",
+      "author": "AMRITH03 <amrith2503@gmail.com>",
+      "date": "2026-10-19T10:40:15+05:30",
+      "message": "docs(provenance): record git history bundles and credential security scan results",
+      "files_count": 14
+    },
+    {
+      "index": 230,
+      "sha": "44e07933ff73807a84b630dbeb31515ed150fa93",
+      "author": "Gowreesh1905 <gowreeshoff@gmail.com>",
+      "date": "2026-10-19T11:11:15+05:30",
+      "message": "feat(tools): add repository verification and asset fetching utilities",
+      "files_count": 23
+    }
+  ]
+}

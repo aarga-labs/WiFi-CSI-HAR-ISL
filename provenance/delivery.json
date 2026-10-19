@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-20",
+  "repository": "https://github.com/aarga-labs/FYP-Team-Consolidated",
+  "private": true,
+  "branch": "main",
+  "import_tip": "59ba076f2204253fa70753bd8f307027666be32f",
+  "import_commits": 28,
+  "release": {
+    "id": 418096091,
+    "tag": "consolidation-2026-10-20",
+    "url": "https://github.com/aarga-labs/FYP-Team-Consolidated/releases/tag/consolidation-2026-10-20",
+    "published": true,
+    "assets": [
+      {
+        "name": "FYP_Legacy_Recordings_And_Models_20261020.zip",
+        "bytes": 183154140,
+        "server_digest": "sha256:bf090e51cc8232412fa91f45083d3bd2829d0d46e35f37779ac90923e509710a"
+      },
+      {
+        "name": "FYP_Verified_Original_Git_Histories_20261020.zip",
+        "bytes": 164129653,
+        "server_digest": "sha256:9b5873378038dbb0778779e09a9825c3e60865dcfe3c4aa65fc676e812b1e91f"
+      }
+    ]
+  },
+  "fresh_clone_verification": "passed at import tip: 2004 imported hashes, 29 notebook structures and current evidence recomputation",
+  "download_helper_test": "histories archive downloaded and SHA256 verified from the published private release",
+  "downloaded_git_bundles": "all nine individually hash-checked and git bundle verify passed; archive CRC passed",
+  "team_access": "same five collaborator accounts and roles as original FYP repository; no new invitations were sent",
+  "source_repo_unchanged_head": "011518a329ddf8aed1d1239095006b3b60171808",
+  "original_source_hashes_checked": 9017,
+  "training_executed": false,
+  "hardware_operation_executed": false,
+  "archive_index_note": "Archive INDEX.json records packaging-time metadata. This delivery record and current provenance records describe final private publication status.",
+  "limitations": [
+    "May/June exact milestone dates remain unresolved.",
+    "Original OPPORTUNITY implementation/split evidence was not found.",
+    "Historical source/runtime findings are recorded; hardware and legacy model performance were not revalidated.",
+    "Public benchmark data/SDKs and private permission documents are not mirrored."
+  ]
+}

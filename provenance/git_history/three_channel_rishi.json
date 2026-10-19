@@ -1,0 +1,48 @@
+{
+  "id": "three_channel_rishi",
+  "source": "/home/adhikkesh/adhikkesh/FYP_Others/Rishiikesh/usrp-projects/Three_Channel_Experiment",
+  "refs": [
+    "refs/heads/main 6d8474e62f82dc099662395dc781f397ea6fde22",
+    "refs/remotes/origin/HEAD d0c6ad7bd611f5cb49a6f463ba479d5a45d4931b",
+    "refs/remotes/origin/main d0c6ad7bd611f5cb49a6f463ba479d5a45d4931b"
+  ],
+  "commits": [
+    {
+      "oid": "d0c6ad7bd611f5cb49a6f463ba479d5a45d4931b",
+      "parents": "6d8474e62f82dc099662395dc781f397ea6fde22",
+      "author_date": "2026-08-13T12:12:34+05:30",
+      "committer_date": "2026-08-13T12:12:34+05:30",
+      "author": "Adhikkesh",
+      "subject": "."
+    },
+    {
+      "oid": "6d8474e62f82dc099662395dc781f397ea6fde22",
+      "parents": "bb64cd74dc73f89569b757ee2ea425dfff0ae25b",
+      "author_date": "2026-08-13T00:56:44+05:30",
+      "committer_date": "2026-08-13T00:56:44+05:30",
+      "author": "Rishiikesh",
+      "subject": "Add activity recognition capture script and associated transmitter functionality"
+    },
+    {
+      "oid": "bb64cd74dc73f89569b757ee2ea425dfff0ae25b",
+      "parents": "",
+      "author_date": "2026-08-12T22:52:40+05:30",
+      "committer_date": "2026-08-12T22:52:40+05:30",
+      "author": "Rishiikesh",
+      "subject": "Add two-USRP three-channel WiFi CSI experiment (TX + RX)"
+    }
+  ],
+  "remotes": [
+    "remote.origin.url git@github.com:Rishiikesh-20/Three_channel_Exp.git"
+  ],
+  "bundle": {
+    "local_path": ".local_history/three_channel_rishi.bundle",
+    "bytes": 741632,
+    "sha256": "c20a01d7e9aa725c7f247096d2da341a2917ac415d54c9e24f81146e634ee2ab",
+    "verified": true,
+    "published": true,
+    "reason": "Original refs preserved for private team transfer; configured reachable-text credential scan had zero hits. See documented scan/privacy/licence limits.",
+    "included_in_private_release_asset": "FYP_Verified_Original_Git_Histories_20261020.zip",
+    "publication_location": "private release archive FYP_Verified_Original_Git_Histories_20261020.zip"
+  }
+}
