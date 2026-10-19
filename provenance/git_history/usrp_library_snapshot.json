@@ -1,0 +1,32 @@
+{
+  "id": "usrp_library_snapshot",
+  "source": "/home/adhikkesh/adhikkesh/FYP_Others/Rishiikesh/usrp-projects/USRP_lib",
+  "refs": [
+    "refs/heads/main 81609a0f44f32a5c919c5df8f18ce0be594bb5be",
+    "refs/remotes/origin/HEAD 81609a0f44f32a5c919c5df8f18ce0be594bb5be",
+    "refs/remotes/origin/main 81609a0f44f32a5c919c5df8f18ce0be594bb5be"
+  ],
+  "commits": [
+    {
+      "oid": "81609a0f44f32a5c919c5df8f18ce0be594bb5be",
+      "parents": "",
+      "author_date": "2026-08-04T16:23:02+05:30",
+      "committer_date": "2026-08-04T16:23:02+05:30",
+      "author": "Rishiikesh",
+      "subject": "first commit"
+    }
+  ],
+  "remotes": [
+    "remote.origin.url git@github.com:Rishiikesh-20/USRP_HAR.git"
+  ],
+  "bundle": {
+    "local_path": ".local_history/usrp_library_snapshot.bundle",
+    "bytes": 474,
+    "sha256": "cb2aa14d5055cf80b0261481a0614da93e37085e4ac0f8292b5689c4841d2b3f",
+    "verified": true,
+    "published": true,
+    "reason": "Original refs preserved for private team transfer; configured reachable-text credential scan had zero hits. See documented scan/privacy/licence limits.",
+    "included_in_private_release_asset": "FYP_Verified_Original_Git_Histories_20261020.zip",
+    "publication_location": "private release archive FYP_Verified_Original_Git_Histories_20261020.zip"
+  }
+}

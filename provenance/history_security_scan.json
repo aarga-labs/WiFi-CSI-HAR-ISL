@@ -1,0 +1,65 @@
+[
+  {
+    "id": "amrith_activity",
+    "objects_scanned": 72,
+    "text_blobs_scanned": 31,
+    "pattern_hits": [],
+    "scope": "credential-pattern scan of reachable text blobs; no model execution; no assurance about all possible personal data in binary documents"
+  },
+  {
+    "id": "current_fyp",
+    "objects_scanned": 1347,
+    "text_blobs_scanned": 955,
+    "pattern_hits": [],
+    "scope": "credential-pattern scan of reachable text blobs; no model execution; no assurance about all possible personal data in binary documents"
+  },
+  {
+    "id": "phase1_baseline",
+    "objects_scanned": 50,
+    "text_blobs_scanned": 45,
+    "pattern_hits": [],
+    "scope": "credential-pattern scan of reachable text blobs; no model execution; no assurance about all possible personal data in binary documents"
+  },
+  {
+    "id": "receiver_september",
+    "objects_scanned": 225,
+    "text_blobs_scanned": 184,
+    "pattern_hits": [],
+    "scope": "credential-pattern scan of reachable text blobs; no model execution; no assurance about all possible personal data in binary documents"
+  },
+  {
+    "id": "receiver_team",
+    "objects_scanned": 27,
+    "text_blobs_scanned": 11,
+    "pattern_hits": [],
+    "scope": "credential-pattern scan of reachable text blobs; no model execution; no assurance about all possible personal data in binary documents"
+  },
+  {
+    "id": "three_channel_rishi",
+    "objects_scanned": 374,
+    "text_blobs_scanned": 288,
+    "pattern_hits": [],
+    "scope": "credential-pattern scan of reachable text blobs; no model execution; no assurance about all possible personal data in binary documents"
+  },
+  {
+    "id": "three_channel_september",
+    "objects_scanned": 647,
+    "text_blobs_scanned": 497,
+    "pattern_hits": [],
+    "scope": "credential-pattern scan of reachable text blobs; no model execution; no assurance about all possible personal data in binary documents"
+  },
+  {
+    "id": "usrp_library_snapshot",
+    "objects_scanned": 3,
+    "text_blobs_scanned": 1,
+    "pattern_hits": [],
+    "scope": "credential-pattern scan of reachable text blobs; no model execution; no assurance about all possible personal data in binary documents"
+  },
+  {
+    "id": "wifi_capture",
+    "objects_scanned": 390,
+    "text_blobs_scanned": 306,
+    "pattern_hits": [],
+    "scope": "credential-pattern scan of reachable text blobs; no model execution; no assurance about all possible personal data in binary documents"
+  }
+]

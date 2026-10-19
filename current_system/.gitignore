@@ -1,0 +1,54 @@
+# ---- Separate git repos / big code trees (not part of this repo) ----
+/wifi_csi_capture/
+/usrp-projects/
+
+# ---- Data (kept out of git; use the backup zip / Drive) ----
+*.csv
+!/session_log_phase1.csv
+/DATA_COMBINED*/
+/pilot/
+*.zip
+*.pt
+*.pth
+
+# ---- Private chat / Claude exports ----
+/Context/
+/conversations*.json
+/projects/
+/artifacts/
+
+# ---- Local junk ----
+/_backup_git/
+/_to_delete/
+desktop.ini
+.directory
+__pycache__/
+*.pyc
+*.lock
+
+# Research handoff: version evidence CSVs, not raw recording dumps.
+!/Kaggle_P1_P5/**/*.csv
+!/Model_Detect-Activity-and-Gestures/*.csv
+!/presentation_current/*.csv
+!/paper/evidence/**/*.csv
+
+# Rebuildable caches and local presentation build products.
+/Kaggle_P1_P5/**/cache/
+/presentation_current/animation_build/
+/presentation_current/animated_rendered/
+/presentation_current/rendered/
+/presentation_current/media_check/
+*.aux
+*.nav
+*.snm
+*.toc
+*.out
+*.synctex.gz
+/presentation_current/*.log
+/presentation_current/full*_layout_check.*
+
+# Download-only large private release assets (see handoff/ASSETS.json).
+/handoff/assets/
+
+# Preserve the small rain-check session log as collection QA metadata.
+!/session_log_rain_check.csv

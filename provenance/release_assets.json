@@ -1,0 +1,25 @@
+{
+  "repository": "aarga-labs/FYP-Team-Consolidated",
+  "release_tag": "consolidation-2026-10-20",
+  "release_url": "https://github.com/aarga-labs/FYP-Team-Consolidated/releases/tag/consolidation-2026-10-20",
+  "assets": [
+    {
+      "key": "legacy",
+      "name": "FYP_Legacy_Recordings_And_Models_20261020.zip",
+      "bytes": 183154140,
+      "sha256": "bf090e51cc8232412fa91f45083d3bd2829d0d46e35f37779ac90923e509710a",
+      "member_count": 156,
+      "uncompressed_source_bytes": 353113427
+    },
+    {
+      "key": "histories",
+      "name": "FYP_Verified_Original_Git_Histories_20261020.zip",
+      "bytes": 164129653,
+      "sha256": "9b5873378038dbb0778779e09a9825c3e60865dcfe3c4aa65fc676e812b1e91f",
+      "history_count": 9
+    }
+  ],
+  "current_p1_p5_assets": "See current_system/handoff/ASSETS.json: existing private aarga-labs/FYP release; not duplicated.",
+  "public_benchmark_data": "See provenance/external_data.csv. These remain in original folders / upstream providers; private consent/permission documents and public dataset archives are not republished.",
+  "history_bundles": "All nine verified bundles remain in ignored .local_history. Those with no credential-pattern hits are also in the private histories ZIP; see history_security_scan.json for scope and any exclusions."
+}

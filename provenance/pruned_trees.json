@@ -1,0 +1,662 @@
+[
+  {
+    "source_root": "adhi_current",
+    "source_relative": "Context",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": ".git",
+    "reason": "git_metadata"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "_to_delete",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "_backup_git",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "artifacts",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "projects",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "pilot_tools/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "wifi_csi_capture/.git",
+    "reason": "git_metadata"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "wifi_csi_capture/pilot_tools/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "wifi_csi_capture/receiver/gr-ieee802-11/examples/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "wifi_csi_capture/receiver/gr-ieee802-11/docs/doxygen/doxyxml/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "wifi_csi_capture/receiver/gr-ieee802-11/docs/doxygen/doxyxml/generated/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "wifi_csi_capture/transmitter/gr-ieee802-11/examples/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "wifi_csi_capture/transmitter/gr-ieee802-11/docs/doxygen/doxyxml/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "wifi_csi_capture/transmitter/gr-ieee802-11/docs/doxygen/doxyxml/generated/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "wifi_csi_capture/transmitter/gr-foo/docs/doxygen/doxyxml/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "wifi_csi_capture/transmitter/gr-foo/docs/doxygen/doxyxml/generated/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "paper/tools/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "Kaggle_P1_P5/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "Kaggle_P1_P5/balanced_results_audit_20261017/run/FYP_BALANCED_2H_20261017_015419/cache",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "Kaggle_P1_P5/balanced_results_audit_20261017/run/FYP_BALANCED_2H_20261017_015419/source/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "Kaggle_P1_P5/results_audit_20261017/run/FYP_FAST_2H_20261017_010129/cache",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "Kaggle_P1_P5/results_audit_20261017/run/FYP_FAST_2H_20261017_010129/source/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "Kaggle_P1_P5/fast_2h/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "Kaggle_P1_P5/balanced_2h/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "Kaggle_P1_P5/robust_2h/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "Kaggle_P1_P5/validation/cache",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "usrp-projects/usrp-projects/.git",
+    "reason": "git_metadata"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "usrp-projects/usrp-projects/data/pilot/windows_gowreesh",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "usrp-projects/usrp-projects/data/pilot/windows",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "usrp-projects/usrp-projects/Three_Channel_Receiver/USRP_HAR_Project/.git",
+    "reason": "git_metadata"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "usrp-projects/usrp-projects/Three_Channel_Receiver/USRP_HAR_Project/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "usrp-projects/usrp-projects/Three_Channel_Receiver/Team67_USRP_Receiver/gr-ieee802-11/build",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "usrp-projects/usrp-projects/Three_Channel_Receiver/Team67_USRP_Receiver/gr-ieee802-11/examples/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "usrp-projects/usrp-projects/Three_Channel_Receiver/Team67_USRP_Receiver/gr-ieee802-11/docs/doxygen/doxyxml/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "usrp-projects/usrp-projects/Three_Channel_Receiver/Team67_USRP_Receiver/gr-ieee802-11/docs/doxygen/doxyxml/generated/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "usrp-projects/usrp-projects/USRP_lib/.git",
+    "reason": "git_metadata"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "usrp-projects/usrp-projects/USRP_lib/csi_tools/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "usrp-projects/usrp-projects/USRP_lib/gnuradio/gr-ieee802-11/build",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "usrp-projects/usrp-projects/USRP_lib/gnuradio/gr-ieee802-11/examples/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "usrp-projects/usrp-projects/USRP_lib/gnuradio/gr-ieee802-11/docs/doxygen/doxyxml/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "usrp-projects/usrp-projects/USRP_lib/gnuradio/gr-ieee802-11/docs/doxygen/doxyxml/generated/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "usrp-projects/usrp-projects/USRP_lib/usrp/uhd",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "usrp-projects/usrp-projects/USRP_lib/FinalYearProject/csi_sender/build",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "usrp-projects/usrp-projects/USRP_lib/FinalYearProject/usrp-projects/USRP_lib/gnuradio/gr-ieee802-11/build",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "usrp-projects/usrp-projects/USRP_lib/FinalYearProject/usrp-projects/USRP_lib/gnuradio/gr-ieee802-11/examples/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "usrp-projects/usrp-projects/USRP_lib/FinalYearProject/usrp-projects/USRP_lib/gnuradio/gr-ieee802-11/docs/doxygen/doxyxml/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "usrp-projects/usrp-projects/USRP_lib/FinalYearProject/usrp-projects/USRP_lib/gnuradio/gr-ieee802-11/docs/doxygen/doxyxml/generated/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "usrp-projects/usrp-projects/USRP_lib/FinalYearProject/usrp-projects/USRP_lib/usrp/uhd",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "usrp-projects/usrp-projects/gr-ieee802-11/.git",
+    "reason": "git_metadata"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "usrp-projects/usrp-projects/gr-ieee802-11/docs/doxygen/doxyxml/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "usrp-projects/usrp-projects/gr-ieee802-11/docs/doxygen/doxyxml/generated/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "usrp-projects/usrp-projects/gr-foo/build",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "usrp-projects/usrp-projects/gr-foo/.git",
+    "reason": "git_metadata"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "usrp-projects/usrp-projects/gr-foo/docs/doxygen/doxyxml/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "usrp-projects/usrp-projects/gr-foo/docs/doxygen/doxyxml/generated/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "others/Works/Action and No action/data/windows",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "presentation_current/animation_build",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "presentation_current/animated_rendered",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "presentation_current/media_check",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "presentation_current/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "presentation_current/rendered",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "handoff/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "Label_Studio/venv",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_current",
+    "source_relative": "capture_snapshot/wifi_csi_capture/pilot_tools/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_sem6",
+    "source_relative": "esp-idf",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_sem6",
+    "source_relative": "esp-idf-v4.3",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_sem6",
+    "source_relative": "ESPectre/ESP32-WiFi-Sensing/.git",
+    "reason": "git_metadata"
+  },
+  {
+    "source_root": "adhi_sem6",
+    "source_relative": "ESPectre/ESP32-WiFi-Sensing/python_utils/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_sem6",
+    "source_relative": "ESPectre/espectre/venv",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_sem6",
+    "source_relative": "ESPectre/espectre/.git",
+    "reason": "git_metadata"
+  },
+  {
+    "source_root": "adhi_sem6",
+    "source_relative": "ESPectre/espectre/examples/.esphome",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_sem6",
+    "source_relative": "ESPectre/espectre/components/espectre/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_sem6",
+    "source_relative": "ESPectre/esp-csi/.git",
+    "reason": "git_metadata"
+  },
+  {
+    "source_root": "adhi_sem6",
+    "source_relative": "csi_receiver/build",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_sem6",
+    "source_relative": "Casas_Github/deep-casas/.git",
+    "reason": "git_metadata"
+  },
+  {
+    "source_root": "adhi_sem6",
+    "source_relative": "Casas_Github/deep-casas/npy",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_sem6",
+    "source_relative": "Casas_Github/deep-casas/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_sem6",
+    "source_relative": "Fall_Detection/venv",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_sem6",
+    "source_relative": "Fall_Detection/csi_graph/build",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_sem6",
+    "source_relative": "Fall_Detection/csi_graph/csi_env",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_sem6",
+    "source_relative": "Fall_Detection/ESP32-CSI-Tool/build",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_sem6",
+    "source_relative": "Fall_Detection/ESP32-CSI-Tool/.git",
+    "reason": "git_metadata"
+  },
+  {
+    "source_root": "adhi_sem6",
+    "source_relative": "Fall_Detection/ESP32-CSI-Tool/active_sta/build",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_sem6",
+    "source_relative": "Fall_Detection/ESP32-CSI-Tool/active_ap/build",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_sem6",
+    "source_relative": "SignFi/SignFi/.git",
+    "reason": "git_metadata"
+  },
+  {
+    "source_root": "adhi_sem6",
+    "source_relative": "SignFi-CNN/SignFi-CNN/tf_gpu_env",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adhi_sem6",
+    "source_relative": "FP_P/__MACOSX",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adithya",
+    "source_relative": "SignFi-CNN/__MACOSX",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adithya",
+    "source_relative": "SignFi-CNN/tuner_logs",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adithya",
+    "source_relative": "SignFi-CNN/.git",
+    "reason": "git_metadata"
+  },
+  {
+    "source_root": "adithya",
+    "source_relative": "SignFi-CNN/usrp-projects/usrp-projects/USRP_lib/gnuradio/gr-ieee802-11/build",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adithya",
+    "source_relative": "SignFi-CNN/usrp-projects/usrp-projects/USRP_lib/gnuradio/gr-ieee802-11/.git",
+    "reason": "git_metadata"
+  },
+  {
+    "source_root": "adithya",
+    "source_relative": "SignFi-CNN/usrp-projects/usrp-projects/USRP_lib/gnuradio/gr-ieee802-11/examples/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adithya",
+    "source_relative": "SignFi-CNN/usrp-projects/usrp-projects/USRP_lib/gnuradio/gr-ieee802-11/docs/doxygen/doxyxml/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adithya",
+    "source_relative": "SignFi-CNN/usrp-projects/usrp-projects/USRP_lib/gnuradio/gr-ieee802-11/docs/doxygen/doxyxml/generated/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "adithya",
+    "source_relative": "SignFi-CNN/usrp-projects/usrp-projects/USRP_lib/usrp/uhd",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "amrith",
+    "source_relative": "Activity-Detection-System/.git",
+    "reason": "git_metadata"
+  },
+  {
+    "source_root": "rishiikesh",
+    "source_relative": "usrp-projects/.git",
+    "reason": "git_metadata"
+  },
+  {
+    "source_root": "rishiikesh",
+    "source_relative": "usrp-projects/data/pilot/windows_gowreesh",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "rishiikesh",
+    "source_relative": "usrp-projects/data/pilot/windows",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "rishiikesh",
+    "source_relative": "usrp-projects/Three_Channel_Experiment/.git",
+    "reason": "git_metadata"
+  },
+  {
+    "source_root": "rishiikesh",
+    "source_relative": "usrp-projects/Three_Channel_Experiment/receiver/gr-ieee802-11/build",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "rishiikesh",
+    "source_relative": "usrp-projects/Three_Channel_Experiment/receiver/gr-ieee802-11/docs/doxygen/doxyxml/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "rishiikesh",
+    "source_relative": "usrp-projects/Three_Channel_Experiment/receiver/gr-ieee802-11/docs/doxygen/doxyxml/generated/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "rishiikesh",
+    "source_relative": "usrp-projects/Three_Channel_Receiver/USRP_HAR_Project/.git",
+    "reason": "git_metadata"
+  },
+  {
+    "source_root": "rishiikesh",
+    "source_relative": "usrp-projects/Three_Channel_Receiver/USRP_HAR_Project/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "rishiikesh",
+    "source_relative": "usrp-projects/Three_Channel_Receiver/Team67_USRP_Receiver/gr-ieee802-11/build",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "rishiikesh",
+    "source_relative": "usrp-projects/Three_Channel_Receiver/Team67_USRP_Receiver/gr-ieee802-11/examples/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "rishiikesh",
+    "source_relative": "usrp-projects/Three_Channel_Receiver/Team67_USRP_Receiver/gr-ieee802-11/docs/doxygen/doxyxml/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "rishiikesh",
+    "source_relative": "usrp-projects/Three_Channel_Receiver/Team67_USRP_Receiver/gr-ieee802-11/docs/doxygen/doxyxml/generated/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "rishiikesh",
+    "source_relative": "usrp-projects/USRP_lib/.git",
+    "reason": "git_metadata"
+  },
+  {
+    "source_root": "rishiikesh",
+    "source_relative": "usrp-projects/USRP_lib/csi_tools/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "rishiikesh",
+    "source_relative": "usrp-projects/USRP_lib/gnuradio/gr-ieee802-11/build",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "rishiikesh",
+    "source_relative": "usrp-projects/USRP_lib/gnuradio/gr-ieee802-11/examples/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "rishiikesh",
+    "source_relative": "usrp-projects/USRP_lib/gnuradio/gr-ieee802-11/docs/doxygen/doxyxml/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "rishiikesh",
+    "source_relative": "usrp-projects/USRP_lib/gnuradio/gr-ieee802-11/docs/doxygen/doxyxml/generated/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "rishiikesh",
+    "source_relative": "usrp-projects/USRP_lib/usrp/uhd",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "rishiikesh",
+    "source_relative": "usrp-projects/USRP_lib/FinalYearProject/csi_sender/build",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "rishiikesh",
+    "source_relative": "usrp-projects/USRP_lib/FinalYearProject/usrp-projects/USRP_lib/gnuradio/gr-ieee802-11/build",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "rishiikesh",
+    "source_relative": "usrp-projects/USRP_lib/FinalYearProject/usrp-projects/USRP_lib/gnuradio/gr-ieee802-11/examples/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "rishiikesh",
+    "source_relative": "usrp-projects/USRP_lib/FinalYearProject/usrp-projects/USRP_lib/gnuradio/gr-ieee802-11/docs/doxygen/doxyxml/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "rishiikesh",
+    "source_relative": "usrp-projects/USRP_lib/FinalYearProject/usrp-projects/USRP_lib/gnuradio/gr-ieee802-11/docs/doxygen/doxyxml/generated/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "rishiikesh",
+    "source_relative": "usrp-projects/USRP_lib/FinalYearProject/usrp-projects/USRP_lib/usrp/uhd",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "rishiikesh",
+    "source_relative": "usrp-projects/gr-ieee802-11/build",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "rishiikesh",
+    "source_relative": "usrp-projects/gr-ieee802-11/.git",
+    "reason": "git_metadata"
+  },
+  {
+    "source_root": "rishiikesh",
+    "source_relative": "usrp-projects/gr-ieee802-11/docs/doxygen/doxyxml/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "rishiikesh",
+    "source_relative": "usrp-projects/gr-ieee802-11/docs/doxygen/doxyxml/generated/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "rishiikesh",
+    "source_relative": "usrp-projects/gr-foo/build",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "rishiikesh",
+    "source_relative": "usrp-projects/gr-foo/.git",
+    "reason": "git_metadata"
+  },
+  {
+    "source_root": "rishiikesh",
+    "source_relative": "usrp-projects/gr-foo/docs/doxygen/doxyxml/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  },
+  {
+    "source_root": "rishiikesh",
+    "source_relative": "usrp-projects/gr-foo/docs/doxygen/doxyxml/generated/__pycache__",
+    "reason": "dependency_environment_cache_or_private_tree"
+  }
+]

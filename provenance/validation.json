@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-20",
+  "imported_file_hashes": "passed: 2004 imported copies",
+  "original_source_hashes": "passed: 9017 source/data hashes unchanged",
+  "notebook_json_count": 29,
+  "notebooks_with_saved_error_outputs": 2,
+  "python_syntax_counts": {
+    "passed": 281,
+    "legacy_syntax_error": 17
+  },
+  "history_bundles_verified": 9,
+  "legacy_zip_crc": "passed",
+  "current_evidence": "passed: 86 hashes, 34 metric rows, 8 summary slices, data/annotation/split checks",
+  "training_executed": false,
+  "inference_executed": false,
+  "hardware_test_executed": false,
+  "limitations": [
+    "Legacy saved outputs were not rerun.",
+    "May/June exact completion dates and original OPPORTUNITY evidence remain unresolved.",
+    "Public benchmark datasets/SDKs are recorded but not mirrored.",
+    "Historical errors are preserved in the audit; source syntax checks are not runtime/hardware validation."
+  ],
+  "capture_protocol_unit_tests": "6 passed; no hardware",
+  "new_verification_tools_syntax": "passed",
+  "credential_pattern_scan": "no high-confidence patterns in staged candidate text; all nine historical reachable-object scans had zero configured hits",
+  "legacy_syntax_findings": "16 vendored Python 2 utilities and one historical ESP32 fall_datection.py; not silently repaired",
+  "remote_fresh_clone": "passed at import tip 59ba076: 2004 imported hashes, 29 notebooks, nine history records and current evidence verifier",
+  "planned_import_commits_executed": 28,
+  "team_access": "new repo collaborator roles match original FYP repo (five accounts)",
+  "source_fyp_head_unchanged": "011518a329ddf8aed1d1239095006b3b60171808",
+  "new_import_commit_date_check": "all 28 import author/committer dates are actual 20 October 2026; no historical backdating",
+  "gitlinks": 0,
+  "published_release_assets": "both remote sizes/digests match; published private release",
+  "downloaded_history_archive": "SHA256/CRC passed; all nine bundle hashes and git bundle verify passed"
+}

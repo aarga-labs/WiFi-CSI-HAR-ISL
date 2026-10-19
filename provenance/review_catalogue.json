@@ -1,0 +1,134 @@
+[
+  {
+    "path": "current_system/falldetection_rishi.pdf",
+    "source_root": "adhi_current",
+    "sha256": "b313a10cb0c355a5136778b6d5270d707bde0e7f861e301ea77bd9ca3a215b46",
+    "pages": "8",
+    "metadata_creation": "",
+    "cover_dates": []
+  },
+  {
+    "path": "current_system/Review/Sem5_Review1/final_ig.pdf",
+    "source_root": "adhi_current",
+    "sha256": "6c861b9bf485c1e8050095686bb4f93b4f58bf32125fff5d5c93689d351d9aee",
+    "pages": "16",
+    "metadata_creation": "Tue Feb 24 09:38:58 2026 IST",
+    "cover_dates": [
+      "February 24, 2026"
+    ]
+  },
+  {
+    "path": "current_system/Review/Sem6_Review2/FYP_updated.pdf",
+    "source_root": "adhi_current",
+    "sha256": "4edc4aa7db759b88c0e831b78e2b74baa5d11686cd21fe9b30f53dcb452c1a37",
+    "pages": "16",
+    "metadata_creation": "Mon Mar 30 09:59:11 2026 IST",
+    "cover_dates": [
+      "March 30, 2026"
+    ]
+  },
+  {
+    "path": "current_system/Review/Sem6_Review2/Final_Report_FYP.pdf",
+    "source_root": "adhi_current",
+    "sha256": "b6ab8aee58dab71646086d51ebbf6de690f4887fd244bdf20c50b35c7f7ea1fe",
+    "pages": "11",
+    "metadata_creation": "Mon Mar 30 08:35:10 2026 IST",
+    "cover_dates": [
+      "March 30, 2026"
+    ]
+  },
+  {
+    "path": "current_system/Reports/FYP_updated.pdf",
+    "source_root": "adhi_current",
+    "sha256": "4edc4aa7db759b88c0e831b78e2b74baa5d11686cd21fe9b30f53dcb452c1a37",
+    "pages": "16",
+    "metadata_creation": "Mon Mar 30 09:59:11 2026 IST",
+    "cover_dates": [
+      "March 30, 2026"
+    ]
+  },
+  {
+    "path": "current_system/Reports/Final_Report_FYP.pdf",
+    "source_root": "adhi_current",
+    "sha256": "b6ab8aee58dab71646086d51ebbf6de690f4887fd244bdf20c50b35c7f7ea1fe",
+    "pages": "11",
+    "metadata_creation": "Mon Mar 30 08:35:10 2026 IST",
+    "cover_dates": [
+      "March 30, 2026"
+    ]
+  },
+  {
+    "path": "current_system/others/Works/Action and No action/comparative_analysis.pdf",
+    "source_root": "adhi_current",
+    "sha256": "9eeeb3f1aa632786a5ac42828c88aeec2d0e1d2540962da9c1bdfecc04c3b956",
+    "pages": "19",
+    "metadata_creation": "Mon Jul 20 23:04:01 2026 IST",
+    "cover_dates": [
+      "July 20, 2026"
+    ]
+  },
+  {
+    "path": "research/early_studies/Adhikkesh_Presentation.pdf",
+    "source_root": "adhi_sem6",
+    "sha256": "9989df8321de04648c8784d6be367acb2bb600b642dd0043072ea35d2db786f6",
+    "pages": "15",
+    "metadata_creation": "Fri Dec 19 13:37:02 2025 IST",
+    "cover_dates": []
+  },
+  {
+    "path": "docs/reviews/sem6_supporting/Review_2/Rishi_Doc.pdf",
+    "source_root": "adhi_sem6",
+    "sha256": "c09c42924f28e1a3cb31d0950a228c81336f04bd73c166a883973cefda339bce",
+    "pages": "4",
+    "metadata_creation": "",
+    "cover_dates": []
+  },
+  {
+    "path": "docs/reviews/sem6_supporting/Review_2/SignFi.pdf",
+    "source_root": "adhi_sem6",
+    "sha256": "31d9bb54b855853dfe89f579adfaaa1f4c7546e2275f5ba3229ae7efba153466",
+    "pages": "5",
+    "metadata_creation": "",
+    "cover_dates": []
+  },
+  {
+    "path": "docs/reviews/sem6_supporting/FP_P/FP_P/Presentation Doc.pdf",
+    "source_root": "adhi_sem6",
+    "sha256": "11cab3080f6a2b77ab79de1a596726d2d491b8365b4ec503a702361463ac1583",
+    "pages": "15",
+    "metadata_creation": "Wed Dec 10 22:20:15 2025 IST",
+    "cover_dates": []
+  },
+  {
+    "path": "experiments/member_versions/rishiikesh/FYP_Sem_7_Review (1).pdf",
+    "source_root": "rishiikesh",
+    "sha256": "8074edffd1fbeab3e578434139524590d3a2b29afd1e70f2f636831a74809aa1",
+    "pages": "20",
+    "metadata_creation": "Thu Aug 13 23:40:52 2026 IST",
+    "cover_dates": []
+  },
+  {
+    "path": "experiments/member_versions/rishiikesh/analysis/comparative_analysis.pdf",
+    "source_root": "rishiikesh",
+    "sha256": "382418eed6b768ea3da8111a9a6b64d6265f65a5cf07131f1151b72cbc0910da",
+    "pages": "19",
+    "metadata_creation": "Mon Jul 20 22:55:32 2026 IST",
+    "cover_dates": []
+  },
+  {
+    "path": "experiments/member_versions/rishiikesh/USRP_lib/FinalYearProject/comparative_analysis.pdf",
+    "source_root": "rishiikesh",
+    "sha256": "a7b98ebba374e949dd6116bf10e323cd04e0bb87248fc24df235b780b14bc9aa",
+    "pages": "12",
+    "metadata_creation": "Sun Jul 19 22:45:44 2026 IST",
+    "cover_dates": []
+  },
+  {
+    "path": "docs/reviews/october/FYP_With_GIF_export_20261017.pdf",
+    "source_root": "downloads_review",
+    "sha256": "6e8f40e7a4cc2e5e5a419cc59078d1d011fe81cd36a276857d042bd0f1787b32",
+    "pages": "42",
+    "metadata_creation": "Sat Oct 17 10:46:32 2026 IST",
+    "cover_dates": []
+  }
+]

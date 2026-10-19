@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-20",
+  "manifest_entries": 13608,
+  "source_roots": [
+    "adhi_current",
+    "adhi_sem6",
+    "adithya",
+    "amrith",
+    "gowreesh",
+    "rishiikesh",
+    "downloads_review"
+  ],
+  "dispositions": {
+    "copy": 2004,
+    "excluded": 1208,
+    "empty": 71,
+    "duplicate": 255,
+    "dependency": 3312,
+    "asset": 156,
+    "external_data": 6602
+  },
+  "selected_files": 2004,
+  "selected_source_bytes": 307875826,
+  "redacted_assignments": 1,
+  "legacy_asset_files": 156,
+  "legacy_asset_crc": "passed",
+  "training_executed": false,
+  "original_files_modified": false
+}
