@@ -1,0 +1,16 @@
+examples/*.py
+# ...but wifi_rx.py is hand-modified, not just GRC output: the channel-hop
+# loop and CSI_CHANNEL parking live in its main() and exist nowhere else.
+# Losing it silently loses that work, so it must be tracked.
+!examples/wifi_rx.py
+.cproject
+.project
+.pydevproject
+.settings
+**/.DS_Store
+.clang_complete
+*~
+*.pyc
+*.pyo
+build*/
+examples/grc/*.py
