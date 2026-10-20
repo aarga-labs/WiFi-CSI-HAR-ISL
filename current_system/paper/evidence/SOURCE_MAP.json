@@ -1,0 +1,8 @@
+{
+  "balanced_results": "Kaggle_P1_P5/balanced_results_audit_20261017/run/FYP_BALANCED_2H_20261017_015419/results",
+  "counts": "presentation_current/verified_dataset_counts.json",
+  "class_recall": "presentation_current/all_class_performance.csv",
+  "fixed_threshold_comparison": "Kaggle_P1_P5/screenshot_comparison_20261017/compare_screenshot_measures.py",
+  "raw_dataset_archive": "handoff/ASSETS.json",
+  "notes": "Copies of evidence for paper authoring. Originals are preserved. See the main handoff for metric/scope caveats."
+}

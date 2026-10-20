@@ -1,0 +1,22 @@
+{
+  "our_run": "FYP_BALANCED_2H_20261017_015419",
+  "our_new_improved_notebook_results_available": false,
+  "matched_events": 684,
+  "participants": [
+    "P01",
+    "P02",
+    "P03"
+  ],
+  "classification": "Known type and event boundaries. Per-class recall and pooled accuracy, not macro F1.",
+  "threshold": "Friend final zero-shot exported means; ours recomputed using identical friend detect/match functions. Both average three participants.",
+  "detection_rules": "50 Hz, 0.2 s frame hop, centered 1 s smoothing, 1 s minimum run, merge gaps <=1 s, match tolerance +/-1 s; no identity requirement for detection.",
+  "scope": "Thresholds combine isolated and story sources: 318 true signs. Routine-hour rates exclude idle and unknown; not all wrong reactions.",
+  "coverage_difference": "Our quality-masked/unavailable frames remain unavailable; routine time differs slightly (0.96544 h vs 0.96816 h).",
+  "screenshot_note": "Action/sign screenshots reproduce friend final zero-shot predictions before excluding one partial P02 lightswitch. Threshold screenshot does not match final CSV; its run/scope are unverified.",
+  "inputs": {
+    "/home/adhikkesh/adhikkesh/FYP/Model_Detect-Activity-and-Gestures/results_final_segments_cal0.csv": "a5ec663c20707217812fa78e798583fab89730212f44533912bf769a046e0a10",
+    "/home/adhikkesh/adhikkesh/FYP/Model_Detect-Activity-and-Gestures/results_final_stream_cal0.csv": "9fa0a1089f538a887e4270f3de6caae644d156a26e352c485a8d55f9a6f97394",
+    "/home/adhikkesh/adhikkesh/FYP/Model_Detect-Activity-and-Gestures/stream_eval.py": "f3f4d11e2145f1295a14eda5e276eb427faa27ac411b8e6ec45f391639d9cdb1",
+    "/home/adhikkesh/adhikkesh/FYP/Kaggle_P1_P5/balanced_results_audit_20261017/run/FYP_BALANCED_2H_20261017_015419/results/all_out_of_fold_predictions.csv": "8965b04c7e1d4b7a5d578a2936059e72cb0e543f0cf85a4eef16a4b4d999f755"
+  }
+}
