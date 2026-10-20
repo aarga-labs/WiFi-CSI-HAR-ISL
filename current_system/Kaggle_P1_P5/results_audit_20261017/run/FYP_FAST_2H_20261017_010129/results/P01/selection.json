@@ -1,0 +1,33 @@
+{
+  "arch": {
+    "name": "residual4",
+    "kind": "residual",
+    "seconds": 4
+  },
+  "epochs": 24,
+  "tau": 0.7499999999999998,
+  "action_tree_weight": 0.0,
+  "validation_pid": "P04",
+  "training_pids": [
+    "P02",
+    "P03",
+    "P04",
+    "P05"
+  ],
+  "test_pid": "P01",
+  "validation_fusion": [
+    {
+      "weight": 0.0,
+      "score": 0.2897973157762621
+    },
+    {
+      "weight": 0.5,
+      "score": 0.2868544786874619
+    },
+    {
+      "weight": 1.0,
+      "score": 0.17083325023433915
+    }
+  ],
+  "protocol": "One fixed validation person within training people; single-seed refit. No full nested search."
+}

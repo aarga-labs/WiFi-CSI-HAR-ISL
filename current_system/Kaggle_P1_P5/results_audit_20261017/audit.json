@@ -1,0 +1,523 @@
+{
+  "archive_crc": "passed",
+  "all_five_fold_markers": true,
+  "dataset": "f01651df3c4b758f3cbec5dd742669b4f0605a9f11c24162aecd662949dede62",
+  "training_executed_locally": false,
+  "probe_note": "Diagnostic balanced random windows, known central labels, CPU forward only. Not a new held-out event score.",
+  "probes": [
+    {
+      "pid": "P01",
+      "split": "train",
+      "available_windows": 53118,
+      "epochs": 24,
+      "state_accuracy": 0.9908854166666666,
+      "activity_typed_accuracy": 0.9347826086956522,
+      "sign_typed_accuracy": 0.9910714285714286
+    },
+    {
+      "pid": "P01",
+      "split": "test",
+      "available_windows": 9689,
+      "epochs": 24,
+      "state_accuracy": 0.7096354166666666,
+      "activity_typed_accuracy": 0.30434782608695654,
+      "sign_typed_accuracy": 0.15294117647058825
+    },
+    {
+      "pid": "P02",
+      "split": "train",
+      "available_windows": 55167,
+      "epochs": 10,
+      "state_accuracy": 0.9479166666666666,
+      "activity_typed_accuracy": 0.7022900763358778,
+      "sign_typed_accuracy": 0.6635514018691588
+    },
+    {
+      "pid": "P02",
+      "split": "test",
+      "available_windows": 7640,
+      "epochs": 10,
+      "state_accuracy": 0.8268229166666666,
+      "activity_typed_accuracy": 0.3767441860465116,
+      "sign_typed_accuracy": 0.23949579831932774
+    },
+    {
+      "pid": "P03",
+      "split": "train",
+      "available_windows": 53738,
+      "epochs": 16,
+      "state_accuracy": 0.98046875,
+      "activity_typed_accuracy": 0.8290598290598291,
+      "sign_typed_accuracy": 0.908695652173913
+    },
+    {
+      "pid": "P03",
+      "split": "test",
+      "available_windows": 9069,
+      "epochs": 16,
+      "state_accuracy": 0.65625,
+      "activity_typed_accuracy": 0.40350877192982454,
+      "sign_typed_accuracy": 0.2222222222222222
+    },
+    {
+      "pid": "P04",
+      "split": "train",
+      "available_windows": 44676,
+      "epochs": 12,
+      "state_accuracy": 0.9661458333333334,
+      "activity_typed_accuracy": 0.7531914893617021,
+      "sign_typed_accuracy": 0.8381742738589212
+    },
+    {
+      "pid": "P04",
+      "split": "test",
+      "available_windows": 18131,
+      "epochs": 12,
+      "state_accuracy": 0.66015625,
+      "activity_typed_accuracy": 0.3333333333333333,
+      "sign_typed_accuracy": 0.15289256198347106
+    },
+    {
+      "pid": "P05",
+      "split": "train",
+      "available_windows": 44529,
+      "epochs": 10,
+      "state_accuracy": 0.9479166666666666,
+      "activity_typed_accuracy": 0.6723404255319149,
+      "sign_typed_accuracy": 0.6899563318777293
+    },
+    {
+      "pid": "P05",
+      "split": "test",
+      "available_windows": 18278,
+      "epochs": 10,
+      "state_accuracy": 0.53125,
+      "activity_typed_accuracy": 0.3574468085106383,
+      "sign_typed_accuracy": 0.1652542372881356
+    },
+    {
+      "pid": "ALL5",
+      "split": "train",
+      "available_windows": 62807,
+      "epochs": 12,
+      "state_accuracy": 0.9388020833333334,
+      "activity_typed_accuracy": 0.7142857142857143,
+      "sign_typed_accuracy": 0.569672131147541
+    }
+  ],
+  "fold_histories": [
+    {
+      "pid": "P01",
+      "epochs": 24,
+      "steps_per_epoch": 32,
+      "updates": 768,
+      "draws": 196608,
+      "last_loss": 0.9807991441339254,
+      "seconds": 9.98004674911499
+    },
+    {
+      "pid": "P02",
+      "epochs": 10,
+      "steps_per_epoch": 32,
+      "updates": 320,
+      "draws": 81920,
+      "last_loss": 2.0483212508261204,
+      "seconds": 4.229858875274658
+    },
+    {
+      "pid": "P03",
+      "epochs": 16,
+      "steps_per_epoch": 32,
+      "updates": 512,
+      "draws": 131072,
+      "last_loss": 1.4459722861647606,
+      "seconds": 6.887942552566528
+    },
+    {
+      "pid": "P04",
+      "epochs": 12,
+      "steps_per_epoch": 32,
+      "updates": 384,
+      "draws": 98304,
+      "last_loss": 1.6891946755349636,
+      "seconds": 5.180783033370972
+    },
+    {
+      "pid": "P05",
+      "epochs": 10,
+      "steps_per_epoch": 32,
+      "updates": 320,
+      "draws": 81920,
+      "last_loss": 2.008542500436306,
+      "seconds": 3.6539697647094727
+    },
+    {
+      "pid": "ALL5",
+      "epochs": 12,
+      "steps_per_epoch": 32,
+      "updates": 384,
+      "draws": 98304,
+      "last_loss": 2.011759053915739,
+      "seconds": 5.687345504760742
+    }
+  ],
+  "isolated_activity_per_class.csv": {
+    "weakest": [
+      {
+        "label": "chop_food",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 40.0
+      },
+      {
+        "label": "tvremote",
+        "precision": 0.3043478260869565,
+        "recall": 0.1044776119402985,
+        "f1-score": 0.1555555555555555,
+        "support": 67.0
+      },
+      {
+        "label": "answerphone",
+        "precision": 0.2,
+        "recall": 0.1343283582089552,
+        "f1-score": 0.1607142857142857,
+        "support": 67.0
+      },
+      {
+        "label": "stir_pot",
+        "precision": 0.1935483870967742,
+        "recall": 0.15,
+        "f1-score": 0.1690140845070422,
+        "support": 40.0
+      },
+      {
+        "label": "drink",
+        "precision": 0.2586206896551724,
+        "recall": 0.2238805970149253,
+        "f1-score": 0.24,
+        "support": 67.0
+      },
+      {
+        "label": "wipetable",
+        "precision": 0.2933333333333333,
+        "recall": 0.3283582089552239,
+        "f1-score": 0.3098591549295774,
+        "support": 67.0
+      }
+    ],
+    "strongest": [
+      {
+        "label": "pickup",
+        "precision": 0.3442622950819672,
+        "recall": 0.4375,
+        "f1-score": 0.3853211009174312,
+        "support": 48.0
+      },
+      {
+        "label": "sitstand",
+        "precision": 0.4,
+        "recall": 0.4583333333333333,
+        "f1-score": 0.4271844660194174,
+        "support": 48.0
+      },
+      {
+        "label": "fall",
+        "precision": 0.4230769230769231,
+        "recall": 0.4782608695652174,
+        "f1-score": 0.4489795918367347,
+        "support": 23.0
+      },
+      {
+        "label": "walk",
+        "precision": 0.6818181818181818,
+        "recall": 0.9782608695652174,
+        "f1-score": 0.8035714285714286,
+        "support": 46.0
+      }
+    ]
+  },
+  "isolated_sign_per_class.csv": {
+    "weakest": [
+      {
+        "label": "TOILET",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 35.0
+      },
+      {
+        "label": "WATER",
+        "precision": 0.1052631578947368,
+        "recall": 0.0571428571428571,
+        "f1-score": 0.074074074074074,
+        "support": 35.0
+      },
+      {
+        "label": "TELEVISION",
+        "precision": 0.2307692307692307,
+        "recall": 0.0857142857142857,
+        "f1-score": 0.125,
+        "support": 35.0
+      },
+      {
+        "label": "HUNGRY",
+        "precision": 0.1481481481481481,
+        "recall": 0.1142857142857142,
+        "f1-score": 0.1290322580645161,
+        "support": 35.0
+      },
+      {
+        "label": "CALL",
+        "precision": 0.1538461538461538,
+        "recall": 0.1142857142857142,
+        "f1-score": 0.1311475409836065,
+        "support": 35.0
+      },
+      {
+        "label": "HOT",
+        "precision": 0.1388888888888889,
+        "recall": 0.1428571428571428,
+        "f1-score": 0.1408450704225352,
+        "support": 35.0
+      }
+    ],
+    "strongest": [
+      {
+        "label": "PAIN",
+        "precision": 0.1666666666666666,
+        "recall": 0.6,
+        "f1-score": 0.2608695652173913,
+        "support": 35.0
+      },
+      {
+        "label": "LAMP",
+        "precision": 0.36,
+        "recall": 0.2571428571428571,
+        "f1-score": 0.3,
+        "support": 35.0
+      },
+      {
+        "label": "FAN",
+        "precision": 0.2653061224489796,
+        "recall": 0.3714285714285714,
+        "f1-score": 0.3095238095238095,
+        "support": 35.0
+      },
+      {
+        "label": "COOK",
+        "precision": 0.3793103448275862,
+        "recall": 0.3142857142857143,
+        "f1-score": 0.34375,
+        "support": 35.0
+      }
+    ]
+  },
+  "missed_quality_windows": 1,
+  "fully_covered_events": 1534,
+  "top_confusions": {
+    "activity": [
+      {
+        "true": "drink",
+        "predicted": "eat",
+        "count": 21
+      },
+      {
+        "true": "stir_pot",
+        "predicted": "eat",
+        "count": 19
+      },
+      {
+        "true": "answerphone",
+        "predicted": "eat",
+        "count": 16
+      },
+      {
+        "true": "tvremote",
+        "predicted": "eat",
+        "count": 14
+      },
+      {
+        "true": "eat",
+        "predicted": "drink",
+        "count": 12
+      },
+      {
+        "true": "drink",
+        "predicted": "pickup",
+        "count": 11
+      },
+      {
+        "true": "pickup",
+        "predicted": "wipetable",
+        "count": 10
+      },
+      {
+        "true": "chop_food",
+        "predicted": "wipetable",
+        "count": 10
+      }
+    ],
+    "sign": [
+      {
+        "true": "HUNGRY",
+        "predicted": "PAIN",
+        "count": 17
+      },
+      {
+        "true": "TELEVISION",
+        "predicted": "PAIN",
+        "count": 14
+      },
+      {
+        "true": "CALL",
+        "predicted": "PAIN",
+        "count": 14
+      },
+      {
+        "true": "LAMP",
+        "predicted": "FAN",
+        "count": 13
+      },
+      {
+        "true": "COOK",
+        "predicted": "FAN",
+        "count": 12
+      },
+      {
+        "true": "TOILET",
+        "predicted": "PAIN",
+        "count": 11
+      },
+      {
+        "true": "ACCIDENT",
+        "predicted": "PAIN",
+        "count": 9
+      },
+      {
+        "true": "WATER",
+        "predicted": "PAIN",
+        "count": 9
+      }
+    ]
+  },
+  "summary": [
+    {
+      "split": "isolated",
+      "type": "activity",
+      "mean_f1": 0.3545610940136813,
+      "sd_f1": 0.0905865732227986,
+      "participants": 5,
+      "events": 628
+    },
+    {
+      "split": "isolated",
+      "type": "sign",
+      "mean_f1": 0.180618175527416,
+      "sd_f1": 0.0462337687632691,
+      "participants": 5,
+      "events": 490
+    },
+    {
+      "split": "isolated_original_parts",
+      "type": "activity",
+      "mean_f1": 0.3618593765707293,
+      "sd_f1": 0.0895675883346769,
+      "participants": 5,
+      "events": 488
+    },
+    {
+      "split": "isolated_original_parts",
+      "type": "sign",
+      "mean_f1": 0.1886541945086643,
+      "sd_f1": 0.0482829037860649,
+      "participants": 5,
+      "events": 350
+    },
+    {
+      "split": "isolated_seated",
+      "type": "activity",
+      "mean_f1": 0.1102205398288347,
+      "sd_f1": 0.0923335286690926,
+      "participants": 2,
+      "events": 140
+    },
+    {
+      "split": "isolated_seated",
+      "type": "sign",
+      "mean_f1": 0.0957162140439909,
+      "sd_f1": 0.0390628663870871,
+      "participants": 2,
+      "events": 140
+    },
+    {
+      "split": "stories_oracle_boundaries",
+      "type": "activity",
+      "mean_f1": 0.382282328999976,
+      "sd_f1": 0.052129029109031,
+      "participants": 5,
+      "events": 208
+    },
+    {
+      "split": "stories_oracle_boundaries",
+      "type": "sign",
+      "mean_f1": 0.128418351023393,
+      "sd_f1": 0.0354645245127924,
+      "participants": 5,
+      "events": 208
+    }
+  ],
+  "checkpoint_participant_metadata": [
+    {
+      "pid": "P01",
+      "training_participants": [
+        "P02",
+        "P03",
+        "P04",
+        "P05"
+      ],
+      "epochs": 24
+    },
+    {
+      "pid": "P02",
+      "training_participants": [
+        "P01",
+        "P03",
+        "P04",
+        "P05"
+      ],
+      "epochs": 10
+    },
+    {
+      "pid": "P03",
+      "training_participants": [
+        "P01",
+        "P02",
+        "P04",
+        "P05"
+      ],
+      "epochs": 16
+    },
+    {
+      "pid": "P04",
+      "training_participants": [
+        "P01",
+        "P02",
+        "P03",
+        "P05"
+      ],
+      "epochs": 12
+    },
+    {
+      "pid": "P05",
+      "training_participants": [
+        "P01",
+        "P02",
+        "P03",
+        "P04"
+      ],
+      "epochs": 10
+    }
+  ],
+  "archive_sha256": "feec28808fc51ff177dad424870ced5e70e1f32ea3ecd327c547e06e041fc81d"
+}
