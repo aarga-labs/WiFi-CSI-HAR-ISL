@@ -1,0 +1,3 @@
+date,time,pid,part,rx_gain,rows,seconds,rows_per_s,gaps_over_100ms,max_gap_ms,mean_csi,overflow_msgs,csi_file,label_file,video_file,status
+2026-10-15,21:37:29,DAY,empty,12,12620,126.5,99.7,1,112,0.007,0,DAY_empty_20261015_213453.csv,-,DAY_empty_20261015_213453.mp4,kept
+2026-10-15,21:43:40,DAY,empty,12,12082,126.6,95.5,0,81,0.008,0,DAY_empty_20261015_214117.csv,-,DAY_empty_20261015_214117.mp4,kept
