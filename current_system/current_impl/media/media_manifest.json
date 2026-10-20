@@ -1,0 +1,23 @@
+[
+  {
+    "file": "collection_action_pickup.mp4",
+    "frames": 25,
+    "fps": "25/3",
+    "duration": "3.000000",
+    "frame_pdf": "collection_action_pickup_frames.pdf"
+  },
+  {
+    "file": "collection_sign_cook_seated.mp4",
+    "frames": 31,
+    "fps": "25/3",
+    "duration": "3.720000",
+    "frame_pdf": "collection_sign_cook_seated_frames.pdf"
+  },
+  {
+    "file": "collection_story_meal.mp4",
+    "frames": 30,
+    "fps": "25/3",
+    "duration": "3.600000",
+    "frame_pdf": "collection_story_meal_frames.pdf"
+  }
+]

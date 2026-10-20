@@ -1,0 +1,16 @@
+{
+  "total_frames": 42,
+  "current_frames": 10,
+  "new_frames": 8,
+  "replaced_dataset_frames": 2,
+  "current_preview_compiled": true,
+  "current_preview_overfull_boxes": 0,
+  "all_current_slides_visually_inspected": true,
+  "photo_placeholders": 4,
+  "dataset_rows": 2050030,
+  "participant_rows": 2010899,
+  "model": "Retained balanced run FYP_BALANCED_2H_20261017_015419; weights unmodified; no training.",
+  "threshold_scope": "P1-P3 fixed-threshold sweep; classifier graphs use P1-P5.",
+  "full_deck_local_assets": "Several original slide images are unavailable locally; full source checked with temporary placeholders. Preserve original Overleaf assets.",
+  "source_sha256": "b4e314eb271f492eb0b84e2112e86e8ea25c414e356a7f5bfd54f5cce8d8444d"
+}

@@ -1,0 +1,16 @@
+{
+  "total_frames": 42,
+  "current_frames": 10,
+  "current_titles": [
+    "\\begin{frame}{21. Current Dataset: Collection and Coverage}",
+    "\\begin{frame}{22. Current Dataset: Actions and Signs}",
+    "\\begin{frame}{23. Current Dataset: Interleaved Stories}",
+    "\\begin{frame}{24. Current Dataset: CSI Rows and Annotations}",
+    "\\begin{frame}{25. Current Dataset: Recording Rows per Class}",
+    "\\begin{frame}{31. Current Model: Training and Evaluation}",
+    "\\begin{frame}{32. Current Results: Action Recognition}",
+    "\\begin{frame}{33. Current Results: Sign Recognition}",
+    "\\begin{frame}{34. Current Results: Detection Threshold}",
+    "\\begin{frame}{35. Current Results: Continuous Story Recognition}"
+  ]
+}
