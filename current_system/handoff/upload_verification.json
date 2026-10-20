@@ -1,0 +1,15 @@
+{
+  "archive": "/home/adhikkesh/Downloads/FYP_Kaggle_P1_P5/FYP_Phase1_P01_P05_verified.zip",
+  "sha256": "74259c5718d512ffa9cd3bdf63f150badcd6887e0cd2b35f780602e6e13a165c",
+  "bytes": 901985586,
+  "csi_files": 25,
+  "participant_takes": 22,
+  "counts": {
+    "P01": 4,
+    "P02": 3,
+    "P03": 3,
+    "P04": 6,
+    "P05": 6
+  },
+  "crc_and_all_file_hashes_verified": true
+}

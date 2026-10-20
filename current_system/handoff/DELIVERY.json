@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-19",
+  "repository": "aarga-labs/FYP",
+  "repository_private": true,
+  "branch": "main",
+  "initial_handoff_commit": "cd9865e44a040885846c77b42b795dfdbfad8456",
+  "release": {
+    "id": 417589673,
+    "tag": "handoff-2026-10-19",
+    "url": "https://github.com/aarga-labs/FYP/releases/tag/handoff-2026-10-19",
+    "published": true,
+    "assets": [
+      {
+        "key": "dataset",
+        "name": "FYP_Phase1_P01_P05_verified.zip",
+        "bytes": 901985586,
+        "sha256": "74259c5718d512ffa9cd3bdf63f150badcd6887e0cd2b35f780602e6e13a165c",
+        "server_digest_verified": true
+      },
+      {
+        "key": "balanced_checkpoints",
+        "name": "FYP_BALANCED_2H_20261017_015419_checkpoints_and_results.zip",
+        "bytes": 223701478,
+        "sha256": "ef5da6338cddb7923d7321e48fb68a42c8268c5d938b2c0a156e848d0f33c02d",
+        "server_digest_verified": true
+      },
+      {
+        "key": "fast_checkpoints",
+        "name": "FYP_FAST_2H_20261017_010129_checkpoints_and_results.zip",
+        "bytes": 125043665,
+        "sha256": "6b579207aa3fa7142813265b4ddaef3a6c6303e1362e0f2291d6cff7cb89c13d",
+        "server_digest_verified": true
+      },
+      {
+        "key": "balanced_inference",
+        "name": "Balanced_All5_Inference_Model.zip",
+        "bytes": 5897164,
+        "sha256": "c977055930346fcfc281f95a23485d2997c62f363c59b345de2af9c016d3cbae",
+        "server_digest_verified": true
+      }
+    ]
+  },
+  "fresh_remote_clone_evidence_verifier": "passed at initial handoff commit; see VALIDATION.json",
+  "fresh_remote_clone_asset_download": "balanced_inference downloaded with handoff/fetch_assets.py and SHA256 verified",
+  "large_asset_policy": "Raw CSI and full checkpoint archives are private release attachments; paper evidence, source and small final inference weights are normal Git files.",
+  "local_training_executed": false,
+  "notes": [
+    "This file records the initial handoff delivery. Later changes must be checked against current main and current asset digests.",
+    "Personal chat exports, credentials, virtual environments, generated caches and rejected fabricated data are intentionally excluded."
+  ]
+}
