@@ -1,0 +1,12 @@
+{
+  "fingerprint": "f01651df3c4b758f3cbec5dd742669b4f0605a9f11c24162aecd662949dede62",
+  "streams": 22,
+  "participants": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05"
+  ],
+  "dataset_root": "/kaggle/input/datasets/adhikkeshsk/fyp-dataset/phase1"
+}

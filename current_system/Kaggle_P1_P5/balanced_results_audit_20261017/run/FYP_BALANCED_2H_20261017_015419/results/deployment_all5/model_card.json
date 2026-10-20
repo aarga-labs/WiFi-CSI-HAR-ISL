@@ -1,0 +1,92 @@
+{
+  "roles": {
+    "detector": "normalized4",
+    "action": "normalized4",
+    "sign": "normalized4"
+  },
+  "architectures": {
+    "residual4": {
+      "name": "residual4",
+      "kind": "residual",
+      "seconds": 4
+    },
+    "residual6": {
+      "name": "residual6",
+      "kind": "residual",
+      "seconds": 6
+    },
+    "normalized4": {
+      "name": "normalized4",
+      "kind": "residual",
+      "seconds": 4,
+      "representation": "window_normalized"
+    }
+  },
+  "epochs": {
+    "normalized4": 12
+  },
+  "models": {
+    "normalized4": [
+      "models/normalized4/seed_17/best.pt",
+      "models/normalized4/seed_29/best.pt"
+    ]
+  },
+  "seeds": [
+    17,
+    29
+  ],
+  "tau": 0.5999999999999999,
+  "action_tree_weight": 0.0,
+  "classes": [
+    "walk",
+    "sitstand",
+    "pickup",
+    "lightswitch",
+    "drink",
+    "answerphone",
+    "eat",
+    "wipetable",
+    "tvremote",
+    "fall",
+    "chop_food",
+    "stir_pot",
+    "HELLO",
+    "THANKYOU",
+    "LAMP",
+    "FAN",
+    "TELEVISION",
+    "COOK",
+    "WATER",
+    "HOT",
+    "HUNGRY",
+    "TOILET",
+    "CALL",
+    "HELP",
+    "PAIN",
+    "ACCIDENT"
+  ],
+  "states": [
+    "idle",
+    "activity",
+    "sign"
+  ],
+  "fs": 50,
+  "training_participants": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05"
+  ],
+  "dataset": "f01651df3c4b758f3cbec5dd742669b4f0605a9f11c24162aecd662949dede62",
+  "completed_evaluation_folds": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05"
+  ],
+  "evaluation_status": "complete",
+  "validation": "Deployment refit has no independent score. Changes were informed by the earlier benchmark; fresh recordings are needed for final confirmation.",
+  "inference": "Offline centered windows; role-specific two-seed ensemble. Tree fusion is isolated-event only."
+}

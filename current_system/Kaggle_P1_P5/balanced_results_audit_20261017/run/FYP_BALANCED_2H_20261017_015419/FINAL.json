@@ -1,0 +1,27 @@
+{
+  "out": "/kaggle/working/FYP_BALANCED_2H_20261017_015419/results",
+  "streams": "/kaggle/working/FYP_BALANCED_2H_20261017_015419/cache/prepared_streams.joblib",
+  "fingerprint": "f01651df3c4b758f3cbec5dd742669b4f0605a9f11c24162aecd662949dede62",
+  "cfg": {
+    "epochs": 100,
+    "patience": 8,
+    "min_epochs": 24,
+    "passes_per_epoch": 1.0,
+    "batch_size": 256,
+    "lr": 0.001,
+    "weight_decay": 0.01,
+    "seed": 17,
+    "seeds": [
+      17,
+      29
+    ],
+    "val_every": 4,
+    "tree_estimators": 300
+  },
+  "pid": "FINAL",
+  "spec_path": "/kaggle/working/FYP_BALANCED_2H_20261017_015419/FINAL.json",
+  "progress": "/kaggle/working/FYP_BALANCED_2H_20261017_015419/FINAL.progress.json",
+  "deadline": 1792206152.4154243,
+  "max_job_seconds": 1740,
+  "gpu": 0
+}

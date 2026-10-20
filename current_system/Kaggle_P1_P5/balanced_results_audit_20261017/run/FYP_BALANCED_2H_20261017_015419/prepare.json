@@ -1,0 +1,13 @@
+{
+  "pid": "PREPARE",
+  "spec_path": "/kaggle/working/FYP_BALANCED_2H_20261017_015419/prepare.json",
+  "progress": "/kaggle/working/FYP_BALANCED_2H_20261017_015419/prepare.progress.json",
+  "deadline": 1792202659.6164885,
+  "work": "/kaggle/working/FYP_BALANCED_2H_20261017_015419",
+  "data": {
+    "root": "",
+    "zip": "",
+    "sha": "74259c5718d512ffa9cd3bdf63f150badcd6887e0cd2b35f780602e6e13a165c"
+  },
+  "gpu": 0
+}

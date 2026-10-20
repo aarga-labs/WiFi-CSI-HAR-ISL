@@ -1,0 +1,6 @@
+{
+  "story_auc": 0.853395061728395,
+  "story_hierarchical_accuracy": 0.4027777777777778,
+  "story_oracle_boundary_note": "Fine identity uses known event boundaries/type; event detection and intent metrics do not.",
+  "missing_prediction_policy": "Fully covered labels without usable windows remain as unavailable and count as misses."
+}

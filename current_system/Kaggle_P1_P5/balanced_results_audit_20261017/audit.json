@@ -1,0 +1,971 @@
+{
+  "archive_crc": "passed",
+  "archive_sha256": "adc3adc8d4481311b36547c98f95fa40fc747ff724d5c214a84b8899a6c161cd",
+  "local_training_executed": false,
+  "checkpoint_checks": [
+    {
+      "pid": "P01",
+      "path": "P01/models/normalized4/seed_17/last.pt",
+      "train": [
+        "P02",
+        "P03",
+        "P04",
+        "P05"
+      ],
+      "val": [],
+      "epoch": 60,
+      "steps": 208,
+      "updates": 12480,
+      "cosine_horizon": 100
+    },
+    {
+      "pid": "P01",
+      "path": "P01/models/normalized4/seed_29/last.pt",
+      "train": [
+        "P02",
+        "P03",
+        "P04",
+        "P05"
+      ],
+      "val": [],
+      "epoch": 60,
+      "steps": 208,
+      "updates": 12480,
+      "cosine_horizon": 100
+    },
+    {
+      "pid": "P01",
+      "path": "P01/models/residual6/seed_17/last.pt",
+      "train": [
+        "P02",
+        "P03",
+        "P04",
+        "P05"
+      ],
+      "val": [],
+      "epoch": 52,
+      "steps": 208,
+      "updates": 10816,
+      "cosine_horizon": 100
+    },
+    {
+      "pid": "P01",
+      "path": "P01/models/residual6/seed_29/last.pt",
+      "train": [
+        "P02",
+        "P03",
+        "P04",
+        "P05"
+      ],
+      "val": [],
+      "epoch": 52,
+      "steps": 208,
+      "updates": 10816,
+      "cosine_horizon": 100
+    },
+    {
+      "pid": "P01",
+      "path": "P01/selection/normalized4/last.pt",
+      "train": [
+        "P02",
+        "P03",
+        "P05"
+      ],
+      "val": [
+        "P04"
+      ],
+      "epoch": 92,
+      "steps": 137,
+      "updates": 12604,
+      "cosine_horizon": 100
+    },
+    {
+      "pid": "P01",
+      "path": "P01/selection/residual4/last.pt",
+      "train": [
+        "P02",
+        "P03",
+        "P05"
+      ],
+      "val": [
+        "P04"
+      ],
+      "epoch": 100,
+      "steps": 137,
+      "updates": 13700,
+      "cosine_horizon": 100
+    },
+    {
+      "pid": "P01",
+      "path": "P01/selection/residual6/last.pt",
+      "train": [
+        "P02",
+        "P03",
+        "P05"
+      ],
+      "val": [
+        "P04"
+      ],
+      "epoch": 84,
+      "steps": 137,
+      "updates": 11508,
+      "cosine_horizon": 100
+    },
+    {
+      "pid": "P02",
+      "path": "P02/models/normalized4/seed_17/last.pt",
+      "train": [
+        "P01",
+        "P03",
+        "P04",
+        "P05"
+      ],
+      "val": [],
+      "epoch": 60,
+      "steps": 216,
+      "updates": 12960,
+      "cosine_horizon": 100
+    },
+    {
+      "pid": "P02",
+      "path": "P02/models/normalized4/seed_29/last.pt",
+      "train": [
+        "P01",
+        "P03",
+        "P04",
+        "P05"
+      ],
+      "val": [],
+      "epoch": 60,
+      "steps": 216,
+      "updates": 12960,
+      "cosine_horizon": 100
+    },
+    {
+      "pid": "P02",
+      "path": "P02/models/residual4/seed_17/last.pt",
+      "train": [
+        "P01",
+        "P03",
+        "P04",
+        "P05"
+      ],
+      "val": [],
+      "epoch": 24,
+      "steps": 216,
+      "updates": 5184,
+      "cosine_horizon": 100
+    },
+    {
+      "pid": "P02",
+      "path": "P02/models/residual4/seed_29/last.pt",
+      "train": [
+        "P01",
+        "P03",
+        "P04",
+        "P05"
+      ],
+      "val": [],
+      "epoch": 24,
+      "steps": 216,
+      "updates": 5184,
+      "cosine_horizon": 100
+    },
+    {
+      "pid": "P02",
+      "path": "P02/selection/normalized4/last.pt",
+      "train": [
+        "P01",
+        "P03",
+        "P04"
+      ],
+      "val": [
+        "P05"
+      ],
+      "epoch": 92,
+      "steps": 145,
+      "updates": 13340,
+      "cosine_horizon": 100
+    },
+    {
+      "pid": "P02",
+      "path": "P02/selection/residual4/last.pt",
+      "train": [
+        "P01",
+        "P03",
+        "P04"
+      ],
+      "val": [
+        "P05"
+      ],
+      "epoch": 56,
+      "steps": 145,
+      "updates": 8120,
+      "cosine_horizon": 100
+    },
+    {
+      "pid": "P02",
+      "path": "P02/selection/residual6/last.pt",
+      "train": [
+        "P01",
+        "P03",
+        "P04"
+      ],
+      "val": [
+        "P05"
+      ],
+      "epoch": 72,
+      "steps": 145,
+      "updates": 10440,
+      "cosine_horizon": 100
+    },
+    {
+      "pid": "P03",
+      "path": "P03/models/normalized4/seed_17/last.pt",
+      "train": [
+        "P01",
+        "P02",
+        "P04",
+        "P05"
+      ],
+      "val": [],
+      "epoch": 12,
+      "steps": 210,
+      "updates": 2520,
+      "cosine_horizon": 100
+    },
+    {
+      "pid": "P03",
+      "path": "P03/models/normalized4/seed_29/last.pt",
+      "train": [
+        "P01",
+        "P02",
+        "P04",
+        "P05"
+      ],
+      "val": [],
+      "epoch": 12,
+      "steps": 210,
+      "updates": 2520,
+      "cosine_horizon": 100
+    },
+    {
+      "pid": "P03",
+      "path": "P03/models/residual6/seed_17/last.pt",
+      "train": [
+        "P01",
+        "P02",
+        "P04",
+        "P05"
+      ],
+      "val": [],
+      "epoch": 24,
+      "steps": 210,
+      "updates": 5040,
+      "cosine_horizon": 100
+    },
+    {
+      "pid": "P03",
+      "path": "P03/models/residual6/seed_29/last.pt",
+      "train": [
+        "P01",
+        "P02",
+        "P04",
+        "P05"
+      ],
+      "val": [],
+      "epoch": 24,
+      "steps": 210,
+      "updates": 5040,
+      "cosine_horizon": 100
+    },
+    {
+      "pid": "P03",
+      "path": "P03/selection/normalized4/last.pt",
+      "train": [
+        "P02",
+        "P04",
+        "P05"
+      ],
+      "val": [
+        "P01"
+      ],
+      "epoch": 44,
+      "steps": 173,
+      "updates": 7612,
+      "cosine_horizon": 100
+    },
+    {
+      "pid": "P03",
+      "path": "P03/selection/residual4/last.pt",
+      "train": [
+        "P02",
+        "P04",
+        "P05"
+      ],
+      "val": [
+        "P01"
+      ],
+      "epoch": 68,
+      "steps": 173,
+      "updates": 11764,
+      "cosine_horizon": 100
+    },
+    {
+      "pid": "P03",
+      "path": "P03/selection/residual6/last.pt",
+      "train": [
+        "P02",
+        "P04",
+        "P05"
+      ],
+      "val": [
+        "P01"
+      ],
+      "epoch": 56,
+      "steps": 173,
+      "updates": 9688,
+      "cosine_horizon": 100
+    },
+    {
+      "pid": "P04",
+      "path": "P04/models/normalized4/seed_17/last.pt",
+      "train": [
+        "P01",
+        "P02",
+        "P03",
+        "P05"
+      ],
+      "val": [],
+      "epoch": 12,
+      "steps": 175,
+      "updates": 2100,
+      "cosine_horizon": 100
+    },
+    {
+      "pid": "P04",
+      "path": "P04/models/normalized4/seed_29/last.pt",
+      "train": [
+        "P01",
+        "P02",
+        "P03",
+        "P05"
+      ],
+      "val": [],
+      "epoch": 12,
+      "steps": 175,
+      "updates": 2100,
+      "cosine_horizon": 100
+    },
+    {
+      "pid": "P04",
+      "path": "P04/models/residual6/seed_17/last.pt",
+      "train": [
+        "P01",
+        "P02",
+        "P03",
+        "P05"
+      ],
+      "val": [],
+      "epoch": 28,
+      "steps": 175,
+      "updates": 4900,
+      "cosine_horizon": 100
+    },
+    {
+      "pid": "P04",
+      "path": "P04/models/residual6/seed_29/last.pt",
+      "train": [
+        "P01",
+        "P02",
+        "P03",
+        "P05"
+      ],
+      "val": [],
+      "epoch": 28,
+      "steps": 175,
+      "updates": 4900,
+      "cosine_horizon": 100
+    },
+    {
+      "pid": "P04",
+      "path": "P04/selection/normalized4/last.pt",
+      "train": [
+        "P01",
+        "P03",
+        "P05"
+      ],
+      "val": [
+        "P02"
+      ],
+      "epoch": 44,
+      "steps": 145,
+      "updates": 6380,
+      "cosine_horizon": 100
+    },
+    {
+      "pid": "P04",
+      "path": "P04/selection/residual4/last.pt",
+      "train": [
+        "P01",
+        "P03",
+        "P05"
+      ],
+      "val": [
+        "P02"
+      ],
+      "epoch": 76,
+      "steps": 145,
+      "updates": 11020,
+      "cosine_horizon": 100
+    },
+    {
+      "pid": "P04",
+      "path": "P04/selection/residual6/last.pt",
+      "train": [
+        "P01",
+        "P03",
+        "P05"
+      ],
+      "val": [
+        "P02"
+      ],
+      "epoch": 60,
+      "steps": 145,
+      "updates": 8700,
+      "cosine_horizon": 100
+    },
+    {
+      "pid": "P05",
+      "path": "P05/models/normalized4/seed_17/last.pt",
+      "train": [
+        "P01",
+        "P02",
+        "P03",
+        "P04"
+      ],
+      "val": [],
+      "epoch": 8,
+      "steps": 174,
+      "updates": 1392,
+      "cosine_horizon": 100
+    },
+    {
+      "pid": "P05",
+      "path": "P05/models/normalized4/seed_29/last.pt",
+      "train": [
+        "P01",
+        "P02",
+        "P03",
+        "P04"
+      ],
+      "val": [],
+      "epoch": 8,
+      "steps": 174,
+      "updates": 1392,
+      "cosine_horizon": 100
+    },
+    {
+      "pid": "P05",
+      "path": "P05/selection/normalized4/last.pt",
+      "train": [
+        "P01",
+        "P02",
+        "P04"
+      ],
+      "val": [
+        "P03"
+      ],
+      "epoch": 40,
+      "steps": 139,
+      "updates": 5560,
+      "cosine_horizon": 100
+    },
+    {
+      "pid": "P05",
+      "path": "P05/selection/residual4/last.pt",
+      "train": [
+        "P01",
+        "P02",
+        "P04"
+      ],
+      "val": [
+        "P03"
+      ],
+      "epoch": 80,
+      "steps": 139,
+      "updates": 11120,
+      "cosine_horizon": 100
+    },
+    {
+      "pid": "P05",
+      "path": "P05/selection/residual6/last.pt",
+      "train": [
+        "P01",
+        "P02",
+        "P04"
+      ],
+      "val": [
+        "P03"
+      ],
+      "epoch": 72,
+      "steps": 139,
+      "updates": 10008,
+      "cosine_horizon": 100
+    }
+  ],
+  "metrics_recomputed": true,
+  "identical_evaluation_event_ids": true,
+  "unavailable_event_predictions": 1,
+  "metrics_recomputed_rows": 34,
+  "deployment_model_card": {
+    "roles": {
+      "detector": "normalized4",
+      "action": "normalized4",
+      "sign": "normalized4"
+    },
+    "architectures": {
+      "residual4": {
+        "name": "residual4",
+        "kind": "residual",
+        "seconds": 4
+      },
+      "residual6": {
+        "name": "residual6",
+        "kind": "residual",
+        "seconds": 6
+      },
+      "normalized4": {
+        "name": "normalized4",
+        "kind": "residual",
+        "seconds": 4,
+        "representation": "window_normalized"
+      }
+    },
+    "epochs": {
+      "normalized4": 12
+    },
+    "models": {
+      "normalized4": [
+        "models/normalized4/seed_17/best.pt",
+        "models/normalized4/seed_29/best.pt"
+      ]
+    },
+    "seeds": [
+      17,
+      29
+    ],
+    "tau": 0.5999999999999999,
+    "action_tree_weight": 0.0,
+    "classes": [
+      "walk",
+      "sitstand",
+      "pickup",
+      "lightswitch",
+      "drink",
+      "answerphone",
+      "eat",
+      "wipetable",
+      "tvremote",
+      "fall",
+      "chop_food",
+      "stir_pot",
+      "HELLO",
+      "THANKYOU",
+      "LAMP",
+      "FAN",
+      "TELEVISION",
+      "COOK",
+      "WATER",
+      "HOT",
+      "HUNGRY",
+      "TOILET",
+      "CALL",
+      "HELP",
+      "PAIN",
+      "ACCIDENT"
+    ],
+    "states": [
+      "idle",
+      "activity",
+      "sign"
+    ],
+    "fs": 50,
+    "training_participants": [
+      "P01",
+      "P02",
+      "P03",
+      "P04",
+      "P05"
+    ],
+    "dataset": "f01651df3c4b758f3cbec5dd742669b4f0605a9f11c24162aecd662949dede62",
+    "completed_evaluation_folds": [
+      "P01",
+      "P02",
+      "P03",
+      "P04",
+      "P05"
+    ],
+    "evaluation_status": "complete",
+    "validation": "Deployment refit has no independent score. Changes were informed by the earlier benchmark; fresh recordings are needed for final confirmation.",
+    "inference": "Offline centered windows; role-specific two-seed ensemble. Tree fusion is isolated-event only."
+  },
+  "deployment_cpu_load_and_forward": "passed, both seeds; no training",
+  "deployment_updates": [
+    {
+      "seed": "seed_17",
+      "epochs": 12,
+      "steps": 246,
+      "updates": 2952
+    },
+    {
+      "seed": "seed_29",
+      "epochs": 12,
+      "steps": 246,
+      "updates": 2952
+    }
+  ],
+  "summary_comparison": [
+    {
+      "split": "isolated",
+      "type": "activity",
+      "mean_f1_new": 0.502294148782432,
+      "sd_f1_new": 0.0841145544785871,
+      "participants_new": 5,
+      "events_new": 628,
+      "mean_f1_old": 0.3545610940136813,
+      "sd_f1_old": 0.0905865732227986,
+      "participants_old": 5,
+      "events_old": 628,
+      "change_percentage_points": 14.773305476875064
+    },
+    {
+      "split": "isolated",
+      "type": "sign",
+      "mean_f1_new": 0.3323200776397995,
+      "sd_f1_new": 0.0296305464643273,
+      "participants_new": 5,
+      "events_new": 490,
+      "mean_f1_old": 0.180618175527416,
+      "sd_f1_old": 0.0462337687632691,
+      "participants_old": 5,
+      "events_old": 490,
+      "change_percentage_points": 15.17019021123835
+    },
+    {
+      "split": "isolated_original_parts",
+      "type": "activity",
+      "mean_f1_new": 0.5304250454701405,
+      "sd_f1_new": 0.0726291286189167,
+      "participants_new": 5,
+      "events_new": 488,
+      "mean_f1_old": 0.3618593765707293,
+      "sd_f1_old": 0.0895675883346769,
+      "participants_old": 5,
+      "events_old": 488,
+      "change_percentage_points": 16.856566889941117
+    },
+    {
+      "split": "isolated_original_parts",
+      "type": "sign",
+      "mean_f1_new": 0.3654160438068,
+      "sd_f1_new": 0.0556403666728021,
+      "participants_new": 5,
+      "events_new": 350,
+      "mean_f1_old": 0.1886541945086643,
+      "sd_f1_old": 0.0482829037860649,
+      "participants_old": 5,
+      "events_old": 350,
+      "change_percentage_points": 17.67618492981357
+    },
+    {
+      "split": "isolated_seated",
+      "type": "activity",
+      "mean_f1_new": 0.1939172697050848,
+      "sd_f1_new": 0.0876035655165751,
+      "participants_new": 2,
+      "events_new": 140,
+      "mean_f1_old": 0.1102205398288347,
+      "sd_f1_old": 0.0923335286690926,
+      "participants_old": 2,
+      "events_old": 140,
+      "change_percentage_points": 8.369672987625009
+    },
+    {
+      "split": "isolated_seated",
+      "type": "sign",
+      "mean_f1_new": 0.1995313675709518,
+      "sd_f1_new": 0.065264149453516,
+      "participants_new": 2,
+      "events_new": 140,
+      "mean_f1_old": 0.0957162140439909,
+      "sd_f1_old": 0.0390628663870871,
+      "participants_old": 2,
+      "events_old": 140,
+      "change_percentage_points": 10.38151535269609
+    },
+    {
+      "split": "stories_oracle_boundaries",
+      "type": "activity",
+      "mean_f1_new": 0.523659281650661,
+      "sd_f1_new": 0.1354685699724965,
+      "participants_new": 5,
+      "events_new": 208,
+      "mean_f1_old": 0.382282328999976,
+      "sd_f1_old": 0.052129029109031,
+      "participants_old": 5,
+      "events_old": 208,
+      "change_percentage_points": 14.137695265068501
+    },
+    {
+      "split": "stories_oracle_boundaries",
+      "type": "sign",
+      "mean_f1_new": 0.247111975326261,
+      "sd_f1_new": 0.0761250961173636,
+      "participants_new": 5,
+      "events_new": 208,
+      "mean_f1_old": 0.128418351023393,
+      "sd_f1_old": 0.0354645245127924,
+      "participants_old": 5,
+      "events_old": 208,
+      "change_percentage_points": 11.8693624302868
+    }
+  ],
+  "class_comparison": [
+    {
+      "label": "walk",
+      "type": "activity",
+      "f1-score_new": 0.9108910891089108,
+      "f1-score_old": 0.8035714285714286,
+      "change_percentage_points": 10.73196605374822,
+      "support_new": 46.0
+    },
+    {
+      "label": "sitstand",
+      "type": "activity",
+      "f1-score_new": 0.6391752577319587,
+      "f1-score_old": 0.4271844660194174,
+      "change_percentage_points": 21.19907917125413,
+      "support_new": 48.0
+    },
+    {
+      "label": "pickup",
+      "type": "activity",
+      "f1-score_new": 0.8080808080808081,
+      "f1-score_old": 0.3853211009174312,
+      "change_percentage_points": 42.27597071633768,
+      "support_new": 48.0
+    },
+    {
+      "label": "lightswitch",
+      "type": "activity",
+      "f1-score_new": 0.5102040816326531,
+      "f1-score_old": 0.375,
+      "change_percentage_points": 13.520408163265307,
+      "support_new": 48.0
+    },
+    {
+      "label": "drink",
+      "type": "activity",
+      "f1-score_new": 0.4328358208955223,
+      "f1-score_old": 0.24,
+      "change_percentage_points": 19.283582089552233,
+      "support_new": 67.0
+    },
+    {
+      "label": "answerphone",
+      "type": "activity",
+      "f1-score_new": 0.3283582089552239,
+      "f1-score_old": 0.1607142857142857,
+      "change_percentage_points": 16.76439232409382,
+      "support_new": 67.0
+    },
+    {
+      "label": "eat",
+      "type": "activity",
+      "f1-score_new": 0.5263157894736842,
+      "f1-score_old": 0.358695652173913,
+      "change_percentage_points": 16.762013729977117,
+      "support_new": 67.0
+    },
+    {
+      "label": "wipetable",
+      "type": "activity",
+      "f1-score_new": 0.4925373134328358,
+      "f1-score_old": 0.3098591549295774,
+      "change_percentage_points": 18.267815850325842,
+      "support_new": 67.0
+    },
+    {
+      "label": "tvremote",
+      "type": "activity",
+      "f1-score_new": 0.1121495327102803,
+      "f1-score_old": 0.1555555555555555,
+      "change_percentage_points": -4.34060228452752,
+      "support_new": 67.0
+    },
+    {
+      "label": "fall",
+      "type": "activity",
+      "f1-score_new": 0.4878048780487805,
+      "f1-score_old": 0.4489795918367347,
+      "change_percentage_points": 3.882528621204578,
+      "support_new": 23.0
+    },
+    {
+      "label": "chop_food",
+      "type": "activity",
+      "f1-score_new": 0.1632653061224489,
+      "f1-score_old": 0.0,
+      "change_percentage_points": 16.32653061224489,
+      "support_new": 40.0
+    },
+    {
+      "label": "stir_pot",
+      "type": "activity",
+      "f1-score_new": 0.4395604395604395,
+      "f1-score_old": 0.1690140845070422,
+      "change_percentage_points": 27.054635505339732,
+      "support_new": 40.0
+    },
+    {
+      "label": "HELLO",
+      "type": "sign",
+      "f1-score_new": 0.3505154639175257,
+      "f1-score_old": 0.2564102564102564,
+      "change_percentage_points": 9.410520750726931,
+      "support_new": 35.0
+    },
+    {
+      "label": "THANKYOU",
+      "type": "sign",
+      "f1-score_new": 0.0434782608695652,
+      "f1-score_old": 0.1791044776119403,
+      "change_percentage_points": -13.562621674237507,
+      "support_new": 35.0
+    },
+    {
+      "label": "LAMP",
+      "type": "sign",
+      "f1-score_new": 0.4307692307692308,
+      "f1-score_old": 0.3,
+      "change_percentage_points": 13.07692307692308,
+      "support_new": 35.0
+    },
+    {
+      "label": "FAN",
+      "type": "sign",
+      "f1-score_new": 0.4923076923076923,
+      "f1-score_old": 0.3095238095238095,
+      "change_percentage_points": 18.27838827838828,
+      "support_new": 35.0
+    },
+    {
+      "label": "TELEVISION",
+      "type": "sign",
+      "f1-score_new": 0.2295081967213114,
+      "f1-score_old": 0.125,
+      "change_percentage_points": 10.45081967213114,
+      "support_new": 35.0
+    },
+    {
+      "label": "COOK",
+      "type": "sign",
+      "f1-score_new": 0.6578947368421053,
+      "f1-score_old": 0.34375,
+      "change_percentage_points": 31.41447368421053,
+      "support_new": 35.0
+    },
+    {
+      "label": "WATER",
+      "type": "sign",
+      "f1-score_new": 0.1111111111111111,
+      "f1-score_old": 0.074074074074074,
+      "change_percentage_points": 3.7037037037037104,
+      "support_new": 35.0
+    },
+    {
+      "label": "HOT",
+      "type": "sign",
+      "f1-score_new": 0.3235294117647059,
+      "f1-score_old": 0.1408450704225352,
+      "change_percentage_points": 18.26843413421707,
+      "support_new": 35.0
+    },
+    {
+      "label": "HUNGRY",
+      "type": "sign",
+      "f1-score_new": 0.4761904761904761,
+      "f1-score_old": 0.1290322580645161,
+      "change_percentage_points": 34.715821812596005,
+      "support_new": 35.0
+    },
+    {
+      "label": "TOILET",
+      "type": "sign",
+      "f1-score_new": 0.1739130434782608,
+      "f1-score_old": 0.0,
+      "change_percentage_points": 17.391304347826082,
+      "support_new": 35.0
+    },
+    {
+      "label": "CALL",
+      "type": "sign",
+      "f1-score_new": 0.2580645161290322,
+      "f1-score_old": 0.1311475409836065,
+      "change_percentage_points": 12.691697514542568,
+      "support_new": 35.0
+    },
+    {
+      "label": "HELP",
+      "type": "sign",
+      "f1-score_new": 0.3783783783783784,
+      "f1-score_old": 0.2571428571428571,
+      "change_percentage_points": 12.123552123552129,
+      "support_new": 35.0
+    },
+    {
+      "label": "PAIN",
+      "type": "sign",
+      "f1-score_new": 0.3673469387755102,
+      "f1-score_old": 0.2608695652173913,
+      "change_percentage_points": 10.647737355811893,
+      "support_new": 35.0
+    },
+    {
+      "label": "ACCIDENT",
+      "type": "sign",
+      "f1-score_new": 0.3636363636363636,
+      "f1-score_old": 0.1481481481481481,
+      "change_percentage_points": 21.548821548821547,
+      "support_new": 35.0
+    }
+  ],
+  "story_totals": {
+    "n_true": 208.0,
+    "n_pred": 239.0,
+    "detected": 121.0,
+    "identified": 39.0,
+    "intent_correct": 32.0,
+    "false_on_routine": 50.0,
+    "routine_seconds": 1218.06
+  },
+  "story_identity_recall": 0.1875,
+  "story_intent_success": 0.15384615384615385,
+  "measured_routine_minutes": 20.301,
+  "routine_false_command_rate": 147.77597162701346,
+  "previous_story_totals": {
+    "n_true": 208.0,
+    "n_pred": 310.0,
+    "detected": 135.0,
+    "identified": 31.0,
+    "intent_correct": 25.0,
+    "false_on_routine": 93.0,
+    "routine_seconds": 1218.06
+  },
+  "inference_package": {
+    "path": "/home/adhikkesh/adhikkesh/FYP/Kaggle_P1_P5/balanced_results_audit_20261017/Balanced_All5_Inference_Model.zip",
+    "bytes": 5897164,
+    "sha256": "c977055930346fcfc281f95a23485d2997c62f363c59b345de2af9c016d3cbae"
+  }
+}

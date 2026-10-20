@@ -1,0 +1,55 @@
+{
+  "roles": {
+    "detector": "normalized4",
+    "action": "normalized4",
+    "sign": "normalized4"
+  },
+  "architectures": {
+    "residual4": {
+      "name": "residual4",
+      "kind": "residual",
+      "seconds": 4
+    },
+    "residual6": {
+      "name": "residual6",
+      "kind": "residual",
+      "seconds": 6
+    },
+    "normalized4": {
+      "name": "normalized4",
+      "kind": "residual",
+      "seconds": 4,
+      "representation": "window_normalized"
+    }
+  },
+  "epochs": {
+    "residual4": 48,
+    "residual6": 40,
+    "normalized4": 8
+  },
+  "tau": 0.3,
+  "action_tree_weight": 0.5,
+  "validation_pid": "P03",
+  "training_pids": [
+    "P01",
+    "P02",
+    "P03",
+    "P04"
+  ],
+  "test_pid": "P05",
+  "validation_fusion": [
+    {
+      "weight": 0.0,
+      "score": 0.5498631636562671
+    },
+    {
+      "weight": 0.5,
+      "score": 0.6023494499248975
+    },
+    {
+      "weight": 1.0,
+      "score": 0.33737703733991165
+    }
+  ],
+  "protocol": "Fixed participant validation; role-specific architecture; two-seed refit; dataset-scaled epochs."
+}

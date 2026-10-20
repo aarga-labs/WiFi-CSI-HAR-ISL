@@ -1,0 +1,5 @@
+{
+  "test": "P04",
+  "version": "p1p5-balanced-2h-v2",
+  "protocol": "Fixed participant validation; role-specific architecture; two-seed refit; dataset-scaled epochs."
+}
