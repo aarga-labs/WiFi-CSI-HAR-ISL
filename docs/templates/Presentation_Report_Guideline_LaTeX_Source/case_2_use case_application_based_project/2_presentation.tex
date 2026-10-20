@@ -1,0 +1,139 @@
+\documentclass[aspectratio=169, 11pt]{beamer}
+
+% --- Packages & Setup ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\usepackage{booktabs} 
+\usepackage{graphicx}
+\usepackage{tikz} % Required for the corner box
+\usetikzlibrary{calc}
+
+% Try loading Open Sans; fallback if missing
+\IfFileExists{opensans.sty}{\usepackage[default,scale=0.95]{opensans}}{}
+
+% --- Branding Colors ---
+\definecolor{amritaMaroon}{HTML}{A4123F} 
+
+% --- Theme Setup ---
+\usetheme{Madrid}
+\usecolortheme[named=amritaMaroon]{structure}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+
+\begin{document}
+
+% --- CUSTOM TITLE SLIDE (Application) ---
+\begin{frame}
+    % Corner Box Indicator
+    \begin{tikzpicture}[remember picture,overlay]
+        \node[fill=amritaMaroon, text=white, font=\bfseries\footnotesize, anchor=north east, rounded corners=2pt, inner sep=5pt] 
+        at ($(current page.north east) + (-0.2cm,-0.2cm)$) 
+        {Type 2: Application Project};
+    \end{tikzpicture}
+
+    \centering
+    \includegraphics[width=3.5cm]{logo.png} 
+    \vspace{0.3cm}
+    
+    {\Large \textbf{\textcolor{amritaMaroon}{APPLICATION PROJECT TITLE}}} \\
+    \vspace{0.2cm}
+    {\normalsize \textbf{Team Number: [XX]}} \\ 
+    \vspace{0.5cm}
+
+    % Student Table
+    \begin{table}
+        \centering
+        \small 
+        \renewcommand{\arraystretch}{1.2}
+        \begin{tabular}{|c|c|l|}
+            \hline
+            \textbf{S.No} & \textbf{Register Number} & \textbf{Student Name} \\
+            \hline
+            1 & CB.EN.U4CSE23XXX & Student Name 1 \\
+            \hline
+            2 & CB.EN.U4CSE23XXX & Student Name 2 \\
+            \hline
+            3 & CB.EN.U4CSE23XXX & Student Name 3 \\
+            \hline
+            4 & CB.EN.U4CSE23XXX & Student Name 4 \\
+            \hline
+        \end{tabular}
+    \end{table}
+    \vspace{0.3cm}
+    
+    Guide: \textbf{Guide Name} \\
+    {\footnotesize Designation, Department of CSE}
+    
+    \vspace{0.5cm}
+    {\footnotesize \today}
+\end{frame}
+
+% --- SLIDE 1: USE CASE (Rubric: 4 Marks) ---
+\section{Use Case}
+\begin{frame}{1. Originality of Use Case}
+    \framesubtitle{Rubric: Novel Use Case \& Applicability}
+    \begin{itemize}
+        \item \textbf{Problem Context:} Lack of [Solution] in [Domain].
+        \item \textbf{Innovation Type:}
+        \begin{itemize}
+            \item \textbf{Adaptation:} Applying [Tech] to [New Context].
+            \item \textbf{Improvement:} Enhancing existing app with [Feature].
+        \end{itemize}
+        \item \textbf{Real-World Applicability:} Validated by [Stakeholder/Survey].
+    \end{itemize}
+\end{frame}
+
+% --- SLIDE 2: BENCHMARKING (Rubric: 6 Marks) ---
+\section{Benchmarking}
+\begin{frame}{2. Benchmarking (Existing Solutions)}
+    \framesubtitle{Rubric: Clear Comparison}
+    \begin{table}
+        \centering
+        \small
+        \begin{tabular}{l l l}
+            \toprule
+            \textbf{Existing App} & \textbf{Limitation} & \textbf{Our Solution} \\
+            \midrule
+            App A & Expensive & Low-cost Sensors \\
+            App B & No Cloud Sync & Real-time API \\
+            \bottomrule
+        \end{tabular}
+        \caption{Comparison against Market Standards}
+    \end{table}
+\end{frame}
+
+% --- SLIDE 3: ARCHITECTURE (Rubric: 15 Marks) ---
+\section{Architecture}
+\begin{frame}{3. Technical Architecture}
+    \framesubtitle{Rubric: End-to-End Data Flow & Tools}
+    \textbf{Components:}
+    \begin{itemize}
+        \item \textbf{Input:} Sensors / User Data.
+        \item \textbf{Protocol:} MQTT / HTTP / BLE.
+        \item \textbf{Output:} Mobile App / Web Dashboard.
+    \end{itemize}
+    
+    \vspace{0.2cm}
+    \centering
+    \fbox{\begin{minipage}{10cm}
+        \centering
+        \textbf{[Insert End-to-End Block Diagram]}
+        \\ \small (Show: Input $\to$ Cloud $\to$ User)
+    \end{minipage}}
+\end{frame}
+
+% --- REFERENCES ---
+\section{References}
+\begin{frame}[allowframebreaks]{References}
+    \bibliographystyle{IEEEtran}
+    \bibliography{ref} 
+\end{frame}
+
+% --- THANK YOU ---
+\begin{frame}
+    \centering    
+    {\Huge \textbf{\textcolor{amritaMaroon}{Thank You}}}
+\end{frame}
+
+\end{document}

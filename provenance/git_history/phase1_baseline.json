@@ -1,0 +1,32 @@
+{
+  "id": "phase1_baseline",
+  "source": "/home/adhikkesh/adhikkesh/FYP_Others/Adithya Ajay/SignFi-CNN",
+  "refs": [
+    "refs/codex/turn-diffs/checkpoints/99755e1bbdcbc2a252c77cee24aee67c/05d1d1c1356f76d2de3f8f4260aef0fb/1792255066712/99137d68-ea6a-4d74-8465-cf58e6f2e93a 80ac0f8cb930fddce7292e727d1d69eb7c4abf93",
+    "refs/heads/main 1f3e360f67eb04048ecbdda8cd28d8eee8eb54ee",
+    "refs/remotes/origin/HEAD 1f3e360f67eb04048ecbdda8cd28d8eee8eb54ee",
+    "refs/remotes/origin/main 1f3e360f67eb04048ecbdda8cd28d8eee8eb54ee"
+  ],
+  "commits": [
+    {
+      "oid": "1f3e360f67eb04048ecbdda8cd28d8eee8eb54ee",
+      "parents": "",
+      "author_date": "2026-10-14T21:00:34+05:30",
+      "committer_date": "2026-10-14T21:00:34+05:30",
+      "author": "Gowreesh1905",
+      "subject": "Phase-1 WiFi CSI activity and ISL sign recognition pipeline"
+    }
+  ],
+  "remotes": [
+    "remote.origin.url https://github.com/aarga-labs/Model_Detect-Activity-and-Gestures.git"
+  ],
+  "bundle": {
+    "local_path": ".local_history/phase1_baseline.bundle",
+    "bytes": 1082068,
+    "sha256": "b52fd319eb8f7dc730730027c4fca2313dc58e667cc02beadaa9e9957d407988",
+    "verified": true,
+    "published": false,
+    "reason": "Local safety backup: historical objects may contain machine settings, public datasets or build outputs. Do not publish without a separate full-history security/licence review.",
+    "included_in_private_release_asset": "FYP_Verified_Original_Git_Histories_20261020.zip"
+  }
+}

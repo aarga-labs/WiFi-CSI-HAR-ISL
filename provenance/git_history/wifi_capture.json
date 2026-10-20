@@ -1,0 +1,79 @@
+{
+  "id": "wifi_capture",
+  "source": "/home/adhikkesh/adhikkesh/FYP/wifi_csi_capture",
+  "refs": [
+    "refs/heads/main 7dc65546b508dea4d4724c58bac27fd180d72a24",
+    "refs/remotes/origin/HEAD 7dc65546b508dea4d4724c58bac27fd180d72a24",
+    "refs/remotes/origin/main 7dc65546b508dea4d4724c58bac27fd180d72a24"
+  ],
+  "commits": [
+    {
+      "oid": "7dc65546b508dea4d4724c58bac27fd180d72a24",
+      "parents": "cdf19a57d7f95b81d7a76637bc66d139b3e0ef3d",
+      "author_date": "2026-10-07T07:45:55Z",
+      "committer_date": "2026-10-07T07:45:55Z",
+      "author": "Adhikkesh",
+      "subject": "README: document pilot_tools, qa, docs and the Phase-1 recording settings"
+    },
+    {
+      "oid": "cdf19a57d7f95b81d7a76637bc66d139b3e0ef3d",
+      "parents": "d7d085a3318ca11a37dfd40d6d1250dece3431b0",
+      "author_date": "2026-10-07T07:45:55Z",
+      "committer_date": "2026-10-07T07:45:55Z",
+      "author": "Adhikkesh",
+      "subject": "docs: full project context handover (7 Oct 2026)"
+    },
+    {
+      "oid": "d7d085a3318ca11a37dfd40d6d1250dece3431b0",
+      "parents": "1780a4d66b3f467fdd95ba93092fa2369fe01414",
+      "author_date": "2026-10-07T07:45:55Z",
+      "committer_date": "2026-10-07T07:45:55Z",
+      "author": "Adhikkesh",
+      "subject": "qa: per-take CSI quality check, sign/action motion check, zip helper"
+    },
+    {
+      "oid": "1780a4d66b3f467fdd95ba93092fa2369fe01414",
+      "parents": "9aa83d9ce97dfe25cb73cc5465d2812e45a4942a",
+      "author_date": "2026-10-07T07:45:55Z",
+      "committer_date": "2026-10-07T07:45:55Z",
+      "author": "Adhikkesh",
+      "subject": "pilot_tools: plotting, site check and usage README"
+    },
+    {
+      "oid": "9aa83d9ce97dfe25cb73cc5465d2812e45a4942a",
+      "parents": "0eed2cee45cb9f9070072893b53d2fdb88fcd580",
+      "author_date": "2026-10-07T07:45:54Z",
+      "committer_date": "2026-10-07T07:45:54Z",
+      "author": "Adhikkesh",
+      "subject": "pilot_tools: Phase-1 recording system (protocol, cues, labelled one-command capture)"
+    },
+    {
+      "oid": "0eed2cee45cb9f9070072893b53d2fdb88fcd580",
+      "parents": "09ff13602d44b9885ca07870a789eb03c824cf65",
+      "author_date": "2026-10-01T20:43:11+05:30",
+      "committer_date": "2026-10-01T20:43:11+05:30",
+      "author": "Adhikkesh",
+      "subject": "fix gain issue"
+    },
+    {
+      "oid": "09ff13602d44b9885ca07870a789eb03c824cf65",
+      "parents": "",
+      "author_date": "2026-09-29T00:47:31+05:30",
+      "committer_date": "2026-09-29T00:47:31+05:30",
+      "author": "Adhikkesh",
+      "subject": "Two-USRP CSI capture: receiver + transmitter"
+    }
+  ],
+  "remotes": [
+    "remote.origin.url git@github.com:aarga-labs/usrp-csi-capture.git"
+  ],
+  "bundle": {
+    "local_path": ".local_history/wifi_capture.bundle",
+    "bytes": 382369,
+    "sha256": "22862eae814c893d7fe3d2c0cc48b0a3f2ec03b694d650d37a82eb7c0bbe8834",
+    "verified": true,
+    "published": false,
+    "reason": "Local safety backup: historical objects may contain machine settings, public datasets or build outputs. Do not publish without a separate full-history security/licence review.",
+    "included_in_private_release_asset": "FYP_Verified_Original_Git_Histories_20261020.zip"
+  }
+}

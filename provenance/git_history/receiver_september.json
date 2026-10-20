@@ -1,0 +1,44 @@
+{
+  "id": "receiver_september",
+  "source": "/home/adhikkesh/adhikkesh/FYP/_backup_git/receiver_dot_git",
+  "refs": [
+    "refs/heads/main 1e2e6acbac29fde0410930f6fb4bdd07407cce20",
+    "refs/stash 01cc7efd2c8d508dc2f36814e1f12458cba01a10"
+  ],
+  "commits": [
+    {
+      "oid": "01cc7efd2c8d508dc2f36814e1f12458cba01a10",
+      "parents": "1e2e6acbac29fde0410930f6fb4bdd07407cce20 02133e52efb6cbed18cd1c404fe6ed0164f639d5",
+      "author_date": "2026-09-03T22:33:22+05:30",
+      "committer_date": "2026-09-03T22:33:22+05:30",
+      "author": "Adhikkesh",
+      "subject": "WIP on main: 1e2e6ac init"
+    },
+    {
+      "oid": "02133e52efb6cbed18cd1c404fe6ed0164f639d5",
+      "parents": "1e2e6acbac29fde0410930f6fb4bdd07407cce20",
+      "author_date": "2026-09-03T22:33:22+05:30",
+      "committer_date": "2026-09-03T22:33:22+05:30",
+      "author": "Adhikkesh",
+      "subject": "index on main: 1e2e6ac init"
+    },
+    {
+      "oid": "1e2e6acbac29fde0410930f6fb4bdd07407cce20",
+      "parents": "",
+      "author_date": "2026-09-03T19:39:40+05:30",
+      "committer_date": "2026-09-03T19:39:40+05:30",
+      "author": "Adhikkesh",
+      "subject": "init"
+    }
+  ],
+  "remotes": [],
+  "bundle": {
+    "local_path": ".local_history/receiver_september.bundle",
+    "bytes": 8239858,
+    "sha256": "fae0ae02d2ddb200ff15d474997f119a783cd3de959a2577e83e15aa4b03b883",
+    "verified": true,
+    "published": false,
+    "reason": "Local safety backup: historical objects may contain machine settings, public datasets or build outputs. Do not publish without a separate full-history security/licence review.",
+    "included_in_private_release_asset": "FYP_Verified_Original_Git_Histories_20261020.zip"
+  }
+}

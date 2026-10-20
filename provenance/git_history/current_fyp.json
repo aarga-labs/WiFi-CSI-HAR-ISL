@@ -1,0 +1,79 @@
+{
+  "id": "current_fyp",
+  "source": "/home/adhikkesh/adhikkesh/FYP",
+  "refs": [
+    "refs/heads/main 011518a329ddf8aed1d1239095006b3b60171808",
+    "refs/remotes/origin/HEAD 011518a329ddf8aed1d1239095006b3b60171808",
+    "refs/remotes/origin/main 011518a329ddf8aed1d1239095006b3b60171808"
+  ],
+  "commits": [
+    {
+      "oid": "011518a329ddf8aed1d1239095006b3b60171808",
+      "parents": "cd9865e44a040885846c77b42b795dfdbfad8456",
+      "author_date": "2026-10-19T23:42:54+05:30",
+      "committer_date": "2026-10-19T23:42:54+05:30",
+      "author": "Adhikkesh",
+      "subject": "Verify private handoff assets and final collaborator delivery"
+    },
+    {
+      "oid": "cd9865e44a040885846c77b42b795dfdbfad8456",
+      "parents": "a61eff9ba5d2c46e1bfdfa116154449edfa33009",
+      "author_date": "2026-10-19T23:33:40+05:30",
+      "committer_date": "2026-10-19T23:33:40+05:30",
+      "author": "Adhikkesh",
+      "subject": "Add complete Adhi-to-Amrith research handoff and reproducible P1-P5 evidence"
+    },
+    {
+      "oid": "a61eff9ba5d2c46e1bfdfa116154449edfa33009",
+      "parents": "904771f1f16cdc75d9bd2af34ca5f0f53f71baf3",
+      "author_date": "2026-10-07T07:46:00Z",
+      "committer_date": "2026-10-07T07:46:00Z",
+      "author": "Adhikkesh",
+      "subject": "Track Three_channel_Exp in this repo (its own .git removed)"
+    },
+    {
+      "oid": "904771f1f16cdc75d9bd2af34ca5f0f53f71baf3",
+      "parents": "5dff16a943b3dac0e1fc6f59705af3ba90e1b54a",
+      "author_date": "2026-10-07T07:45:59Z",
+      "committer_date": "2026-10-07T07:45:59Z",
+      "author": "Adhikkesh",
+      "subject": "code: pilot_tools recording system, ImgFi/SignFi notebooks, earlier work"
+    },
+    {
+      "oid": "5dff16a943b3dac0e1fc6f59705af3ba90e1b54a",
+      "parents": "9ee3568f5ea59c6481b28bf8228c505709a01f90",
+      "author_date": "2026-10-07T07:45:58Z",
+      "committer_date": "2026-10-07T07:45:58Z",
+      "author": "Adhikkesh",
+      "subject": "paper: LaTeX sources, reference papers, reports, reviews and setup images"
+    },
+    {
+      "oid": "9ee3568f5ea59c6481b28bf8228c505709a01f90",
+      "parents": "5b59bb398ae600aae0f25f965144aeaed06310b0",
+      "author_date": "2026-10-07T07:45:56Z",
+      "committer_date": "2026-10-07T07:45:56Z",
+      "author": "Adhikkesh",
+      "subject": "docs: project context, data collection plan, approvals and 3-month plan"
+    },
+    {
+      "oid": "5b59bb398ae600aae0f25f965144aeaed06310b0",
+      "parents": "",
+      "author_date": "2026-10-07T07:45:56Z",
+      "committer_date": "2026-10-07T07:45:56Z",
+      "author": "Adhikkesh",
+      "subject": "Add .gitignore and README for the outer FYP repo"
+    }
+  ],
+  "remotes": [
+    "remote.origin.url git@github.com:aarga-labs/FYP.git"
+  ],
+  "bundle": {
+    "local_path": ".local_history/current_fyp.bundle",
+    "bytes": 72839147,
+    "sha256": "d1e88209229a6483df48dd57f0f6e557b2101df56926606708b55433e1dec758",
+    "verified": true,
+    "published": false,
+    "reason": "Local safety backup: historical objects may contain machine settings, public datasets or build outputs. Do not publish without a separate full-history security/licence review.",
+    "included_in_private_release_asset": "FYP_Verified_Original_Git_Histories_20261020.zip"
+  }
+}

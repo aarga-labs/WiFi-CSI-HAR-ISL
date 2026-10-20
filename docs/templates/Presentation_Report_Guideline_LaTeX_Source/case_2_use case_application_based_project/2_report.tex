@@ -1,0 +1,134 @@
+\documentclass[11pt, a4paper]{article}
+
+% --- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{times}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{multirow}
+
+% --- Amrita Colors ---
+\definecolor{amritaMaroon}{HTML}{A4123F}
+
+% --- Title & Section Formatting ---
+\titlespacing*{\section}{0pt}{10pt}{3pt}
+\titleformat{\section}{\large\bfseries\color{amritaMaroon}}{\thesection}{1em}{}
+
+\pagestyle{empty} 
+
+\begin{document}
+
+% ==========================================
+% HEADER 
+% ==========================================
+\noindent
+\begin{minipage}{\textwidth}
+    \centering
+    {\Large \textbf{\textcolor{amritaMaroon}{
+    AMRITA VISHWA VIDYAPEETHAM \\
+    SCHOOL OF COMPUTING \\
+    DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING \\
+    }}} 
+    \vspace{0.2cm}
+    {\large \textbf{PROJECT TITLE HERE}} \\
+    \vspace{0.1cm}
+    23CSE399 -- Project Phase 1 (Panel Review 1)\\
+    \today %Date of submission
+\end{minipage}
+
+\vspace{0.3cm}
+\hrule
+\vspace{0.3cm}
+
+% --- Team & Guide Details ---
+\noindent
+\begin{center}
+    \renewcommand{\arraystretch}{1.5}
+    \setlength{\tabcolsep}{5pt}
+    \begin{tabular}{|l|p{4.2cm}|p{4cm}|p{2.5cm}|c|}
+        \hline
+        \multicolumn{2}{|c|}{\textbf{Team Members}} & \textbf{Guide} & \textbf{Project Type} & \textbf{Marks} \\ 
+        \hline
+        
+        % Row 1
+        \small CB.EN.U4CSE23XXX & \small \raggedright Student Name & 
+        \multirow{4}{=}{\raggedright \small \textbf{Dr/Mr/Ms. Guide Name} \newline \textit{Designation, \newline Dept. of CSE}} & 
+        \multirow{4}{=}{\raggedright \small \textbf{Type 2} \newline Implementation / Use-Case} & 
+        \multirow{4}{*}{\textbf{\huge \dots / 5}} \\ \cline{1-2}
+        
+        % Row 2
+        \small CB.EN.U4CSE23XXX & \small Student Name 2 & & & \\ \cline{1-2}
+        
+        % Row 3
+        \small CB.EN.U4CSE23XXX & \small Student Name 3 & & & \\ \cline{1-2}
+        
+        % Row 4
+        \small CB.EN.U4CSE23XXX & \small Student Name 4 & & & \\ 
+        \cline{1-2}
+        
+        % Row 5
+        \small CB.EN.U4CSE23XXX & \small Student Name 5 & & & \\ 
+        \hline
+    \end{tabular}
+\end{center}
+\vspace{0.2cm}
+
+% ==========================================
+% MAIN CONTENT - TYPE 2 (IMPLEMENTATION)
+% ==========================================
+
+% --- 1. PROBLEM & UTILITY ---
+\section{Problem Definition \& Relevance}
+\textbf{Problem Statement:} Define the real-world problem or inefficiency being addressed. \\
+\textbf{Utility Claim:} \textit{(Select one based on Rubric)}
+\begin{itemize}[noitemsep, topsep=0pt]
+    \item \textbf{Practical Application:} We apply [Technology X] to solve [Specific Scenario] where it has not been effectively used before.
+    \item \textbf{Efficiency Improvement:} Our implementation improves [Process/Task] by reducing [Cost/Time/Complexity] compared to manual methods.
+\end{itemize}
+
+% --- 2. SURVEY & GAPS ---
+\section{Literature \& Market Survey}
+\textit{(Rubric: Justify need for this implementation)}
+\begin{itemize}[noitemsep, topsep=0pt]
+    \item \textbf{Current Practices:} Currently, [Target Audience] uses [Method A/Manual Process] to achieve this task.
+    \item \textbf{Existing Limitations:} These methods are limited by [High Cost / Slowness / Lack of Automation].
+    \item \textbf{Implementation Gap:} There is no accessible system that integrates [Feature X] and [Feature Y] for this specific use case.
+\end{itemize}
+
+% --- 3. SYSTEM ARCHITECTURE ---
+\section{Proposed System Architecture}
+\textit{(Rubric: Technical knowledge of tools/hardware/integration)}
+
+\textbf{Core Solution:} We propose a system integrating [Hardware/Sensor/API] with [Software Logic] to automate...
+
+% FIGURE PLACEHOLDER
+\begin{figure}[H]
+    \centering
+    \fbox{\begin{minipage}[c][4cm]{0.9\textwidth}
+        \centering
+        \vspace{1.5cm}
+        \textbf{[Insert System Block Diagram / Architecture View]} \\
+        \small (Required: Visual showing inputs, processing units, and outputs)
+    \end{minipage}}
+    \caption{Proposed System Architecture}
+\end{figure}
+
+\textbf{Implementation Logic:} Brief explanation of the flow (e.g., "Data from sensors is processed by Module X, using Logic Y to trigger Actuator Z").
+
+% --- 4. PLAN ---
+\section{Current Status \& Plan}
+\textbf{Status:} Use-case finalized; Hardware/Tools selected; Basic prototype conceptualized. \\
+\textbf{Next Steps:} Component integration (Phase 2); Testing in simulated environment; Performance analysis.
+
+% --- REFERENCES ---
+\vspace{0.2cm}
+\renewcommand{\refname}{\normalsize References}
+\bibliographystyle{IEEEtran}
+\bibliography{ref} %List the references in the file ref.bib
+
+\end{document}

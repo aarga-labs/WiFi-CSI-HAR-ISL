@@ -1,0 +1,64 @@
+{
+  "id": "three_channel_september",
+  "source": "/home/adhikkesh/adhikkesh/FYP/_backup_git/Three_channel_Exp_dot_git",
+  "refs": [
+    "refs/heads/main d0c6ad7bd611f5cb49a6f463ba479d5a45d4931b",
+    "refs/remotes/origin/HEAD ba678ed651088c5550f34fa630a5e710e1b8cdf1",
+    "refs/remotes/origin/adhi ba678ed651088c5550f34fa630a5e710e1b8cdf1",
+    "refs/remotes/origin/main ba678ed651088c5550f34fa630a5e710e1b8cdf1"
+  ],
+  "commits": [
+    {
+      "oid": "ba678ed651088c5550f34fa630a5e710e1b8cdf1",
+      "parents": "3f97594f300677b8ec2eff8de24d1a270d770708",
+      "author_date": "2026-09-02T12:07:07+05:30",
+      "committer_date": "2026-09-02T12:07:07+05:30",
+      "author": "Adhikkesh",
+      "subject": "."
+    },
+    {
+      "oid": "3f97594f300677b8ec2eff8de24d1a270d770708",
+      "parents": "d0c6ad7bd611f5cb49a6f463ba479d5a45d4931b",
+      "author_date": "2026-09-01T21:37:22+05:30",
+      "committer_date": "2026-09-01T21:37:22+05:30",
+      "author": "Adhikkesh",
+      "subject": "."
+    },
+    {
+      "oid": "d0c6ad7bd611f5cb49a6f463ba479d5a45d4931b",
+      "parents": "6d8474e62f82dc099662395dc781f397ea6fde22",
+      "author_date": "2026-08-13T12:12:34+05:30",
+      "committer_date": "2026-08-13T12:12:34+05:30",
+      "author": "Adhikkesh",
+      "subject": "."
+    },
+    {
+      "oid": "6d8474e62f82dc099662395dc781f397ea6fde22",
+      "parents": "bb64cd74dc73f89569b757ee2ea425dfff0ae25b",
+      "author_date": "2026-08-13T00:56:44+05:30",
+      "committer_date": "2026-08-13T00:56:44+05:30",
+      "author": "Rishiikesh",
+      "subject": "Add activity recognition capture script and associated transmitter functionality"
+    },
+    {
+      "oid": "bb64cd74dc73f89569b757ee2ea425dfff0ae25b",
+      "parents": "",
+      "author_date": "2026-08-12T22:52:40+05:30",
+      "committer_date": "2026-08-12T22:52:40+05:30",
+      "author": "Rishiikesh",
+      "subject": "Add two-USRP three-channel WiFi CSI experiment (TX + RX)"
+    }
+  ],
+  "remotes": [
+    "remote.origin.url git@github.com:Rishiikesh-20/Three_channel_Exp.git"
+  ],
+  "bundle": {
+    "local_path": ".local_history/three_channel_september.bundle",
+    "bytes": 910657,
+    "sha256": "d490f6a5d7233d528e90053ba06de2766649f11c8dfc35ebbc5157a5a3f23b0f",
+    "verified": true,
+    "published": false,
+    "reason": "Local safety backup: historical objects may contain machine settings, public datasets or build outputs. Do not publish without a separate full-history security/licence review.",
+    "included_in_private_release_asset": "FYP_Verified_Original_Git_Histories_20261020.zip"
+  }
+}
