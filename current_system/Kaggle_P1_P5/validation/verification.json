@@ -1,0 +1,44 @@
+{
+  "cpu_forward_shapes": "passed; no gradients or training",
+  "local_training_guard": "passed",
+  "atomic_checkpoint_recovery_and_zip_path_guard": "passed",
+  "dataset_fingerprint": "f01651df3c4b758f3cbec5dd742669b4f0605a9f11c24162aecd662949dede62",
+  "participants": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05"
+  ],
+  "streams": 22,
+  "events": {
+    "P01": 237,
+    "P02": 210,
+    "P03": 237,
+    "P04": 425,
+    "P05": 425
+  },
+  "windows": {
+    "P01": 9689,
+    "P02": 7640,
+    "P03": 9069,
+    "P04": 18131,
+    "P05": 18278
+  },
+  "uncovered_labels_excluded": "{('P02', 'actions'): 27}",
+  "all_20_nested_participant_splits": "disjoint",
+  "synthetic_perfect_story_identity_recall": 1.0,
+  "metrics_export": "passed",
+  "action_feature_shape": [
+    185,
+    186
+  ],
+  "training_executed": false,
+  "gpu_execution": "not run; requires Kaggle",
+  "notebook_schema": "passed",
+  "code_cells_ast": "passed",
+  "embedded_source_matches": true,
+  "per_fold_bundle_merge": "passed",
+  "config_fingerprint_guards": "passed",
+  "source_sha256": "5182a7dd650182b1a87a2a297bb8fa941e2a62564c157a9978a90d6a7a0f4f21"
+}

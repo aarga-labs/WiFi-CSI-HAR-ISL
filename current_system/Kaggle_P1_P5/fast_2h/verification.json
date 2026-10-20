@@ -1,0 +1,22 @@
+{
+  "training_executed": false,
+  "gpu_execution": "not tested; run on Kaggle",
+  "five_fixed_participant_splits": "passed",
+  "cpu_forward_shapes": "passed; no fitting/backpropagation",
+  "gpu_bank_indexing_equivalence_on_cpu": "passed",
+  "local_training_guard": "passed",
+  "external_watchdog_stops_fake_hang": "passed",
+  "deadline_prevents_new_work": "passed",
+  "real_data_coverage_reference": "22 recordings already validated; preprocessing functions unchanged",
+  "synthetic_metric_plot_zip_export": "passed",
+  "notebook_ast_and_embedded_sources": "passed",
+  "evaluation_fits": 15,
+  "deployment_fits": 1,
+  "budgets_minutes": {
+    "evaluation": 85,
+    "all_training": 105,
+    "finish_target": 115
+  },
+  "source_sha256": "8f71ab1236788b81a0d6f8e9877cf9e7b014096c20f35046391fcfa173f041ef",
+  "notebook_schema": "passed"
+}

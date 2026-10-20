@@ -1,0 +1,15 @@
+{
+  "matched_events": 684,
+  "unmatched_events": 1,
+  "comparison": "Zero-shot saved out-of-fold predictions; matched P1\u2013P3 test events; training pools differ",
+  "inputs": {
+    "/home/adhikkesh/adhikkesh/FYP/Model_Detect-Activity-and-Gestures/results_final_segments_cal0.csv": "a5ec663c20707217812fa78e798583fab89730212f44533912bf769a046e0a10",
+    "/home/adhikkesh/adhikkesh/FYP/Model_Detect-Activity-and-Gestures/results_final_summary.csv": "6b80bffd552d7dbea7603e570d697cbe460d829ae19c2e7e2b86538812a01bf4",
+    "/home/adhikkesh/adhikkesh/FYP/Kaggle_P1_P5/balanced_results_audit_20261017/run/FYP_BALANCED_2H_20261017_015419/results/all_out_of_fold_predictions.csv": "8965b04c7e1d4b7a5d578a2936059e72cb0e543f0cf85a4eef16a4b4d999f755",
+    "/home/adhikkesh/adhikkesh/FYP/Kaggle_P1_P5/balanced_results_audit_20261017/run/FYP_BALANCED_2H_20261017_015419/results/story_metrics.csv": "ef7850bc191ed8467d9b28fa71955a3fb088dd8302d4aa5b25dc6fe86a664fd1"
+  },
+  "mean_story_auc": {
+    "friend_auc": 0.9151234567901234,
+    "our_auc": 0.8801440329218106
+  }
+}
