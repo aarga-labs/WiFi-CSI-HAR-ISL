@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# GNU Radio Companion
+*.grc.bak
+*.pyc
+
+# Captured packet logs (optional flowgraph path, not part of the dataset)
+*.pcap
+
+# Derived data: regenerate with scripts/segment_windows.py (see data/README.md)
+data/pilot/windows/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
