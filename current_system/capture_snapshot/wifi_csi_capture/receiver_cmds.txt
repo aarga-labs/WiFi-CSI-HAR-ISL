@@ -1,0 +1,230 @@
+=====================================================================
+ RECEIVER (RX) — USRP N210 #2 at 192.168.10.7
+ Two-USRP WiFi CSI capture. Every command, in order.
+ Repo root below is written as $REPO. Set it once per terminal:
+
+     REPO=~/adhikkesh/FYP/wifi_csi_capture
+=====================================================================
+
+What this side does
+-------------------
+The USRP only digitises the radio signal and streams raw samples
+(20 MS/s) over Ethernet. This laptop runs the whole 802.11 receiver in
+GNU Radio, decodes each frame from the transmitter, and writes one CSV
+row per frame: Packet, Timestamp_us, Channel, SC0_Re, SC0_Im ... SC51_Im.
+
+  - Receiver flowgraph : $REPO/receiver/gr-ieee802-11/examples/wifi_rx.py
+  - CSI block (C++)    : $REPO/receiver/gr-ieee802-11/lib/extract_csi_impl.cc
+  - Settings come from environment variables: CSI_TA, CSI_RA, CSI_OUT
+  - wifi_rx.py is fixed to Channel 1 (2412 MHz). The transmitter MUST be
+    parked on channel 1 (TX_CHANNEL=1), otherwise almost nothing arrives.
+
+
+---------------------------------------------------------------------
+0. ONE-TIME INSTALL (skip if GNU Radio + UHD already work)
+---------------------------------------------------------------------
+Ubuntu 22.04:
+    sudo apt update && sudo apt upgrade -y
+    sudo apt install -y gnuradio gnuradio-dev libuhd-dev uhd-host \
+                        cmake g++ git libboost-all-dev pybind11-dev
+    sudo uhd_images_downloader
+
+Check:
+    uhd_config_info --version
+    gnuradio-companion --version
+
+
+---------------------------------------------------------------------
+1. NETWORK (laptop <-> USRP, direct Ethernet cable)
+---------------------------------------------------------------------
+    nmcli device status                          # find the ethernet name (eno1, enp2s0, ...)
+    ip addr show eno1                            # want 192.168.10.1/24
+    sudo ip addr add 192.168.10.1/24 dev eno1    # only if missing (use your iface name)
+    sudo ip link set eno1 up
+    ping -c 3 192.168.10.7
+    uhd_find_devices                             # must list addr: 192.168.10.7
+
+Optional live spectrum check (is the transmitter visible?):
+    uhd_fft --args="addr=192.168.10.7" -f 2.412e9 -s 20e6
+
+
+---------------------------------------------------------------------
+1b. HOST TUNING — REQUIRED, or ~99% of frames are lost
+---------------------------------------------------------------------
+Symptom it fixes (seen on 29 Sep):
+    [WARNING] [UDP] The recv buffer could not be resized sufficiently ... 4194304 bytes
+    DDDD ... usrp_source :error: In the last 800 ms, 7 overflows occurred.
+    -> only 19 CSV rows in 15 s (1.3 rows/s) while the TX sent ~200 frames/s.
+
+Every time (until made permanent):
+    sudo sysctl -w net.core.rmem_max=50000000
+    sudo sysctl -w net.core.wmem_max=50000000
+    sudo cpupower frequency-set -g performance      # Arch/Fedora: package cpupower / kernel-tools
+Make the buffer sizes permanent (one-time):
+    printf "net.core.rmem_max=50000000\nnet.core.wmem_max=50000000\n" | sudo tee /etc/sysctl.d/90-usrp.conf
+    sudo sysctl --system
+Check the Ethernet link is 1 Gb/s full duplex (a slow USB adapter causes D's):
+    ethtool eno1 | grep -E "Speed|Duplex"        # want: Speed: 1000Mb/s, Duplex: Full
+Optional, if the NIC supports it:
+    sudo ethtool -G eno1 rx 4096
+One-time speed-up for GNU Radio maths kernels:
+    volk_profile
+Also: laptop on charger, close browsers/IDEs while recording.
+
+---------------------------------------------------------------------
+1c. FIND THE RX GAIN — once per room / antenna setup
+---------------------------------------------------------------------
+Too much gain overloads the receiver (most frames lost even though SNR looks
+high); too little loses weak frames. The right value depends on distance and
+room, so measure it whenever the antennas move.
+
+Start the transmitter first (TX_CHANNEL=1, PPS=200), keep the room still, then:
+    cd $REPO/receiver
+    ./gain_sweep.sh              # 20 s per step, gains 0..31.5 dB (~4 min)
+It prints rows/s for every gain and suggests the best one, e.g.:
+    Best: gain 16 dB  ->  152.3 rows/s
+    Record with:  RX_GAIN=16 python3 wifi_rx.py
+Write the chosen value down and use it for the whole dataset:
+    export RX_GAIN=16            # in every receiver terminal
+(If two neighbouring gains are almost equal, take the lower one.)
+
+---------------------------------------------------------------------
+2. BUILD + INSTALL THE RECEIVER MODULE
+---------------------------------------------------------------------
+IMPORTANT: on the RX laptop install ONLY receiver/gr-ieee802-11.
+The transmitter's gr-ieee802-11 installs under the SAME name and
+overwrites the CSI version (this already happened once, on 4 Sep).
+The receiver module already contains every transmitter block, so a
+laptop that does both only needs this one (+ gr-foo for TX).
+
+Fresh build:
+    cd $REPO/receiver/gr-ieee802-11
+    rm -rf build                                  # only if an old/copied build folder exists
+    mkdir build && cd build
+    cmake ..
+    make -j$(nproc)
+    sudo make install
+    sudo ldconfig
+
+Re-install from an existing build folder (e.g. after something overwrote it):
+    cd $REPO/receiver/gr-ieee802-11/build
+    make -j$(nproc) && sudo make install && sudo ldconfig
+
+After ANY change to lib/*.cc: run the re-install lines above.
+Changes to examples/wifi_rx.py need no rebuild.
+
+
+---------------------------------------------------------------------
+3. ONE-TIME: LET PYTHON + LINKER FIND /usr/local  (instead of exporting)
+---------------------------------------------------------------------
+    SP=$(python3 -c "import site; print(site.getsitepackages()[0])")
+    echo /usr/local/lib/python3.14/site-packages | sudo tee "$SP/usr-local.pth"
+    echo /usr/local/lib | sudo tee /etc/ld.so.conf.d/usr-local.conf
+    sudo ldconfig
+Then remove any PYTHONPATH / LD_LIBRARY_PATH exports from ~/.zshrc and open a new terminal.
+(When the system Python moves to 3.15: change 3.14 -> 3.15 above and rebuild step 2.)
+
+Temporary alternative (current terminal only):
+    export PYTHONPATH=/usr/local/lib/python3.14/site-packages:$PYTHONPATH
+    export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+
+
+---------------------------------------------------------------------
+4. VERIFY THE RIGHT MODULE IS INSTALLED
+---------------------------------------------------------------------
+    python3 -c "import ieee802_11; print(hasattr(ieee802_11.extract_csi, 'set_channel'))"   # must be True
+    strings /usr/local/lib/libgnuradio-ieee802_11.so | grep CSI_TA                        # must print CSI_TA
+(Fedora installs to /usr/local/lib64 instead of /usr/local/lib.)
+If you get False / nothing: the transmitter version is installed -> redo step 2.
+
+
+---------------------------------------------------------------------
+5. FIRST TEST — accept every frame (start the transmitter first)
+---------------------------------------------------------------------
+    cd $REPO/receiver/gr-ieee802-11/examples
+    export CSI_TA=any
+    export CSI_RA=any
+    unset CSI_OUT
+    python3 wifi_rx.py
+
+Expected console lines:
+    extract_csi: TA filter = any, RA filter = any
+    extract_csi: writing to ./data/csi_<date>_<time>.csv
+    extract_csi: seen TA=02:00:00:00:00:01 RA=02:00:00:00:00:02 (MATCH)
+Ctrl+C to stop (prints "total saved packets: N").
+
+
+---------------------------------------------------------------------
+6. REAL CAPTURE — lock the filter and name the file
+---------------------------------------------------------------------
+    cd $REPO/receiver/gr-ieee802-11/examples
+    export CSI_TA=02:00:00:00:00:01
+    export CSI_RA=02:00:00:00:00:02
+    mkdir -p ~/usrp-projects/data/phase1
+    export CSI_OUT=~/usrp-projects/data/phase1/P01_part2_actions_$(date +%Y%m%d_%H%M%S).csv
+    export RX_GAIN=16                               # the value from step 1c
+    python3 wifi_rx.py                              # prints "wifi_rx: RX gain = 16.0 dB" at start
+Always set CSI_OUT. If unset, the file goes to ./data/ of whatever folder you ran from.
+CSI_OUT appends to an existing file — use a new name for every part.
+
+Ground-truth labels (second terminal, SAME laptop, while wifi_rx.py runs):
+    cd ~/adhikkesh/FYP/pilot_tools
+    python3 cue_session.py baseline --pid P01
+    python3 cue_session.py actions  --pid P01 --reps 10
+    python3 cue_session.py signs    --pid P01 --posture standing --reps 5
+    python3 cue_session.py signs    --pid P01 --posture seated   --reps 5
+    python3 cue_session.py script   --pid P01 --runs 2
+(One CSV file per part: stop wifi_rx.py with Ctrl+C and set a new CSI_OUT between parts.
+ Full session table: ~/adhikkesh/FYP/pilot_tools/README.md)
+
+
+---------------------------------------------------------------------
+7. CHECK THE CAPTURE IS HEALTHY (second terminal)
+---------------------------------------------------------------------
+    watch -n 1 "wc -l $CSI_OUT"                  # should grow ~100+ rows per second
+    head -2 "$CSI_OUT" | cut -d, -f1-8           # header + first row
+    tail -n +2 "$CSI_OUT" | cut -d, -f3 | sort | uniq -c    # Channel column (always 1 here)
+
+Rate helpers:
+    - Close other apps; CPU performance mode:
+          sudo cpupower frequency-set -g performance
+    - Transmitter must run PPS=200 and TX_CHANNEL=1.
+    - Target: 100-150 rows/s. Under ~60 rows/s: stop and fix before recording people.
+
+Plots / QC after a part:
+    cd ~/adhikkesh/FYP/pilot_tools
+    python3 plot_pilot.py --csi "$CSI_OUT" --labels "$HOME/usrp-projects/data/labels/labels_P01_actions_*.csv" --out figs
+
+
+---------------------------------------------------------------------
+8. TROUBLESHOOTING
+---------------------------------------------------------------------
+No "seen TA=" lines at all
+    -> transmitter not running / not parked on channel 1, or no signal:
+       check uhd_fft (step 1).
+"seen TA=..." but never 02:00:00:00:00:01
+    -> you only see other WiFi devices; the transmitter is not on channel 1.
+(MATCH) appears but the CSV stays at 1 line
+    -> the transmitter version of the module is installed: step 4, then step 2.
+Lots of "O" / "D" or "overflows occurred" in the console, very few rows
+    -> step 1b (socket buffers + performance governor), then retest for 30 s:
+         timeout -s INT 30 python3 wifi_rx.py ; wc -l data/csi_*.csv   (want 3000+ rows)
+Few rows even though (MATCH) appears, SNR is high and overflows are rare
+    -> signal TOO STRONG (receiver overload). wifi_rx.py uses max RX gain and the
+       TX uses gain 30, so antennas that are close clip the ADC and most frames fail.
+       Evidence 29 Sep: good capture (3 Sep, 155 rows/s) had mean |CSI| ~0.13;
+       bad captures had 0.31 (+8 dB) and ~1.3 (+20 dB).
+       Fix: TX and RX antennas 3-5 m apart, not pointing at each other at close range.
+       Check for clipping while the TX runs (values near 1.0 = clipping):
+         python3 -c "import uhd,numpy as n;u=uhd.usrp.MultiUSRP('addr=192.168.10.7');s=u.recv_num_samps(4000000,2412e6,20e6,[0],31.5);a=n.abs(s);print('max',a.max(),'p99.9',n.percentile(a,99.9))"
+       Aim: max well below 0.7. Then check mean |CSI| in the new CSV is near 0.1-0.2.
+Every row says Channel 1
+    -> expected: wifi_rx.py is fixed to 2412 MHz.
+wifi_rx_headless.py / wifi_rx_archieve.py
+    -> moved to _archive/ (broken / old channel-hopping version). Use wifi_rx.py.
+"Odd decimation", "No GPSDO", "thread priority" warnings
+    -> harmless.
+"pdu_to_tagged_stream ... Message discarded"
+    -> harmless (unconnected debug port).
+CMake error "CMakeCache.txt directory ... is different"
+    -> the build folder was copied from another path: rm -rf build and build fresh (step 2).
