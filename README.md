@@ -142,7 +142,3 @@ Next steps are additional participants/sessions and environments, independent an
 | Rishiikesh S K | [Rishiikesh-20](https://github.com/Rishiikesh-20) |
 
 **Faculty guide: Ms. Nalinadevi K.**
-
-## Attribution and reuse
-
-GNU Radio, UHD, `gr-ieee802-11`, ESPectre, ESP32 CSI tools and public benchmark resources retain their upstream attribution and licences. See [NOTICE.md](NOTICE.md), [dependency notes](docs/DEPENDENCIES.md) and [code-licensing guidance](docs/LICENSING.md). A licence for the team's original code belongs in a root-level `LICENSE` file once approved by its rights holders; this cleanup does not assign a new blanket licence. Participant data and media are excluded from the code distribution.
