@@ -1,4 +1,4 @@
-> CURRENT ENTRY: read ../Adhi_To_Amrith_Context.md. This README documents the original extensive notebook before later runs. The retained completed result is BALANCED under balanced_results_audit_20261017; the newer robust_2h notebook has no verified outputs. Do not rerun training to write the paper.
+> Current entry: use balanced_2h/ and the retained BALANCED result summaries. This file documents an earlier extensive notebook. Input recordings and private evidence are not distributed in this source checkout.
 
 # P1–P5 Kaggle training
 

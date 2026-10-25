@@ -4,7 +4,6 @@
 
 # ---- Data (kept out of git; use the backup zip / Drive) ----
 *.csv
-!/session_log_phase1.csv
 /DATA_COMBINED*/
 /pilot/
 *.zip
@@ -26,11 +25,7 @@ __pycache__/
 *.pyc
 *.lock
 
-# Research handoff: version evidence CSVs, not raw recording dumps.
-!/Kaggle_P1_P5/**/*.csv
-!/Model_Detect-Activity-and-Gestures/*.csv
-!/presentation_current/*.csv
-!/paper/evidence/**/*.csv
+# Existing aggregate CSVs remain tracked. Broad CSV exceptions are intentionally removed.
 
 # Rebuildable caches and local presentation build products.
 /Kaggle_P1_P5/**/cache/
@@ -50,5 +45,14 @@ __pycache__/
 # Download-only large private release assets (see handoff/ASSETS.json).
 /handoff/assets/
 
-# Preserve the small rain-check session log as collection QA metadata.
-!/session_log_rain_check.csv
+# Session logs remain private.
+
+# Keep private inputs excluded even when root ignore rules are extended.
+/handoff/
+/presentation_current/
+**/labels/
+*.mp4
+*.mov
+*.avi
+*.npz
+*.npy

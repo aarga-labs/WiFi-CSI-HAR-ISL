@@ -1,5 +1,0 @@
-pid,mode,posture,trial,label,type,intent,home_action,context,script_id,run,step,t_start_us,t_end_us,source,note
-P05,baseline,,,clap_x3,sync,,,,,,,1792156655153158,1792156655153158,keypress,protocol=p45-v1; start
-P05,baseline,standing,1,stand_still,idle,I0,none,isolated,,,,1792156657653788,1792156717654466,cue,protocol=p45-v1
-P05,baseline,seated,2,sit_still,idle,I0,none,isolated,,,,1792156722155379,1792156782156020,cue,protocol=p45-v1
-P05,baseline,,,clap_x3,sync,,,,,,,1792156792360935,1792156792360935,keypress,protocol=p45-v1; end

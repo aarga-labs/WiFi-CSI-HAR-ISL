@@ -1,4 +1,0 @@
-pid,mode,posture,trial,label,type,intent,home_action,context,script_id,run,step,t_start_us,t_end_us,source,note
-P04,signs,seated,15.0,ACCIDENT,sign,I3,emergency_alert,isolated,,,,1792152899283128,1792152903283699,cue,protocol=p45-v1
-P04,signs,seated,16.0,COOK,sign,I1,cooking_mode,isolated,,,,1792152908284587,1792152912286562,cue,protocol=p45-v1
-P04,signs,seated,17.0,TOILET,sign,I2,toilet_assist,isolated,,,,1792152917287496,1792152921288077,cue,protocol=p45-v1

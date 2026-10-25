@@ -39,7 +39,7 @@ def main():
         if not path.exists():
             if metadata.get('published') is False:
                 raise SystemExit('The consolidation release has been removed. No download was attempted. '
-                                 'The current numerical dataset is at https://doi.org/10.21227/tbq2-nc86; '
+                                 'Private dataset access is not distributed in this source repository; '
                                  'legacy archives remain local backups.')
             subprocess.run(['gh', 'release', 'download', metadata['release_tag'],
                             '--repo', metadata['repository'], '--pattern', item['name'],

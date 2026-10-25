@@ -2,7 +2,7 @@
 
 **Learning to distinguish everyday movement from deliberate sign gestures using a single Wi-Fi link.**
 
-[Dataset · IEEE DataPort](https://doi.org/10.21227/tbq2-nc86) · [GPU training notebook](current_system/Kaggle_P1_P5/balanced_2h/FYP_P1_P5_Kaggle_BALANCED_2_Hours.ipynb) · [Saved results](current_system/Kaggle_P1_P5/balanced_results_audit_20261017/) · [Capture code](current_system/capture_snapshot/wifi_csi_capture/)
+[GPU training notebook](current_system/Kaggle_P1_P5/balanced_2h/FYP_P1_P5_Kaggle_BALANCED_2_Hours.ipynb) · [Result summaries](current_system/paper/evidence/summary.csv) · [Capture code](current_system/capture_snapshot/wifi_csi_capture/)
 
 Final-year project, Department of Computer Science and Engineering, Amrita School of Computing, Amrita Vishwa Vidyapeetham, Coimbatore, India. **Group 067 · Vision, Language and Intelligent Learning (VLIL).**
 
@@ -33,11 +33,7 @@ The layout illustrates the collection geometry rather than a surveyed floor plan
 | Recorded signal | Packet counter, receiver timestamp, channel, real/imaginary CSI |
 | Model representation | CSI amplitude, resampled to 50 Hz |
 
-## Published dataset
-
-**[Single-Link Wi-Fi CSI Dataset of Daily Activities and Sign Gestures from Five Participants](https://doi.org/10.21227/tbq2-nc86)**
-
-DOI: **10.21227/tbq2-nc86**
+## Collection overview
 
 | Collection | Verified quantity |
 |---|---:|
@@ -53,7 +49,7 @@ DOI: **10.21227/tbq2-nc86**
 | Scripted story runs | 34 |
 | Labelled story steps | 208 activities + 208 signs |
 
-The DataPort release contains numerical recordings, original labels, a combined event catalogue, metadata, documentation, checksums and Python reader/validation scripts. It is a **Standard Dataset**: the record is shareable, while file downloads depend on DataPort account or institutional access. Full participant videos and identity mappings are not included.
+This source repository contains implementation code, aggregate results and analytical figures. Raw CSI, original annotations, individual-event records, participant media, private archive handoffs and dataset/video access links are excluded from the current tracked files. These quantities summarize the experimental collection; the recordings are not supplied here.
 
 Only P04/P05 have the additional seated blocks and cooking activities. Twenty-seven incomplete P02 action intervals are excluded from complete-event evaluation. **Packet rows, trials and story steps are different units.**
 
@@ -64,8 +60,6 @@ Only P04/P05 have the additional seated blocks and cooking activities. Twenty-se
 | Walking, sitting down/standing up, picking up an object, operating a light switch, drinking, answering a phone, eating, wiping a table, using a TV remote, simulated fall onto a mattress, chopping food, stirring a pot | HELLO, THANKYOU, LAMP, FAN, TELEVISION, COOK, WATER, HOT, HUNGRY, TOILET, CALL, HELP, PAIN, ACCIDENT |
 
 Stories combine meal preparation/eating, TV/phone use, cleaning/fall scenarios and seated routines. They follow fixed recorded templates, including transitions back from signs to activities; they are not spontaneous sign-language conversations.
-
-![Excerpt showing the numerical CSI schema and the separate event annotation format](current_system/current_impl/dataset_excerpt.png)
 
 ## From recording to recognition
 
@@ -106,7 +100,7 @@ COOK (**25/35**) is strongest, followed by HUNGRY (**20/35**). THANKYOU (**1/35*
 
 Across **208 true story signs**, the pipeline detects **121 (58.2%)** and correctly names **39 (18.8%)**. The final bar counts **32 correct sign-plus-predefined-response matches**; it does not establish learned intent understanding. There are also **50 unmatched commands during 20.3 minutes of routine activity**. Separating deliberate signs from surrounding movement is the main unresolved challenge.
 
-The underlying [result tables](current_system/paper/evidence/) and [saved out-of-fold predictions](current_system/paper/evidence/all_out_of_fold_predictions.csv) allow these numbers to be checked without retraining.
+The [aggregate result tables](current_system/paper/evidence/) document these numbers. Individual-event predictions and original annotations are kept locally for authorized verification and are not distributed in this checkout.
 
 ## Use the repository
 
@@ -116,15 +110,15 @@ cd WiFi-CSI-HAR-ISL
 python3 tools/verify_repository.py
 ```
 
-The repository is currently private, so cloning requires collaborator access. The verification command uses Python's standard library to check imported-file integrity, notebook structure, evidence hashes and saved evaluation results. It does not train a model or operate the radios.
+The repository is currently private, so cloning requires collaborator access. The default verification command uses Python's standard library to check retained imported-file integrity, notebook structure and aggregate result consistency. Recomputing event-level scores requires the separately retained private evidence. Verification does not train a model or operate the radios.
 
-For a new training run, open the [BALANCED Kaggle notebook](current_system/Kaggle_P1_P5/balanced_2h/FYP_P1_P5_Kaggle_BALANCED_2_Hours.ipynb) and read its [run instructions](current_system/Kaggle_P1_P5/balanced_2h/START_HERE_BALANCED.md). The original training ZIP and the published DataPort ZIP have different packaging; follow the notebook's expected input layout rather than assuming the archives are interchangeable. The newer `robust_2h` notebook is an unverified proposal, not the source of the results above.
+For a new training run, open the [BALANCED Kaggle notebook](current_system/Kaggle_P1_P5/balanced_2h/FYP_P1_P5_Kaggle_BALANCED_2_Hours.ipynb) and read its [run instructions](current_system/Kaggle_P1_P5/balanced_2h/START_HERE_BALANCED.md). Supply your own authorized input archive using the layout expected by the notebook. No dataset or private download link is provided here. The newer `robust_2h` notebook is an unverified proposal, not the source of the results above.
 
 | Location | Contents |
 |---|---|
 | [`current_system/capture_snapshot/`](current_system/capture_snapshot/) | USRP transmitter/receiver code and P04/P05 collection protocol |
 | [`current_system/Kaggle_P1_P5/`](current_system/Kaggle_P1_P5/) | GPU notebooks, training source, retained outputs and model checkpoints |
-| [`current_system/current_impl/`](current_system/current_impl/) | Class-performance figures, dataset excerpt and presentation assets |
+| [`current_system/current_impl/`](current_system/current_impl/) | Aggregate class-performance figures and nonparticipant setup imagery |
 | [`capture/esp32/`](capture/esp32/) | ESP32 CSI capture and ESPectre motion experiments |
 | [`experiments/`](experiments/) | Passive USRP, SignFi, CASAS, ESP32 fall detection and IMU experiments |
 | [`docs/reviews/`](docs/reviews/) | Review presentations and supporting material |
@@ -151,4 +145,4 @@ Next steps are additional participants/sessions and environments, independent an
 
 ## Attribution and reuse
 
-Cite the [IEEE DataPort dataset record](https://doi.org/10.21227/tbq2-nc86) when using the released collection, and follow the licence/access terms shown there. GNU Radio, UHD, `gr-ieee802-11`, ESPectre, ESP32 CSI tools and public benchmark resources retain their upstream attribution and licences. See [NOTICE.md](NOTICE.md) and [dependency notes](docs/DEPENDENCIES.md); the dataset's terms do not automatically license every code component in this repository.
+GNU Radio, UHD, `gr-ieee802-11`, ESPectre, ESP32 CSI tools and public benchmark resources retain their upstream attribution and licences. See [NOTICE.md](NOTICE.md), [dependency notes](docs/DEPENDENCIES.md) and [code-licensing guidance](docs/LICENSING.md). A licence for the team's original code belongs in a root-level `LICENSE` file once approved by its rights holders; this cleanup does not assign a new blanket licence. Participant data and media are excluded from the code distribution.

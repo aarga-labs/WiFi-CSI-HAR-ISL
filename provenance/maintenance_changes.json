@@ -11,8 +11,1031 @@
     "current_system/README.md": {
       "action": "update",
       "imported_sha256": "d5ed9e64358f87bec66726ab3b7793a0716ec143c49360a3744dd65a490d73e9",
-      "reason": "Replace assistant handoff entry point with current implementation, published dataset and verified results documentation.",
-      "sha256": "0c98787327422caef4241a0ac23e7aef0d949ad5f3a0597166bcc45ee3feb5a2"
+      "sha256": "ccc3730455d7790bf4010feaef4d3c3454a8bf31c88886e20d01152643981835",
+      "reason": "Source-facing documentation without private dataset links or context/handoff entry points."
+    },
+    "current_system/Adhi_To_Amrith_Context.md": {
+      "action": "remove",
+      "imported_sha256": "46fcc4043900a7165f9beb8e470347ec9fbf7b2fe31e34cfbbd35d6123ccb970",
+      "reason": "Internal context or handoff document; local working copy retained and ignored."
+    },
+    "current_system/FYP_FULL_CONTEXT.md": {
+      "action": "remove",
+      "imported_sha256": "d7d8be262abadb6052f1a8362bfe5acfa3867bfc9dbd783fc19cca7f887d93fe",
+      "reason": "Internal context or handoff document; local working copy retained and ignored."
+    },
+    "current_system/Full_Context_7_Oct_26.md": {
+      "action": "remove",
+      "imported_sha256": "9914121bb242073fc273a59f4fe1fab332375ffb4e9c6cbb3cb13d754391f68d",
+      "reason": "Internal context or handoff document; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/balanced_results_audit_20261017/run/FYP_BALANCED_2H_20261017_015419/FINAL.log": {
+      "action": "remove",
+      "imported_sha256": "df61dae8c48856431a9244b9323c08f8d142d000d577dc6ed4af61cf240d6674",
+      "reason": "Local capture or training log; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/balanced_results_audit_20261017/run/FYP_BALANCED_2H_20261017_015419/P01.log": {
+      "action": "remove",
+      "imported_sha256": "1628943da0059b78a05b03589765dea559041c7750517e81b8d5cc6d8b70c52c",
+      "reason": "Local capture or training log; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/balanced_results_audit_20261017/run/FYP_BALANCED_2H_20261017_015419/P02.log": {
+      "action": "remove",
+      "imported_sha256": "12ac4370f51af498625dd5e157411e6eea48e8b3798638fee96f638a08634e0e",
+      "reason": "Local capture or training log; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/balanced_results_audit_20261017/run/FYP_BALANCED_2H_20261017_015419/P03.log": {
+      "action": "remove",
+      "imported_sha256": "e6b60db4cad19c69c1997aacba354377c3e6b0037c97b57464ee4e1619d8eb5f",
+      "reason": "Local capture or training log; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/balanced_results_audit_20261017/run/FYP_BALANCED_2H_20261017_015419/P04.log": {
+      "action": "remove",
+      "imported_sha256": "e311997288a97778507b3eef6da811a319267b2c93ab7122693c6696454ea88e",
+      "reason": "Local capture or training log; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/balanced_results_audit_20261017/run/FYP_BALANCED_2H_20261017_015419/P05.log": {
+      "action": "remove",
+      "imported_sha256": "4ab271cd2c59e86b77e2a39874efb9433ca08467b6773869ab0e4faef7edbcd5",
+      "reason": "Local capture or training log; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/balanced_results_audit_20261017/run/FYP_BALANCED_2H_20261017_015419/REPORT.log": {
+      "action": "remove",
+      "imported_sha256": "53799c91bb47f377ea18c9558e970b335063abccc8ecf546bda82b548f3430aa",
+      "reason": "Local capture or training log; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/balanced_results_audit_20261017/run/FYP_BALANCED_2H_20261017_015419/event_coverage.csv": {
+      "action": "remove",
+      "imported_sha256": "7af3d9facf0041d160279f86f8123ec25a34fa96536ee831f57de9beaf2bc7af",
+      "reason": "Individual-recording/event annotations, timestamps or raw examples; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/balanced_results_audit_20261017/run/FYP_BALANCED_2H_20261017_015419/prepare.log": {
+      "action": "remove",
+      "imported_sha256": "53be274551969a97f66624a5b01fdc14bff80723a162e4712e49552c895a9847",
+      "reason": "Local capture or training log; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/balanced_results_audit_20261017/run/FYP_BALANCED_2H_20261017_015419/recording_audit.csv": {
+      "action": "remove",
+      "imported_sha256": "648b9292548c23a5bb47d817e7cd25b6d03b6a3a46a03961527705a7779addc2",
+      "reason": "Individual-recording/event annotations, timestamps or raw examples; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/balanced_results_audit_20261017/run/FYP_BALANCED_2H_20261017_015419/results/P01/frame_predictions.npz": {
+      "action": "remove",
+      "imported_sha256": "381f9a0365655bbe0c13be753a0a0fa0f8ae4900f416ec4109ae2d0cc504e36a",
+      "reason": "Participant media or individual-event arrays; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/balanced_results_audit_20261017/run/FYP_BALANCED_2H_20261017_015419/results/P01/predicted_commands.csv": {
+      "action": "remove",
+      "imported_sha256": "0323584d506931cbeb42f22bd6f0d7d8eb6917f64b5e487189042ad300c9c9bb",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/balanced_results_audit_20261017/run/FYP_BALANCED_2H_20261017_015419/results/P01/segments.csv": {
+      "action": "remove",
+      "imported_sha256": "d1424ce9a9d43c67ca5336072ad3994e880a51869f1e81e4618b321c2d2f8e1a",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/balanced_results_audit_20261017/run/FYP_BALANCED_2H_20261017_015419/results/P02/frame_predictions.npz": {
+      "action": "remove",
+      "imported_sha256": "5cc863b57b6c91dbff086b4f63199885356cbd17762e74861f22ee769a63a811",
+      "reason": "Participant media or individual-event arrays; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/balanced_results_audit_20261017/run/FYP_BALANCED_2H_20261017_015419/results/P02/predicted_commands.csv": {
+      "action": "remove",
+      "imported_sha256": "1bb3426c5108ac512387d7bac3cd9d45ad37442687e8cca4118af072886398a9",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/balanced_results_audit_20261017/run/FYP_BALANCED_2H_20261017_015419/results/P02/segments.csv": {
+      "action": "remove",
+      "imported_sha256": "96fa00620a8ea44aaf95e1953f62c579f67afcaf392e6b54a432f81a18f80401",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/balanced_results_audit_20261017/run/FYP_BALANCED_2H_20261017_015419/results/P03/frame_predictions.npz": {
+      "action": "remove",
+      "imported_sha256": "bc80e2aa7b9010035796eb1e0a1331f10ea24d1b76b4b022bb1f09e13e5e1fc5",
+      "reason": "Participant media or individual-event arrays; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/balanced_results_audit_20261017/run/FYP_BALANCED_2H_20261017_015419/results/P03/predicted_commands.csv": {
+      "action": "remove",
+      "imported_sha256": "37f2c60d96429b6ccb277718925c23025137694d8cfdbc22d1f2d7fcf10ed8c3",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/balanced_results_audit_20261017/run/FYP_BALANCED_2H_20261017_015419/results/P03/segments.csv": {
+      "action": "remove",
+      "imported_sha256": "36911ad10fdea1e22e41298b7fc543c925427b9ea7e8011884442b24f471222f",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/balanced_results_audit_20261017/run/FYP_BALANCED_2H_20261017_015419/results/P04/frame_predictions.npz": {
+      "action": "remove",
+      "imported_sha256": "215013829fd1696617533fa5eee9f34f1d90bdacbdf9e0528026efd34dca3668",
+      "reason": "Participant media or individual-event arrays; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/balanced_results_audit_20261017/run/FYP_BALANCED_2H_20261017_015419/results/P04/predicted_commands.csv": {
+      "action": "remove",
+      "imported_sha256": "35dc03a73119e9f6ebbe3bea0e6cfaace9d9a522011633e73b3922fbfe0ef71d",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/balanced_results_audit_20261017/run/FYP_BALANCED_2H_20261017_015419/results/P04/segments.csv": {
+      "action": "remove",
+      "imported_sha256": "c78e79b7065bb9c9ab70b49952163ef2fe8285f549ce03f2a9d54cbeaeae2a71",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/balanced_results_audit_20261017/run/FYP_BALANCED_2H_20261017_015419/results/P05/frame_predictions.npz": {
+      "action": "remove",
+      "imported_sha256": "c7d3c93d41a975af3bc6deb1c55ac6742dcc99d564188baa90a3526926bc1a9d",
+      "reason": "Participant media or individual-event arrays; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/balanced_results_audit_20261017/run/FYP_BALANCED_2H_20261017_015419/results/P05/predicted_commands.csv": {
+      "action": "remove",
+      "imported_sha256": "496ecfb023b73fb4ec5f03f0e0820bf0dde92914cafabda7b0746bab4b74f96e",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/balanced_results_audit_20261017/run/FYP_BALANCED_2H_20261017_015419/results/P05/segments.csv": {
+      "action": "remove",
+      "imported_sha256": "84f2fd699cf572064ac701798a561c1074e621aa41c4c212ba7400b7f51b6e23",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/balanced_results_audit_20261017/run/FYP_BALANCED_2H_20261017_015419/results/all_out_of_fold_predictions.csv": {
+      "action": "remove",
+      "imported_sha256": "8965b04c7e1d4b7a5d578a2936059e72cb0e543f0cf85a4eef16a4b4d999f755",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/balanced_results_audit_20261017/run/FYP_BALANCED_2H_20261017_015419/results/event_coverage.csv": {
+      "action": "remove",
+      "imported_sha256": "7af3d9facf0041d160279f86f8123ec25a34fa96536ee831f57de9beaf2bc7af",
+      "reason": "Individual-recording/event annotations, timestamps or raw examples; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/balanced_results_audit_20261017/run/FYP_BALANCED_2H_20261017_015419/results/recording_audit.csv": {
+      "action": "remove",
+      "imported_sha256": "648b9292548c23a5bb47d817e7cd25b6d03b6a3a46a03961527705a7779addc2",
+      "reason": "Individual-recording/event annotations, timestamps or raw examples; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/friend_comparison_20261017/matched_predictions.csv": {
+      "action": "remove",
+      "imported_sha256": "c84b9349acf2d3aa47ff282a629030922082614bd80f97c41d548f0df325475d",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/friend_comparison_20261017/unmatched_events.csv": {
+      "action": "remove",
+      "imported_sha256": "bb63302a4f5694ac6c32415f98b38270eb25487afd38aa87a85f8cf55eedb806",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/results_audit_20261017/run/FYP_FAST_2H_20261017_010129/FINAL.log": {
+      "action": "remove",
+      "imported_sha256": "d5fc7b8d86be030c14761d86bd2600fb79e90a74976f599ed1b6fc103f67f305",
+      "reason": "Local capture or training log; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/results_audit_20261017/run/FYP_FAST_2H_20261017_010129/P01.log": {
+      "action": "remove",
+      "imported_sha256": "f45249e01c22f15c99fb9aaaa6a4ece14710affec6ce594f19b94a20d82a9800",
+      "reason": "Local capture or training log; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/results_audit_20261017/run/FYP_FAST_2H_20261017_010129/P02.log": {
+      "action": "remove",
+      "imported_sha256": "604f8f39e9d5765dd5507ce3fcf4085ce5cf844d7b2e407f05290447a7ca765f",
+      "reason": "Local capture or training log; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/results_audit_20261017/run/FYP_FAST_2H_20261017_010129/P03.log": {
+      "action": "remove",
+      "imported_sha256": "ded4af18575e5083457832c9f52b23eea678a1686a915463d9d0e48fea98f6b5",
+      "reason": "Local capture or training log; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/results_audit_20261017/run/FYP_FAST_2H_20261017_010129/P04.log": {
+      "action": "remove",
+      "imported_sha256": "a1c2cb99a814c1bc82377ead13b372293b0b5da8bd54e1d70086444f6f8a952b",
+      "reason": "Local capture or training log; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/results_audit_20261017/run/FYP_FAST_2H_20261017_010129/P05.log": {
+      "action": "remove",
+      "imported_sha256": "3ebeb53110de0a88cdd481023e47a00115f39e4998c2a0e455a5d97efcc8326a",
+      "reason": "Local capture or training log; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/results_audit_20261017/run/FYP_FAST_2H_20261017_010129/REPORT.log": {
+      "action": "remove",
+      "imported_sha256": "f09725890e6a892bc910be8850f85011f8d11ac6066aef53af694f9f44fc018f",
+      "reason": "Local capture or training log; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/results_audit_20261017/run/FYP_FAST_2H_20261017_010129/event_coverage.csv": {
+      "action": "remove",
+      "imported_sha256": "7af3d9facf0041d160279f86f8123ec25a34fa96536ee831f57de9beaf2bc7af",
+      "reason": "Individual-recording/event annotations, timestamps or raw examples; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/results_audit_20261017/run/FYP_FAST_2H_20261017_010129/prepare.log": {
+      "action": "remove",
+      "imported_sha256": "53be274551969a97f66624a5b01fdc14bff80723a162e4712e49552c895a9847",
+      "reason": "Local capture or training log; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/results_audit_20261017/run/FYP_FAST_2H_20261017_010129/recording_audit.csv": {
+      "action": "remove",
+      "imported_sha256": "648b9292548c23a5bb47d817e7cd25b6d03b6a3a46a03961527705a7779addc2",
+      "reason": "Individual-recording/event annotations, timestamps or raw examples; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/results_audit_20261017/run/FYP_FAST_2H_20261017_010129/results/P01/frame_predictions.npz": {
+      "action": "remove",
+      "imported_sha256": "e23fcd0a40e8f488c4f6993b3baf7cdc346f5024f2a08f5412a6dc37f3682d04",
+      "reason": "Participant media or individual-event arrays; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/results_audit_20261017/run/FYP_FAST_2H_20261017_010129/results/P01/predicted_commands.csv": {
+      "action": "remove",
+      "imported_sha256": "1412b536fc48a920c292b7520ebf97f113f3d531690c256dbaf0d5cfd406ec83",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/results_audit_20261017/run/FYP_FAST_2H_20261017_010129/results/P01/segments.csv": {
+      "action": "remove",
+      "imported_sha256": "690442c81bcfe7879282758d3da4bc4864907cc1e367cde52d7a615e3f855b88",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/results_audit_20261017/run/FYP_FAST_2H_20261017_010129/results/P02/frame_predictions.npz": {
+      "action": "remove",
+      "imported_sha256": "c999919df7fefa7927d225a8b2bd03f6548cffb75277d401a813c74266cdcd48",
+      "reason": "Participant media or individual-event arrays; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/results_audit_20261017/run/FYP_FAST_2H_20261017_010129/results/P02/predicted_commands.csv": {
+      "action": "remove",
+      "imported_sha256": "1d690d4e7ff2f0eab1d3fb1fcebf2b8387bf90dc0c6dd010e1b22f028eb87e3a",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/results_audit_20261017/run/FYP_FAST_2H_20261017_010129/results/P02/segments.csv": {
+      "action": "remove",
+      "imported_sha256": "d939118455925b689246944cca92dd0f57b2042b23e302636f141930b51b8ec8",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/results_audit_20261017/run/FYP_FAST_2H_20261017_010129/results/P03/frame_predictions.npz": {
+      "action": "remove",
+      "imported_sha256": "3d8a69e03d19293f807ff7738136dd71073972eb649d5392b487c4b36c950d98",
+      "reason": "Participant media or individual-event arrays; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/results_audit_20261017/run/FYP_FAST_2H_20261017_010129/results/P03/predicted_commands.csv": {
+      "action": "remove",
+      "imported_sha256": "f0ce7bd5eebc15c434c7014d42612ad41c5b776141b07e3bbe3ea4e41f6d456d",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/results_audit_20261017/run/FYP_FAST_2H_20261017_010129/results/P03/segments.csv": {
+      "action": "remove",
+      "imported_sha256": "03cc8917d02f3dec7cab1c8e9988a4928fc11f5be52d7bb8623db38fffc2ea04",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/results_audit_20261017/run/FYP_FAST_2H_20261017_010129/results/P04/frame_predictions.npz": {
+      "action": "remove",
+      "imported_sha256": "e9f400e2264f506f22c508dc0d49661f9d376435fb1eb177025e1f53ee1fcb7e",
+      "reason": "Participant media or individual-event arrays; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/results_audit_20261017/run/FYP_FAST_2H_20261017_010129/results/P04/predicted_commands.csv": {
+      "action": "remove",
+      "imported_sha256": "ebf1b31adb3c2dce111a86de1e4a7f83007f0e78c4f62983b87d0592e6c96cfd",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/results_audit_20261017/run/FYP_FAST_2H_20261017_010129/results/P04/segments.csv": {
+      "action": "remove",
+      "imported_sha256": "c95e52fbaa9712cb918b0843e2e92664a235ff366ef792aa2d519462ab1edc8e",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/results_audit_20261017/run/FYP_FAST_2H_20261017_010129/results/P05/frame_predictions.npz": {
+      "action": "remove",
+      "imported_sha256": "151ca62f08160b6bfb8d410715b6cb7ab9aee69327464da6525957079382a780",
+      "reason": "Participant media or individual-event arrays; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/results_audit_20261017/run/FYP_FAST_2H_20261017_010129/results/P05/predicted_commands.csv": {
+      "action": "remove",
+      "imported_sha256": "a47c039a888f2e9f58276a83b4aacb1943344264d6ac31dbbd536da7e4e37bc8",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/results_audit_20261017/run/FYP_FAST_2H_20261017_010129/results/P05/segments.csv": {
+      "action": "remove",
+      "imported_sha256": "dbab59f75ecc3b16b042040cc5f40c335a15654f4b8341582753fe7115245ff8",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/results_audit_20261017/run/FYP_FAST_2H_20261017_010129/results/all_out_of_fold_predictions.csv": {
+      "action": "remove",
+      "imported_sha256": "6e025ac43ab8bc650692fba9ec1a442d7faec164e83b63c70ea9882a6da9a1ce",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/results_audit_20261017/run/FYP_FAST_2H_20261017_010129/results/event_coverage.csv": {
+      "action": "remove",
+      "imported_sha256": "7af3d9facf0041d160279f86f8123ec25a34fa96536ee831f57de9beaf2bc7af",
+      "reason": "Individual-recording/event annotations, timestamps or raw examples; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/results_audit_20261017/run/FYP_FAST_2H_20261017_010129/results/recording_audit.csv": {
+      "action": "remove",
+      "imported_sha256": "648b9292548c23a5bb47d817e7cd25b6d03b6a3a46a03961527705a7779addc2",
+      "reason": "Individual-recording/event annotations, timestamps or raw examples; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/validation/event_coverage.csv": {
+      "action": "remove",
+      "imported_sha256": "7af3d9facf0041d160279f86f8123ec25a34fa96536ee831f57de9beaf2bc7af",
+      "reason": "Individual-recording/event annotations, timestamps or raw examples; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/validation/recording_audit.csv": {
+      "action": "remove",
+      "imported_sha256": "648b9292548c23a5bb47d817e7cd25b6d03b6a3a46a03961527705a7779addc2",
+      "reason": "Individual-recording/event annotations, timestamps or raw examples; local working copy retained and ignored."
+    },
+    "current_system/Model_Detect-Activity-and-Gestures/results_final_segments_cal0.csv": {
+      "action": "remove",
+      "imported_sha256": "a5ec663c20707217812fa78e798583fab89730212f44533912bf769a046e0a10",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "current_system/Model_Detect-Activity-and-Gestures/results_final_segments_cal1.csv": {
+      "action": "remove",
+      "imported_sha256": "d68b59bf92b4cf4ba293a5ca0bd8d748496618c9ae256ea01775da0bb65101dd",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "current_system/Model_Detect-Activity-and-Gestures/results_intent_cal1.csv": {
+      "action": "remove",
+      "imported_sha256": "f07770ab4b94e707152438aaf3c4b054b732122993ec6cea725ea0ca1b827fe4",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "current_system/Model_Detect-Activity-and-Gestures/results_intent_cal2.csv": {
+      "action": "remove",
+      "imported_sha256": "96661d5ee3f29573351eedb4118970b447c123b6a6bd46bf85dbcab989414a06",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "current_system/Model_Detect-Activity-and-Gestures/results_intent_iso+story.csv": {
+      "action": "remove",
+      "imported_sha256": "066d1854bebf1ff964f49a4f48127932f4340a9f7e1c322fc9a2a02fd2ca7405",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "current_system/Model_Detect-Activity-and-Gestures/results_intent_iso.csv": {
+      "action": "remove",
+      "imported_sha256": "69165170dd3fd558d0e3060551fb2dd459f3bba488de546adce946ec42e077df",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "current_system/Model_Detect-Activity-and-Gestures/results_segments_cal1.csv": {
+      "action": "remove",
+      "imported_sha256": "b57e623c4547bd87aa426340a74bb01e57b014d9c6704431fef0cf8ca756edce",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "current_system/Model_Detect-Activity-and-Gestures/results_segments_cal2.csv": {
+      "action": "remove",
+      "imported_sha256": "6275593b1ca4198c74fd99af5c72ccc3c0f9b04cb27d84207d104d22d031dadf",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "current_system/Model_Detect-Activity-and-Gestures/results_segments_iso+story.csv": {
+      "action": "remove",
+      "imported_sha256": "3eb141be31edfd520b3482f165025c56068ed83665c30a38fc3d6ad039aca11d",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "current_system/Model_Detect-Activity-and-Gestures/results_segments_iso.csv": {
+      "action": "remove",
+      "imported_sha256": "4989c4fc2ab5ef7077ce9670f0c4c6e9524518edbc67793b50cb1297a4ec6a01",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "current_system/capture_snapshot/wifi_csi_capture/docs/FULL_CONTEXT_2026-10-07.md": {
+      "action": "remove",
+      "imported_sha256": "25c8c9931c7d7ec53d2425f9213d64024b879f946edb51e25ea0e73978e8a572",
+      "reason": "Internal context or handoff document; local working copy retained and ignored."
+    },
+    "current_system/current_impl/dataset_excerpt.pdf": {
+      "action": "remove",
+      "imported_sha256": "50764e1832edac5c376ff323042319f516fdb0e7409060628c5dfb7e00e322dc",
+      "reason": "Figure showing actual raw dataset excerpts; local working copy retained and ignored."
+    },
+    "current_system/current_impl/dataset_excerpt.png": {
+      "action": "remove",
+      "imported_sha256": "e84938ad5065d530c02fbf6653d883b4b3e4aa52ff803b220cbe068057a5e609",
+      "reason": "Figure showing actual raw dataset excerpts; local working copy retained and ignored."
+    },
+    "current_system/current_impl/media/collection_action_pickup.mp4": {
+      "action": "remove",
+      "imported_sha256": "58ee0de5d1f40fcb8c8809f29809f5dca309df692e8bb532bedc6e8144a16513",
+      "reason": "Participant media or individual-event arrays; local working copy retained and ignored."
+    },
+    "current_system/current_impl/media/collection_sign_cook_seated.mp4": {
+      "action": "remove",
+      "imported_sha256": "fce53f12daeb7d22995a7634903f0b20ca9e8730e620948c68b93f11537d8e6e",
+      "reason": "Participant media or individual-event arrays; local working copy retained and ignored."
+    },
+    "current_system/current_impl/media/collection_story_meal.mp4": {
+      "action": "remove",
+      "imported_sha256": "5929373a056e0817ce0481fde70b1704ba480b73f6ec0a5c4e6de1cde00539a1",
+      "reason": "Participant media or individual-event arrays; local working copy retained and ignored."
+    },
+    "current_system/handoff/ASSETS.json": {
+      "action": "remove",
+      "imported_sha256": "2fb73aaba05918854d418e0f73693f252ef1ca800d416446b8ea59c7399ec83b",
+      "reason": "Private archive delivery and dataset handoff metadata; local working copy retained and ignored."
+    },
+    "current_system/handoff/DELIVERY.json": {
+      "action": "remove",
+      "imported_sha256": "0504ac568f0a8d91fa07346103a43a04e68b098124426fb070a0f39a9fc3ee58",
+      "reason": "Private archive delivery and dataset handoff metadata; local working copy retained and ignored."
+    },
+    "current_system/handoff/FYP_Phase1_P01_P05_verified.zip.sha256": {
+      "action": "remove",
+      "imported_sha256": "84708ba66f083f80072e80336df40029793f2fd6fa0465815bbea96cb023f812",
+      "reason": "Private archive delivery and dataset handoff metadata; local working copy retained and ignored."
+    },
+    "current_system/handoff/INVENTORY.md": {
+      "action": "remove",
+      "imported_sha256": "b4e109900d129ad3c5681774a8cd7d34268a1ebda2f1ababf41ab5d5c2b5f587",
+      "reason": "Private archive delivery and dataset handoff metadata; local working copy retained and ignored."
+    },
+    "current_system/handoff/README.md": {
+      "action": "remove",
+      "imported_sha256": "db31fee845f5b7e9c023e8f6cf818bb378f9c04974092d564789615e871db675",
+      "reason": "Private archive delivery and dataset handoff metadata; local working copy retained and ignored."
+    },
+    "current_system/handoff/RELEASE_NOTES.md": {
+      "action": "remove",
+      "imported_sha256": "afa4751dc814f3c07f8b07c28f29a030f55748735e025b482bc1bbab7c8f682b",
+      "reason": "Private archive delivery and dataset handoff metadata; local working copy retained and ignored."
+    },
+    "current_system/handoff/REPOSITORY_INVENTORY.json": {
+      "action": "remove",
+      "imported_sha256": "2000f52005af6b0c896a0876440979ad175be5f0939fed4c55b51314d9dafe89",
+      "reason": "Private archive delivery and dataset handoff metadata; local working copy retained and ignored."
+    },
+    "current_system/handoff/VALIDATION.json": {
+      "action": "remove",
+      "imported_sha256": "2c046b9f908a03883cf50fd2fb43154b2b334c8a53c08f038857b93df89c2fa0",
+      "reason": "Private archive delivery and dataset handoff metadata; local working copy retained and ignored."
+    },
+    "current_system/handoff/capture_source_provenance.json": {
+      "action": "remove",
+      "imported_sha256": "3e87d0fc37e29dc9227cf0e438d5b914469a068cfc8d3946e0ec5bdfcf297805",
+      "reason": "Private archive delivery and dataset handoff metadata; local working copy retained and ignored."
+    },
+    "current_system/handoff/fetch_assets.py": {
+      "action": "remove",
+      "imported_sha256": "4ba261c6942bba98b99b463dd97a8d94b587086c08f79af6db24131fa253d570",
+      "reason": "Private archive delivery and dataset handoff metadata; local working copy retained and ignored."
+    },
+    "current_system/handoff/friend_source_provenance.json": {
+      "action": "remove",
+      "imported_sha256": "a52c01deb05939903e486b60098da051ad4925c1f78228c769e91a30ca4d5330",
+      "reason": "Private archive delivery and dataset handoff metadata; local working copy retained and ignored."
+    },
+    "current_system/handoff/manifest.json": {
+      "action": "remove",
+      "imported_sha256": "f01651df3c4b758f3cbec5dd742669b4f0605a9f11c24162aecd662949dede62",
+      "reason": "Private archive delivery and dataset handoff metadata; local working copy retained and ignored."
+    },
+    "current_system/handoff/upload_verification.json": {
+      "action": "remove",
+      "imported_sha256": "92280e516d0b63ef10440681e5b647a9873887685dac490a0ab953935d634cb7",
+      "reason": "Private archive delivery and dataset handoff metadata; local working copy retained and ignored."
+    },
+    "current_system/paper/evidence/P04_capture_audit.json": {
+      "action": "remove",
+      "imported_sha256": "ed9426aed89669a14f79cba4742a0cca12ba1379ea4e79a9227c8c240cedaa22",
+      "reason": "Individual-recording/event annotations, timestamps or raw examples; local working copy retained and ignored."
+    },
+    "current_system/paper/evidence/P04_capture_audit.md": {
+      "action": "remove",
+      "imported_sha256": "06fc04c8d10c25b5e81d479fb505f733cc6e2d4d3b0f6250e4ff8124090e683f",
+      "reason": "Individual-recording/event annotations, timestamps or raw examples; local working copy retained and ignored."
+    },
+    "current_system/paper/evidence/P05_capture_audit.json": {
+      "action": "remove",
+      "imported_sha256": "88e05d9880b4abdb131e6ce6897fd6cb60df3de9c703179f62a1a43e2972ba0b",
+      "reason": "Individual-recording/event annotations, timestamps or raw examples; local working copy retained and ignored."
+    },
+    "current_system/paper/evidence/P05_capture_audit.md": {
+      "action": "remove",
+      "imported_sha256": "7a424411059b46244a6fcbc2fa56e585ff7384c5fbc59577c76eb209f839f9f9",
+      "reason": "Individual-recording/event annotations, timestamps or raw examples; local working copy retained and ignored."
+    },
+    "current_system/paper/evidence/actual_CSI_sample.csv": {
+      "action": "remove",
+      "imported_sha256": "7b04a22dfbd15d4e0b1a4e413246669ed5ce44bdf09c469f919891774e275216",
+      "reason": "Individual-recording/event annotations, timestamps or raw examples; local working copy retained and ignored."
+    },
+    "current_system/paper/evidence/actual_label_sample.csv": {
+      "action": "remove",
+      "imported_sha256": "ffb04976b25dbe2e293a3e3b6da7dcbae03d7a1a12d026de0669af3b91894a91",
+      "reason": "Individual-recording/event annotations, timestamps or raw examples; local working copy retained and ignored."
+    },
+    "current_system/paper/evidence/all_out_of_fold_predictions.csv": {
+      "action": "remove",
+      "imported_sha256": "8965b04c7e1d4b7a5d578a2936059e72cb0e543f0cf85a4eef16a4b4d999f755",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "current_system/paper/evidence/audit_p04.py": {
+      "action": "remove",
+      "imported_sha256": "1152b7b4d0bf1f55a6e816df48574b68abbdbb7ffb5a477905719c8500c1c87f",
+      "reason": "Individual-recording/event annotations, timestamps or raw examples; local working copy retained and ignored."
+    },
+    "current_system/paper/evidence/event_coverage.csv": {
+      "action": "remove",
+      "imported_sha256": "7af3d9facf0041d160279f86f8123ec25a34fa96536ee831f57de9beaf2bc7af",
+      "reason": "Individual-recording/event annotations, timestamps or raw examples; local working copy retained and ignored."
+    },
+    "current_system/paper/evidence/labels/labels_P01_actions_20261002_163014.csv": {
+      "action": "remove",
+      "imported_sha256": "eaabaca43397846cf9d526023aaefce74f5c35f0e9f0875d935fdbb4cf5d1c3c",
+      "reason": "Original participant annotation file; local working copy retained and ignored."
+    },
+    "current_system/paper/evidence/labels/labels_P01_baseline_20261002_121626.csv": {
+      "action": "remove",
+      "imported_sha256": "261a59c1a708b295d0e6b4c1bef2eb3261a2c273b103b91a303c192fd2f2e76e",
+      "reason": "Original participant annotation file; local working copy retained and ignored."
+    },
+    "current_system/paper/evidence/labels/labels_P01_script_20261002_210746.csv": {
+      "action": "remove",
+      "imported_sha256": "a776d82fac5b6fa4d9d73b6a1dc3c5ff6c61aa466c7aea79bb8779800704a907",
+      "reason": "Original participant annotation file; local working copy retained and ignored."
+    },
+    "current_system/paper/evidence/labels/labels_P01_signs_20261002_195626.csv": {
+      "action": "remove",
+      "imported_sha256": "b54de7a025fa3e0e0a0adca7414f4294ab4ae34ddab800ecacc43b994e61b735",
+      "reason": "Original participant annotation file; local working copy retained and ignored."
+    },
+    "current_system/paper/evidence/labels/labels_P02_actions_20261002_171241.csv": {
+      "action": "remove",
+      "imported_sha256": "18db57146f8bbaa0b59d869441faab515ad3def2abb8f2d94e3b69b49af56d61",
+      "reason": "Original participant annotation file; local working copy retained and ignored."
+    },
+    "current_system/paper/evidence/labels/labels_P02_script_20261002_222950.csv": {
+      "action": "remove",
+      "imported_sha256": "16926825a5246617a90abaa7155b29154c580ae6e0c72cbe60fb014a38ee1f80",
+      "reason": "Original participant annotation file; local working copy retained and ignored."
+    },
+    "current_system/paper/evidence/labels/labels_P02_signs_20261002_193845.csv": {
+      "action": "remove",
+      "imported_sha256": "b9edc13fb9da0ddf17452250657ffaf3e541b761c807968c4ccdfca4d39937f8",
+      "reason": "Original participant annotation file; local working copy retained and ignored."
+    },
+    "current_system/paper/evidence/labels/labels_P03_actions_20261002_175526.csv": {
+      "action": "remove",
+      "imported_sha256": "0469e227edc420f0cca61d149e37f05b3ec38b7780e550d89cf39698835141c5",
+      "reason": "Original participant annotation file; local working copy retained and ignored."
+    },
+    "current_system/paper/evidence/labels/labels_P03_script_20261002_224650.csv": {
+      "action": "remove",
+      "imported_sha256": "e79b50996e63d26920d13b50f526f7c80739aa7e727fffdb67495d2d5bb48bc0",
+      "reason": "Original participant annotation file; local working copy retained and ignored."
+    },
+    "current_system/paper/evidence/labels/labels_P03_signs_20261002_204556.csv": {
+      "action": "remove",
+      "imported_sha256": "23265924b35230e5047f7b93272e9161f23c86419ca66a0fdc3b1ad196d40d83",
+      "reason": "Original participant annotation file; local working copy retained and ignored."
+    },
+    "current_system/paper/evidence/labels/labels_P04_actions_seated_20261016_114353.csv": {
+      "action": "remove",
+      "imported_sha256": "aeb15550004b03aeb467bd59ff340cc23e8c04888cfb7d983b4688c4cb6dcbac",
+      "reason": "Original participant annotation file; local working copy retained and ignored."
+    },
+    "current_system/paper/evidence/labels/labels_P04_actions_standing_20261016_110318.csv": {
+      "action": "remove",
+      "imported_sha256": "f499c58524c094b9a9e715cb557212fe6dee9ddbc1af34c889fedd2b43a36800",
+      "reason": "Original participant annotation file; local working copy retained and ignored."
+    },
+    "current_system/paper/evidence/labels/labels_P04_baseline_20261015_210933.csv": {
+      "action": "remove",
+      "imported_sha256": "d24b77885628c09b483de6dbf55ca950a3493c4e7c7147e1cefbf1f901870d90",
+      "reason": "Original participant annotation file; local working copy retained and ignored."
+    },
+    "current_system/paper/evidence/labels/labels_P04_script_20261016_180623.csv": {
+      "action": "remove",
+      "imported_sha256": "01046f7958d962b18d7428a38c4717dacdcce7e16733aecc5dc406f2c3a62443",
+      "reason": "Original participant annotation file; local working copy retained and ignored."
+    },
+    "current_system/paper/evidence/labels/labels_P04_signs_seated_20261016_174247.csv": {
+      "action": "remove",
+      "imported_sha256": "1fdd71cb06099e3776230246b874a2d583728f3b607430a40a25d8b39451ab5c",
+      "reason": "Original participant annotation file; local working copy retained and ignored."
+    },
+    "current_system/paper/evidence/labels/labels_P04_signs_standing_20261016_133528.csv": {
+      "action": "remove",
+      "imported_sha256": "322dc55c78af884b399180d05060cc2d63ba80e5f4c3176ca55bffd799e62a5a",
+      "reason": "Original participant annotation file; local working copy retained and ignored."
+    },
+    "current_system/paper/evidence/labels/labels_P05_actions_seated_20261016_192014.csv": {
+      "action": "remove",
+      "imported_sha256": "52b2a06d9b2212157e5f3845675e5a132b7b99d59106484e3acd214fb7a32226",
+      "reason": "Original participant annotation file; local working copy retained and ignored."
+    },
+    "current_system/paper/evidence/labels/labels_P05_actions_standing_20261016_185158.csv": {
+      "action": "remove",
+      "imported_sha256": "aeafb93f8dffa359b9da19c86787f6a5dce2c3772d4fa023a8ef9d953889c6fe",
+      "reason": "Original participant annotation file; local working copy retained and ignored."
+    },
+    "current_system/paper/evidence/labels/labels_P05_baseline_20261016_184735.csv": {
+      "action": "remove",
+      "imported_sha256": "4d9676da794a51b5ae86d194f87d23917b87c789c551b6ec7e21af205a93c3c4",
+      "reason": "Original participant annotation file; local working copy retained and ignored."
+    },
+    "current_system/paper/evidence/labels/labels_P05_script_20261016_202659.csv": {
+      "action": "remove",
+      "imported_sha256": "270d7b7e2c65f2fc880a3ab00df7cdd9a36caadd140399220b7500c554cf6c23",
+      "reason": "Original participant annotation file; local working copy retained and ignored."
+    },
+    "current_system/paper/evidence/labels/labels_P05_signs_seated_20261016_200742.csv": {
+      "action": "remove",
+      "imported_sha256": "3832b115283ff3698f578be9fb0671c5ebcd2eceb4c906d1da83f94d136b7858",
+      "reason": "Original participant annotation file; local working copy retained and ignored."
+    },
+    "current_system/paper/evidence/labels/labels_P05_signs_standing_20261016_194836.csv": {
+      "action": "remove",
+      "imported_sha256": "6e37e8c41a9484a2d1c036738185054afd28fa3bc972e5b7e0be2e3c5ff67cbd",
+      "reason": "Original participant annotation file; local working copy retained and ignored."
+    },
+    "current_system/paper/evidence/raw_rows_by_labelled_segment.csv": {
+      "action": "remove",
+      "imported_sha256": "9db89ac88c74fd79e618e255ff95c1af82c3cba1cd0db070c90c648d8572e8e3",
+      "reason": "Individual-recording/event annotations, timestamps or raw examples; local working copy retained and ignored."
+    },
+    "current_system/paper/evidence/raw_rows_by_recording.csv": {
+      "action": "remove",
+      "imported_sha256": "4a294c1990c024229e9d83a573cf33a73c1fb022ce7055e5f67fee13a57dedce",
+      "reason": "Individual-recording/event annotations, timestamps or raw examples; local working copy retained and ignored."
+    },
+    "current_system/paper/evidence/recording_audit.csv": {
+      "action": "remove",
+      "imported_sha256": "648b9292548c23a5bb47d817e7cd25b6d03b6a3a46a03961527705a7779addc2",
+      "reason": "Individual-recording/event annotations, timestamps or raw examples; local working copy retained and ignored."
+    },
+    "current_system/paper/evidence/selected_session_log.csv": {
+      "action": "remove",
+      "imported_sha256": "6ec29aae8d2d0d2b1614f4e3fdde0c6c48497ca10c994c5b630c82f7bc4169b6",
+      "reason": "Individual-recording/event annotations, timestamps or raw examples; local working copy retained and ignored."
+    },
+    "current_system/presentation_current/OVERLEAF_README.md": {
+      "action": "remove",
+      "imported_sha256": "bbc6adb89b913e23ddf028304a75f880b4ebfbce25ab0adc16aabe1a6730cd91",
+      "reason": "Presentation bundle containing participant frames or raw-data examples; local working copy retained and ignored."
+    },
+    "current_system/presentation_current/README.md": {
+      "action": "remove",
+      "imported_sha256": "b89ff97ca2b803504b73a2b7d2a8b7c5105534c4222b9242c1452526f9d3fb45",
+      "reason": "Presentation bundle containing participant frames or raw-data examples; local working copy retained and ignored."
+    },
+    "current_system/presentation_current/action_class_performance.csv": {
+      "action": "remove",
+      "imported_sha256": "b76da274b030e90b80f46daef792b6dd9ec14eeb5eeb64e24627a936384ab134",
+      "reason": "Presentation bundle containing participant frames or raw-data examples; local working copy retained and ignored."
+    },
+    "current_system/presentation_current/actual_CSI_sample.csv": {
+      "action": "remove",
+      "imported_sha256": "7b04a22dfbd15d4e0b1a4e413246669ed5ce44bdf09c469f919891774e275216",
+      "reason": "Presentation bundle containing participant frames or raw-data examples; local working copy retained and ignored."
+    },
+    "current_system/presentation_current/actual_label_sample.csv": {
+      "action": "remove",
+      "imported_sha256": "ffb04976b25dbe2e293a3e3b6da7dcbae03d7a1a12d026de0669af3b91894a91",
+      "reason": "Presentation bundle containing participant frames or raw-data examples; local working copy retained and ignored."
+    },
+    "current_system/presentation_current/add_video_animations.py": {
+      "action": "remove",
+      "imported_sha256": "21643b8180248cb1d7d6614faef95642fea828befa8bc34b907633a21a7cfac1",
+      "reason": "Presentation bundle containing participant frames or raw-data examples; local working copy retained and ignored."
+    },
+    "current_system/presentation_current/all_class_performance.csv": {
+      "action": "remove",
+      "imported_sha256": "b3a071e68e92b4ddd9cbf0303a0c892cbd018068729b1c4dfc8a3cdf96810561",
+      "reason": "Presentation bundle containing participant frames or raw-data examples; local working copy retained and ignored."
+    },
+    "current_system/presentation_current/animated_frame_manifest.json": {
+      "action": "remove",
+      "imported_sha256": "6d000316b68166fe94a57c1e5640087335922d25b6df52847ba3ec2a56c16765",
+      "reason": "Presentation bundle containing participant frames or raw-data examples; local working copy retained and ignored."
+    },
+    "current_system/presentation_current/animated_verification.json": {
+      "action": "remove",
+      "imported_sha256": "194411877f67eb6700bf8b841777e60d99459140f7419988c053b37e42444330",
+      "reason": "Presentation bundle containing participant frames or raw-data examples; local working copy retained and ignored."
+    },
+    "current_system/presentation_current/build_assets.py": {
+      "action": "remove",
+      "imported_sha256": "d649d606147841ab30bea283d73b4efbc149592fd3a4f36152938642287d5934",
+      "reason": "Presentation bundle containing participant frames or raw-data examples; local working copy retained and ignored."
+    },
+    "current_system/presentation_current/current_implementation_animated_preview.pdf": {
+      "action": "remove",
+      "imported_sha256": "fa3815a82380e452a99e60cc834a52d236f605c5fbf02ed065530caaed53487e",
+      "reason": "Presentation bundle containing participant frames or raw-data examples; local working copy retained and ignored."
+    },
+    "current_system/presentation_current/current_implementation_preview.pdf": {
+      "action": "remove",
+      "imported_sha256": "fc737a2aa2cf7780160fdc7e9e84edfb7dce4ac6c556fb1d404136c9070f8ab4",
+      "reason": "Presentation bundle containing participant frames or raw-data examples; local working copy retained and ignored."
+    },
+    "current_system/presentation_current/current_implementation_preview.tex": {
+      "action": "remove",
+      "imported_sha256": "417928f928d1c669b312c773397a708b30da31ab1ccde64eb64e09cd13cc1867",
+      "reason": "Presentation bundle containing participant frames or raw-data examples; local working copy retained and ignored."
+    },
+    "current_system/presentation_current/frame_manifest.json": {
+      "action": "remove",
+      "imported_sha256": "6e4f7455defde0a51376d561821d72ac3ae9a2cddd6cfdff60fab33c68acb329",
+      "reason": "Presentation bundle containing participant frames or raw-data examples; local working copy retained and ignored."
+    },
+    "current_system/presentation_current/isolated_raw_rows_by_class.csv": {
+      "action": "remove",
+      "imported_sha256": "fc261f99ad060d21df957e828fc0656fcf3b44c8eb9ee6b41554c971a9151949",
+      "reason": "Presentation bundle containing participant frames or raw-data examples; local working copy retained and ignored."
+    },
+    "current_system/presentation_current/main_before_animations.tex": {
+      "action": "remove",
+      "imported_sha256": "b4e314eb271f492eb0b84e2112e86e8ea25c414e356a7f5bfd54f5cce8d8444d",
+      "reason": "Presentation bundle containing participant frames or raw-data examples; local working copy retained and ignored."
+    },
+    "current_system/presentation_current/main_before_current_implementation.tex": {
+      "action": "remove",
+      "imported_sha256": "41c65dfea610e6f9ec58ea40c0f98ebc0defe877c882b297ea1592b4cbd4e6c4",
+      "reason": "Presentation bundle containing participant frames or raw-data examples; local working copy retained and ignored."
+    },
+    "current_system/presentation_current/raw_rows_by_labelled_segment.csv": {
+      "action": "remove",
+      "imported_sha256": "9db89ac88c74fd79e618e255ff95c1af82c3cba1cd0db070c90c648d8572e8e3",
+      "reason": "Presentation bundle containing participant frames or raw-data examples; local working copy retained and ignored."
+    },
+    "current_system/presentation_current/raw_rows_by_recording.csv": {
+      "action": "remove",
+      "imported_sha256": "4a294c1990c024229e9d83a573cf33a73c1fb022ce7055e5f67fee13a57dedce",
+      "reason": "Presentation bundle containing participant frames or raw-data examples; local working copy retained and ignored."
+    },
+    "current_system/presentation_current/sign_class_performance.csv": {
+      "action": "remove",
+      "imported_sha256": "a7b0b2077346943ad6731f17ab323ad19b92447ffc03a7ba26f6c2120cadb9fa",
+      "reason": "Presentation bundle containing participant frames or raw-data examples; local working copy retained and ignored."
+    },
+    "current_system/presentation_current/slide_data.json": {
+      "action": "remove",
+      "imported_sha256": "c42409b538726358a2bd409045b259f71d9231399b3c739c81e39d24a6b6b470",
+      "reason": "Presentation bundle containing participant frames or raw-data examples; local working copy retained and ignored."
+    },
+    "current_system/presentation_current/update_deck.py": {
+      "action": "remove",
+      "imported_sha256": "fc84714e700b606b82fbe0bedaa770ba746d562def1ff42c2bbc4aac74a9ab24",
+      "reason": "Presentation bundle containing participant frames or raw-data examples; local working copy retained and ignored."
+    },
+    "current_system/presentation_current/verification.json": {
+      "action": "remove",
+      "imported_sha256": "60ff5b534148ca032b73f8add05e6c3b592aa32a705edb0967f56cd5a60fe004",
+      "reason": "Presentation bundle containing participant frames or raw-data examples; local working copy retained and ignored."
+    },
+    "current_system/presentation_current/verified_dataset_counts.json": {
+      "action": "remove",
+      "imported_sha256": "b85ef877aa1cde7eeabc9739aaeade1fdbbdbe5c7e1f63ba0f460ae6cd19423d",
+      "reason": "Presentation bundle containing participant frames or raw-data examples; local working copy retained and ignored."
+    },
+    "current_system/session_log_phase1.csv": {
+      "action": "remove",
+      "imported_sha256": "e9ee82afb6bbfe7aa1ea62ddad1196b04a9fb79487aaa1cc397fdd7073b4aa6d",
+      "reason": "Individual-recording/event annotations, timestamps or raw examples; local working copy retained and ignored."
+    },
+    "current_system/session_log_rain_check.csv": {
+      "action": "remove",
+      "imported_sha256": "d64072a9349df69b5a042d4274cca96cf11dcf7b1cacab7ce6bc154269a9165f",
+      "reason": "Individual-recording/event annotations, timestamps or raw examples; local working copy retained and ignored."
+    },
+    "docs/reviews/october/FYP_With_GIF_export_20261017.pdf": {
+      "action": "remove",
+      "imported_sha256": "6e8f40e7a4cc2e5e5a419cc59078d1d011fe81cd36a276857d042bd0f1787b32",
+      "reason": "Presentation bundle containing participant frames or raw-data examples; local working copy retained and ignored."
+    },
+    "experiments/casas/train_output.log": {
+      "action": "remove",
+      "imported_sha256": "f059e8780d0179fee76fad3fb2d6d63088ebce34c88a35717d4ee38c0be43f39",
+      "reason": "Local capture or training log; local working copy retained and ignored."
+    },
+    "experiments/member_versions/adithya/CONTEXT.md": {
+      "action": "remove",
+      "imported_sha256": "d5d180413a07e82c2c1d7a8fd43f9e3b05cf3a6a5bb56397376878824f518619",
+      "reason": "Internal context or handoff document; local working copy retained and ignored."
+    },
+    "experiments/member_versions/adithya/FinalYearProject/Complete_Project_Context.md": {
+      "action": "remove",
+      "imported_sha256": "8e35a340d4bee17bbdac83111c68359c39f45f66667b38aebe0d6feb8b3d5e80",
+      "reason": "Internal context or handoff document; local working copy retained and ignored."
+    },
+    "experiments/member_versions/adithya/FinalYearProject/context.md": {
+      "action": "remove",
+      "imported_sha256": "59a1bebdc7ca2d943e9cbb901934afd578df5ff01d29fc31e6389ed9ab6fc910",
+      "reason": "Internal context or handoff document; local working copy retained and ignored."
+    },
+    "experiments/member_versions/adithya/csi_tools/session_logger.py": {
+      "action": "remove",
+      "imported_sha256": "819d7feec41155c7dbe67062bf42d29881f50f9a708b7c7c6601db908731c47d",
+      "reason": "Individual-recording/event annotations, timestamps or raw examples; local working copy retained and ignored."
+    },
+    "experiments/member_versions/adithya/results_final_segments_cal0.csv": {
+      "action": "remove",
+      "imported_sha256": "8b4ac03cd959346df71cdee16d0437819bb63bbf119040cf3fbb50a996f161f0",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "experiments/member_versions/adithya/results_final_segments_cal1.csv": {
+      "action": "remove",
+      "imported_sha256": "ae3857f156aa420c49b5f5d00dae91b0ac117d66f8feeb69ebd56c302c113ee3",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "experiments/member_versions/adithya/results_intent_cal1.csv": {
+      "action": "remove",
+      "imported_sha256": "6c2cd4194ed9d5b11a4dc8a7bce24e7240c3669fcecd32fabb92fd609c426761",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "experiments/member_versions/adithya/results_intent_cal2.csv": {
+      "action": "remove",
+      "imported_sha256": "0a9963736dd8e210d8ff23fe33451108bece167a018085dcf978db808d66fc60",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "experiments/member_versions/adithya/results_intent_iso+story.csv": {
+      "action": "remove",
+      "imported_sha256": "b881ca4dc093e4f0a1afffd99c3fe5a77ef460b99038e5cdbe5719f7970a89af",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "experiments/member_versions/adithya/results_intent_iso.csv": {
+      "action": "remove",
+      "imported_sha256": "9294e37df5b3497098756b03da18e365aea461636b135546b0ba5248548e904d",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "experiments/member_versions/adithya/results_segments_cal1.csv": {
+      "action": "remove",
+      "imported_sha256": "34958b62570570b5e1328678fe74c71fd1fad41d921a82f191c779afcc2d210c",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "experiments/member_versions/adithya/results_segments_cal2.csv": {
+      "action": "remove",
+      "imported_sha256": "f8b202f15ae12149f1435c38a82f8c2410793e51af80fa926b05a65e80d5a300",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "experiments/member_versions/adithya/results_segments_iso+story.csv": {
+      "action": "remove",
+      "imported_sha256": "c585b556548d8a6aa7ff493fef8064a7a57124685b8ce8282ee3a09bba7a2867",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "experiments/member_versions/adithya/results_segments_iso.csv": {
+      "action": "remove",
+      "imported_sha256": "306c52362bede1a8fda776f4503e70ec41396a3f5c0b94b83ad50b24fffb35a4",
+      "reason": "Raw signal or individual labelled-event records; local working copy retained and ignored."
+    },
+    "current_system/main.tex": {
+      "action": "remove",
+      "imported_sha256": "6f1d698d7233ce4844d1661bcc1fff4a9845b585864c029ee19b106c4c4c1af7",
+      "reason": "Private presentation source or internal research handoff document; local working copy retained and ignored."
+    },
+    "current_system/ppt.tex": {
+      "action": "remove",
+      "imported_sha256": "99dd32ed8d761d2ec6d77ed1d38de0964c3b96a9f2dfe3ac55815a6f2a08d89c",
+      "reason": "Private presentation source or internal research handoff document; local working copy retained and ignored."
+    },
+    "current_system/current_implementation_animated_preview.tex": {
+      "action": "remove",
+      "imported_sha256": "f4b577a8f88bd93b097e5c3d10029ff8adb18fa99319dbbdc64b1a19f3de19cf",
+      "reason": "Private presentation source or internal research handoff document; local working copy retained and ignored."
+    },
+    "current_system/paper/evidence_manifest.json": {
+      "action": "remove",
+      "imported_sha256": "e9abfc3d5aac171f248de204ab1e5f431c047e80853fd6d387d2d866cb462eef",
+      "reason": "Private presentation source or internal research handoff document; local working copy retained and ignored."
+    },
+    "current_system/paper/README.md": {
+      "action": "remove",
+      "imported_sha256": "e51d170175cd8a220bf2ff39d9eaf7ff0726f874904a25b19e950c8714a78a6b",
+      "reason": "Private presentation source or internal research handoff document; local working copy retained and ignored."
+    },
+    "current_system/paper/CLAIM_LEDGER.md": {
+      "action": "remove",
+      "imported_sha256": "ca779a27f637369668c451be172b42b1dff3e2c3a48a77ff1a4d9b43222530a7",
+      "reason": "Private presentation source or internal research handoff document; local working copy retained and ignored."
+    },
+    "current_system/paper/PERCOM_WIP_RULES.md": {
+      "action": "remove",
+      "imported_sha256": "5b594ce9821b836360f5f34bb1cc50d08213f0c69eab179d86f6c6ff7b8846e7",
+      "reason": "Private presentation source or internal research handoff document; local working copy retained and ignored."
+    },
+    "current_system/paper/reference_notes/Research_Paper_accepted_OCR.txt": {
+      "action": "remove",
+      "imported_sha256": "085f998b26b657c4d9a5e79aee86fcb64374b027dc7c53c8dcaaee86d8cc27d8",
+      "reason": "Private presentation source or internal research handoff document; local working copy retained and ignored."
+    },
+    "current_system/Kaggle_P1_P5/README.md": {
+      "action": "update",
+      "imported_sha256": "4d049b4f34ccbb7785aacda78e6ce0c6923ad8bd21ba8946a52012fe73c065fb",
+      "sha256": "001a5a533d43e5a2328b6aa6d2f9a3868737bfee10515331fca991d7c40b0ab6",
+      "reason": "Source-facing documentation without private dataset links or context/handoff entry points."
+    },
+    "current_system/ImagePi/ImagePi_Model_Kaggle_Notebook.ipynb": {
+      "action": "update",
+      "imported_sha256": "981f23c706ea0d2d65fce9bfa438240d09688f0d7d5254213362c579166c6061",
+      "sha256": "5170939fb9e600168ae6bbea5b5c45cc95c4434ad0c4a4c5e4c74181862b91c1",
+      "reason": "Clear saved notebook outputs for privacy; original output-bearing notebook preserved in an ignored local backup. Code cells unchanged."
+    },
+    "current_system/ImagePi/SignFi-CNN.ipynb": {
+      "action": "update",
+      "imported_sha256": "36c318b9297a2e2d45fd5781db2af855b732a1f91c143e4e4646d89bd0fbfe82",
+      "sha256": "e31c8b95fbbf2a063fc14a74ffe0556ccf12a9b9e7080c1d272546076e554a44",
+      "reason": "Clear saved notebook outputs for privacy; original output-bearing notebook preserved in an ignored local backup. Code cells unchanged."
+    },
+    "current_system/ImagePi/fall_detection_amrith_pipeline.ipynb": {
+      "action": "update",
+      "imported_sha256": "ca7d8c3865454449b8adab5627bacab33a304d324d225450c0c00f3a0b902c3a",
+      "sha256": "fcec9e73ad4bc36c4962f57fda4ffd93120d20da57f675528b453385c11c631c",
+      "reason": "Clear saved notebook outputs for privacy; original output-bearing notebook preserved in an ignored local backup. Code cells unchanged."
+    },
+    "current_system/ImagePi/notebook1d147b48fb.ipynb": {
+      "action": "update",
+      "imported_sha256": "39599fce9c9d94c168c07824271a8b8f1363f53a4f902eb5cb66eec6a3fe47cb",
+      "sha256": "0abbc211b4d20b28c19a08520d2d830e04fa991f5ff75edee333efeac9264dcd",
+      "reason": "Clear saved notebook outputs for privacy; original output-bearing notebook preserved in an ignored local backup. Code cells unchanged."
+    },
+    "current_system/others/Works/Action and No action/CNN_GRU_Method/Action_NoAction_CNN_GRU.ipynb": {
+      "action": "update",
+      "imported_sha256": "33fb5206641ecec3b911fe6a0e1b5e447abbb5ad586a6754cfdc3623aada189b",
+      "sha256": "df356d12e7fdfe092758a77c00c76a714b1653bafc27e29610d72ab930b3d11a",
+      "reason": "Clear saved notebook outputs for privacy; original output-bearing notebook preserved in an ignored local backup. Code cells unchanged."
+    },
+    "experiments/esp32_fall_detection/ESP32-CSI-Tool/Model/main.ipynb": {
+      "action": "update",
+      "imported_sha256": "83aab016483f6524fac9b45436d5aabd8aed41b440abedf00fee58841f18b0a4",
+      "sha256": "f146c7402f27ff48b129aa7282ebbd3b5207988b13d2677ab62e7ad55b028dca",
+      "reason": "Clear saved notebook outputs for privacy; original output-bearing notebook preserved in an ignored local backup. Code cells unchanged."
+    },
+    "experiments/member_versions/adithya/Action_NoAction_imgfi (1).ipynb": {
+      "action": "update",
+      "imported_sha256": "cf841871f7df7c0f77a9776715feb8646de7c0e590511fc40362f47b8db75edf",
+      "sha256": "0823e253eec69f87da88876b82fbf0862790e79b4df2599d8f637be8345bccb5",
+      "reason": "Clear saved notebook outputs for privacy; original output-bearing notebook preserved in an ignored local backup. Code cells unchanged."
+    },
+    "experiments/member_versions/adithya/Action_NoAction_imgfi.ipynb": {
+      "action": "update",
+      "imported_sha256": "664f4306005047781e11f67793debdc05bd81e8667d90ff65f44d542fd5e4025",
+      "sha256": "a6b7fe424f688d769e78463f33439b55aad87685f6de9468504673e0f1f7aba3",
+      "reason": "Clear saved notebook outputs for privacy; original output-bearing notebook preserved in an ignored local backup. Code cells unchanged."
+    },
+    "experiments/member_versions/adithya/SignFi-CNN.ipynb": {
+      "action": "update",
+      "imported_sha256": "0b0ec8c2ff44a8939a5c2eefde747be07f15f9547113ef2d331795170eaf2f81",
+      "sha256": "8e331ae2e54775f2ffa5cf26ecbe77675a0b1693fc9df1c2da7a48925c22692d",
+      "reason": "Clear saved notebook outputs for privacy; original output-bearing notebook preserved in an ignored local backup. Code cells unchanged."
+    },
+    "experiments/member_versions/adithya/USRP_Model/USRP_Action_Detection.ipynb": {
+      "action": "update",
+      "imported_sha256": "a33ac9e4ee94477f9f2c436b9d244d4c0650193e698ce1f2405fb25115d2a7e4",
+      "sha256": "3c6961c23a864d27071ff88649983dbc504ba56a3d940324252ebcf2d7434fa0",
+      "reason": "Clear saved notebook outputs for privacy; original output-bearing notebook preserved in an ignored local backup. Code cells unchanged."
+    },
+    "experiments/member_versions/adithya/WiFi_CSI_HAR_Pipeline.ipynb": {
+      "action": "update",
+      "imported_sha256": "c628b4752f2166b442c0dbebad452ed122b2a6e932c8157fce7871719e517b71",
+      "sha256": "71818864011f7718333ef2c99036434b6b53c2e854b523981cea51c3ad595289",
+      "reason": "Clear saved notebook outputs for privacy; original output-bearing notebook preserved in an ignored local backup. Code cells unchanged."
+    },
+    "experiments/member_versions/adithya/activity_vs_gesture_30epochs.ipynb": {
+      "action": "update",
+      "imported_sha256": "937b45b720e66cae1b73660b52a554090006bc4658179591629227cc79fd2996",
+      "sha256": "8e946460eeb7c74049fba0c45931a826368542b7ab4728b30f3cda873fad1097",
+      "reason": "Clear saved notebook outputs for privacy; original output-bearing notebook preserved in an ignored local backup. Code cells unchanged."
+    },
+    "experiments/member_versions/adithya/csi_fall_detection_3class_temporal_cnnlstm.ipynb": {
+      "action": "update",
+      "imported_sha256": "251a5ea341858cc393969b84b7105a519021c59cb84e0164b14a1b21726f93b6",
+      "sha256": "7cf9e928e37117476d42e0d0dcca8d8d0a1cb5d4eea78b8e44ec0a0dfef9fe57",
+      "reason": "Clear saved notebook outputs for privacy; original output-bearing notebook preserved in an ignored local backup. Code cells unchanged."
+    },
+    "experiments/member_versions/adithya/csi_fall_detection_3class_temporal_full.ipynb": {
+      "action": "update",
+      "imported_sha256": "3ff65dc62a24227272be42550deaa030ef1fbb5525e16f7168f094c10ca75db0",
+      "sha256": "c79bff85ff53d4f824b83397e8dcec477f99fa3b1f4bf6396f58ecc4e6bdf5aa",
+      "reason": "Clear saved notebook outputs for privacy; original output-bearing notebook preserved in an ignored local backup. Code cells unchanged."
+    },
+    "experiments/member_versions/adithya/csi_fall_detection_3class_temporal_lstm.ipynb": {
+      "action": "update",
+      "imported_sha256": "e2f3d63815abf563bcc0a7cab2f6afdbdd292f8f984f27caf84c376c5bc34681",
+      "sha256": "aade243eb5a2917767d350d16de60f772b5d89aa564bfcc51fcfd580cc70a849",
+      "reason": "Clear saved notebook outputs for privacy; original output-bearing notebook preserved in an ignored local backup. Code cells unchanged."
+    },
+    "experiments/member_versions/adithya/fall_detection_amrith_pipeline.ipynb": {
+      "action": "update",
+      "imported_sha256": "4f8a2539385aa55f4ce76b6d77fc3e84018705a8c698d2ecd52465e369ebe923",
+      "sha256": "867d060549830a9b2229cf9e4197d69573d27ef1f2f562cd71bab69e51d9d2c4",
+      "reason": "Clear saved notebook outputs for privacy; original output-bearing notebook preserved in an ignored local backup. Code cells unchanged."
+    },
+    "experiments/member_versions/gowreesh/Action_NoAction_imgfi.ipynb": {
+      "action": "update",
+      "imported_sha256": "6f286224ce0363cae39b9e16ea83ec66744c88060e0adeaa5e9c01adef51b63f",
+      "sha256": "da3dece4c93c9733f7ee86d8e7947ac85de46de40190c5f7c7e4a4c1009ed43a",
+      "reason": "Clear saved notebook outputs for privacy; original output-bearing notebook preserved in an ignored local backup. Code cells unchanged."
+    },
+    "experiments/member_versions/gowreesh/fall_detection_corrected_dataset (3).ipynb": {
+      "action": "update",
+      "imported_sha256": "f4f7db380d31d3b0f9a08fe6c7fc458b66de9da4050a03aa79d2f45692fddf63",
+      "sha256": "1adc057d13429c2ee587ee29b0555f4aef106796aabbf33296eaa753190d8042",
+      "reason": "Clear saved notebook outputs for privacy; original output-bearing notebook preserved in an ignored local backup. Code cells unchanged."
+    },
+    "experiments/member_versions/rishiikesh/USRP_lib/FinalYearProject/ImgFi/ImagePi_Model_Kaggle_Notebook.ipynb": {
+      "action": "update",
+      "imported_sha256": "63beceda889fed7c90291b7ca481a534ed371a518bb67f174bca9470bfc4255c",
+      "sha256": "5cbcc2a87588341b259e60e6a7cd42a80a3e43cdc0d0d60f86c26d48726b43f0",
+      "reason": "Clear saved notebook outputs for privacy; original output-bearing notebook preserved in an ignored local backup. Code cells unchanged."
+    },
+    "experiments/signfi/sem6/SignFi-CNN.ipynb": {
+      "action": "update",
+      "imported_sha256": "9b674694d05b290023d9317668e9a64c9588a4dba7ebf724d64be0f1ad16afef",
+      "sha256": "bc9fe832c6aa5fb2d0a70124e47622c4e1b1f7f3eca8761bc9218d5dfa5ecddd",
+      "reason": "Clear saved notebook outputs for privacy; original output-bearing notebook preserved in an ignored local backup. Code cells unchanged."
+    },
+    "experiments/signfi/sem6/SignFi-CNN/SignFi-CNN.ipynb": {
+      "action": "update",
+      "imported_sha256": "ca6c04242314fb8a9cc3817b5d7de620ce456cfb9572691603649501158a4290",
+      "sha256": "23f9fc2557ea321cc44d36ff3f6782de4a7f6bcdd9465eebb2adf0bcfce68260",
+      "reason": "Clear saved notebook outputs for privacy; original output-bearing notebook preserved in an ignored local backup. Code cells unchanged."
+    },
+    "current_system/.gitignore": {
+      "action": "update",
+      "imported_sha256": "aa7061720821e282eaa546b9f652e4702fbd1b493504bfe26007e30f282f2f80",
+      "sha256": "0b9d70c1a0fb95ca1b89087c99aa34e0d08265d2c60d6d85b512a27f05f51c67",
+      "reason": "Remove nested CSV negations that would otherwise override privacy exclusions and re-track private records."
     }
   }
 }

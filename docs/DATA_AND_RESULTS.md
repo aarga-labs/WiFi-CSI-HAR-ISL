@@ -1,23 +1,19 @@
-# Data and Results Boundaries
+# Data, results and access boundaries
 
-## Current System
+## What this source checkout includes
 
-The retained primary model is the completed BALANCED P1–P5 run. The repository README, saved evidence and model card describe the implementation and current results. The verifier recomputes headline results without training or model loading. It distinguishes mean held-out macro F1, pooled accuracy, supplied-boundary classification and automatic continuous-story evaluation.
+The retained implementation is the completed BALANCED P01–P05 run. Code, aggregate class/fold metrics, analytical figures, training histories and model metadata describe its results. Known-boundary classification, mean participant macro-F1, pooled class recall and automatic story detection are distinct evaluation measures.
 
-The numerical P01–P05 dataset is published at https://doi.org/10.21227/tbq2-nc86. It contains the selected raw CSI, event labels, quality checks, documentation and reader scripts. It is a Standard DataPort record; download access depends on DataPort subscription or institutional access. Its academic release layout differs from the original training ZIP.
+## Private material
 
-The retired consolidation release is no longer a download source. Original training/archive metadata remains under `current_system/handoff/`; that metadata refers to a separate historical FYP repository release and is not a replacement for the current dataset DOI. Legacy consolidation archives remain backed up locally. Large raw data and optimizer/checkpoint archives are not duplicated into normal Git.
+Raw CSI examples, original participant annotations, event-level outputs, probability arrays, recording/session audits, participant video, animated presentation bundles, archive handoffs and internal context documents are excluded from the current tracked tree. Dataset and participant-media access links are not distributed. Local working copies remain on the owner's machine under ignore rules.
 
-## Legacy & Exploratory Material
+Aggregate checks run with `python3 tools/verify_repository.py`. Authorized local verification against retained private annotations/predictions uses `python3 tools/verify_repository.py --private-evidence`. A fresh source clone cannot independently reconstruct event-level scores without those private inputs.
 
-The repository cleanly separates earlier exploratory recordings from the primary verified P1–P5 corpus. Synthetically perturbed dataset variations have been excluded to preserve experimental integrity.
+An ordinary removal commit does not erase historical blobs. Keep this repository private until a separate history/privacy review and any necessary history cleanup have been completed. Ignore rules prevent future tracking; they do not hide earlier commits.
 
-Models are archived as source files and weights. No pickle, PyTorch checkpoint, Keras model or notebook was executed without isolation. Inspect trusted source and use an isolated environment before loading a model.
+## Earlier experiments
 
-Public SignFi/CASAS/wearable benchmark data and rebuildable arrays are listed in `provenance/external_data.csv` and retained in the original source folders, rather than republished as team-collected data. Use each experiment's original README/source references for upstream retrieval and verify the split/shape before rerunning.
+Earlier ESP32, passive USRP, public SignFi/CASAS and IMU experiments remain distinct from the current CSI-only benchmark. Their inputs, splits and performance must not be combined with the five-person collection. Upstream datasets and code retain their own licences.
 
-## Empty or Incomplete Files
-
-`provenance/empty_files.csv` records empty placeholder files. They were not promoted to working source or valid recordings. Several have intact copies elsewhere; exact hashes make the choice auditable.
-
-The original phone/IMU fall-alert branch and ESP32 actuator are separate from the current CSI-only experiment. Their existence does not establish validated multimodal fusion or real-world safety performance.
+Models and legacy experiments are archived source/resources, not proof of validated real-world safety, linguistic performance or sensor fusion. No training, inference or hardware operation is needed for this privacy cleanup.
