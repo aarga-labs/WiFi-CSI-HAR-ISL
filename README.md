@@ -104,7 +104,7 @@ The [aggregate result tables](current_system/paper/evidence/) document these num
 
 ## Research paper draft
 
-Read the [four-page research paper draft](research/paper/Research_Paper_FYP.pdf): **From Isolated Trials to Continuous Streams: Activity and Sign-Gesture Recognition with a Single Wi-Fi CSI Link**. This is the team-supplied draft for TEA review, not a claim of conference acceptance.
+Read the [latest four-page research paper draft](research/paper/Research_Paper_FYP.pdf). This is the team-supplied draft for Group 067 TEA review, not a claim of conference acceptance.
 
 ## Use the repository
 

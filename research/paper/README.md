@@ -2,7 +2,7 @@
 
 [Read the current paper draft](Research_Paper_FYP.pdf).
 
-**Title:** From Isolated Trials to Continuous Streams: Activity and Sign-Gesture Recognition with a Single Wi-Fi CSI Link
+**Title:** Human Activity and Sign Gesture Recognition Using Wi-Fi Channel State Information for Inclusive Smart Homes
 
 **Authors:** Adhikkesh S K, Adithya Ajay, Amrith B, Gowreesh B, Rishiikesh S K and Nalinadevi K.
 
