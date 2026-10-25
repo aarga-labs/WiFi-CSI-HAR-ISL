@@ -148,7 +148,3 @@ Next steps are additional participants/sessions and environments, independent an
 | Rishiikesh S K | [Rishiikesh-20](https://github.com/Rishiikesh-20) |
 
 **Faculty guide: Ms. Nalinadevi K.**
-
-## Attribution and reuse
-
-Cite the [IEEE DataPort dataset record](https://doi.org/10.21227/tbq2-nc86) when using the released collection, and follow the licence/access terms shown there. GNU Radio, UHD, `gr-ieee802-11`, ESPectre, ESP32 CSI tools and public benchmark resources retain their upstream attribution and licences. See [NOTICE.md](NOTICE.md) and [dependency notes](docs/DEPENDENCIES.md); the dataset's terms do not automatically license every code component in this repository.
