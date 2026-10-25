@@ -804,11 +804,6 @@
       "imported_sha256": "59a1bebdc7ca2d943e9cbb901934afd578df5ff01d29fc31e6389ed9ab6fc910",
       "reason": "Internal context or handoff document; local working copy retained and ignored."
     },
-    "experiments/member_versions/adithya/csi_tools/session_logger.py": {
-      "action": "remove",
-      "imported_sha256": "819d7feec41155c7dbe67062bf42d29881f50f9a708b7c7c6601db908731c47d",
-      "reason": "Individual-recording/event annotations, timestamps or raw examples; local working copy retained and ignored."
-    },
     "experiments/member_versions/adithya/results_final_segments_cal0.csv": {
       "action": "remove",
       "imported_sha256": "8b4ac03cd959346df71cdee16d0437819bb63bbf119040cf3fbb50a996f161f0",
