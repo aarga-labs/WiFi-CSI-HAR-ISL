@@ -28,18 +28,37 @@ def main():
         entries = list(csv.DictReader(stream))
     copies = [e for e in entries if e['disposition'] == 'copy']
     assert len({e['destination'] for e in copies}) == len(copies), 'Destination collision'
+    changes_path = ROOT / 'provenance/maintenance_changes.json'
+    changes = json.loads(changes_path.read_text())['files'] if changes_path.exists() else {}
+    imported = {e['destination'] for e in copies}
+    assert set(changes) <= imported, 'Maintenance entry is not an imported file'
     notebooks = 0
+    updated = removed = 0
     for item in copies:
         rel = Path(item['destination'])
         assert not rel.is_absolute() and '..' not in rel.parts
         path = ROOT / rel
+        change = changes.get(item['destination'])
+        expected = item['destination_sha256']
+        if change:
+            assert change['imported_sha256'] == expected, f'Original hash mismatch: {rel}'
+            assert change['reason'].strip(), f'Missing maintenance reason: {rel}'
+            assert change['action'] in {'update', 'remove'}, f'Invalid maintenance action: {rel}'
+            if change['action'] == 'remove':
+                assert not path.exists(), f'Removed file returned: {rel}'
+                removed += 1
+                continue
+            expected = change['sha256']
+            updated += 1
         assert path.is_file(), f'Missing imported file: {rel}'
-        assert digest(path) == item['destination_sha256'], f'Changed imported file: {rel}'
+        assert digest(path) == expected, f'Changed imported file: {rel}'
         if path.suffix == '.ipynb':
             data = json.loads(path.read_text())
             assert data.get('nbformat') == 4 and isinstance(data.get('cells'), list), rel
             notebooks += 1
-    print(f'PASS: {len(copies)} imported files match their recorded hashes; {notebooks} notebook JSON structures read')
+    print(f'PASS: {len(copies) - updated - removed} unchanged imported hashes; '
+          f'{updated} documented updates; {removed} documented removals; '
+          f'{notebooks} notebook JSON structures read')
     if args.check_originals:
         roots = json.loads((ROOT / 'provenance/source_roots.json').read_text())
         checked = 0

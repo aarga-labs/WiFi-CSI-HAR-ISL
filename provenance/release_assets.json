@@ -1,7 +1,7 @@
 {
-  "repository": "aarga-labs/FYP-Team-Consolidated",
+  "repository": "aarga-labs/WiFi-CSI-HAR-ISL",
   "release_tag": "consolidation-2026-10-20",
-  "release_url": "https://github.com/aarga-labs/FYP-Team-Consolidated/releases/tag/consolidation-2026-10-20",
+  "release_url": null,
   "assets": [
     {
       "key": "legacy",
@@ -21,5 +21,10 @@
   ],
   "current_p1_p5_assets": "See current_system/handoff/ASSETS.json: existing private aarga-labs/FYP release; not duplicated.",
   "public_benchmark_data": "See provenance/external_data.csv. These remain in original folders / upstream providers; private consent/permission documents and public dataset archives are not republished.",
-  "history_bundles": "All nine verified bundles remain in ignored .local_history. Those with no credential-pattern hits are also in the private histories ZIP; see history_security_scan.json for scope and any exclusions."
+  "history_bundles": "All nine verified bundles remain in ignored .local_history. Those with no credential-pattern hits are also in the private histories ZIP; see history_security_scan.json for scope and any exclusions.",
+  "published": false,
+  "release_removed_at": "2026-10-25",
+  "retired_release_url": "https://github.com/aarga-labs/WiFi-CSI-HAR-ISL/releases/tag/consolidation-2026-10-20",
+  "availability": "Retired by the project owner. Both archive sizes and SHA256 digests were checked against local backups before removal.",
+  "current_dataset": "https://doi.org/10.21227/tbq2-nc86"
 }

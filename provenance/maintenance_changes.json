@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-25",
+  "description": "Explicit post-import documentation changes; original import manifest is retained unchanged.",
+  "files": {
+    "current_system/CLAUDE.md": {
+      "action": "remove",
+      "imported_sha256": "f003445cb73d3e01a123bc138e11913e5c3d364c32e130b028ff43b54de03d29",
+      "reason": "Remove assistant-specific instruction file at the project owner's request; ignored in future commits."
+    },
+    "current_system/README.md": {
+      "action": "update",
+      "imported_sha256": "d5ed9e64358f87bec66726ab3b7793a0716ec143c49360a3744dd65a490d73e9",
+      "reason": "Replace assistant handoff entry point with current implementation, published dataset and verified results documentation.",
+      "sha256": "0c98787327422caef4241a0ac23e7aef0d949ad5f3a0597166bcc45ee3feb5a2"
+    }
+  }
+}

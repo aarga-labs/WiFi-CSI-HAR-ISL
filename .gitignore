@@ -13,3 +13,21 @@ node_modules/
 *.synctex.gz
 .env
 .env.*
+
+# Local assistant instructions and workspace state.
+CLAUDE.md
+CLAUDE.local.md
+AGENTS.md
+GEMINI.md
+CHATGPT.md
+ANTIGRAVITY.md
+.claude/
+.antigravity/
+.chatgpt/
+.codex/
+.agent/
+.agents/
+.gemini/
+.cursor/
+.cursorrules
+.aider*

@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-25",
+  "repository": "https://github.com/aarga-labs/WiFi-CSI-HAR-ISL",
+  "branch": "main",
+  "private": true,
+  "dataset_doi": "10.21227/tbq2-nc86",
+  "dataset_url": "https://doi.org/10.21227/tbq2-nc86",
+  "retained_run": "FYP_BALANCED_2H_20261017_015419",
+  "consolidation_release": "removed at owner request; local archives verified and retained",
+  "research_manuscript": "new Research_Paper workspace not imported in this update"
+}

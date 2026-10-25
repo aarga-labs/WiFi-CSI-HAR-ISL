@@ -26,6 +26,8 @@ def main():
     parser.add_argument('--list', action='store_true')
     args = parser.parse_args()
     if args.list or not (args.asset or args.all):
+        if metadata.get('published') is False:
+            print('The consolidation release was retired; these are historical archive records.')
         for key, item in assets.items():
             print(f"{key}: {item['name']} ({item['bytes'] / 1048576:.1f} MiB)")
         return
@@ -35,6 +37,10 @@ def main():
         item = assets[key]
         path = folder / item['name']
         if not path.exists():
+            if metadata.get('published') is False:
+                raise SystemExit('The consolidation release has been removed. No download was attempted. '
+                                 'The current numerical dataset is at https://doi.org/10.21227/tbq2-nc86; '
+                                 'legacy archives remain local backups.')
             subprocess.run(['gh', 'release', 'download', metadata['release_tag'],
                             '--repo', metadata['repository'], '--pattern', item['name'],
                             '--dir', str(folder)], check=True)
