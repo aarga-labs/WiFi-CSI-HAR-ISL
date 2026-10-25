@@ -2,7 +2,7 @@
 
 **Learning to distinguish everyday movement from deliberate sign gestures using a single Wi-Fi link.**
 
-[GPU training notebook](current_system/Kaggle_P1_P5/balanced_2h/FYP_P1_P5_Kaggle_BALANCED_2_Hours.ipynb) · [Result summaries](current_system/paper/evidence/summary.csv) · [Capture code](current_system/capture_snapshot/wifi_csi_capture/)
+[Paper draft](research/paper/Research_Paper_FYP.pdf) · [GPU training notebook](current_system/Kaggle_P1_P5/balanced_2h/FYP_P1_P5_Kaggle_BALANCED_2_Hours.ipynb) · [Result summaries](current_system/paper/evidence/summary.csv) · [Capture code](current_system/capture_snapshot/wifi_csi_capture/)
 
 Final-year project, Department of Computer Science and Engineering, Amrita School of Computing, Amrita Vishwa Vidyapeetham, Coimbatore, India. **Group 067 · Vision, Language and Intelligent Learning (VLIL).**
 
@@ -102,6 +102,10 @@ Across **208 true story signs**, the pipeline detects **121 (58.2%)** and correc
 
 The [aggregate result tables](current_system/paper/evidence/) document these numbers. Individual-event predictions and original annotations are kept locally for authorized verification and are not distributed in this checkout.
 
+## Research paper draft
+
+Read the [four-page research paper draft](research/paper/Research_Paper_FYP.pdf): **From Isolated Trials to Continuous Streams: Activity and Sign-Gesture Recognition with a Single Wi-Fi CSI Link**. This is the team-supplied draft for TEA review, not a claim of conference acceptance.
+
 ## Use the repository
 
 ```bash
@@ -110,7 +114,7 @@ cd WiFi-CSI-HAR-ISL
 python3 tools/verify_repository.py
 ```
 
-The repository is currently private, so cloning requires collaborator access. The default verification command uses Python's standard library to check retained imported-file integrity, notebook structure and aggregate result consistency. Recomputing event-level scores requires the separately retained private evidence. Verification does not train a model or operate the radios.
+The default verification command uses Python's standard library to check retained imported-file integrity, notebook structure and aggregate result consistency. Recomputing event-level scores requires the separately retained private evidence. Verification does not train a model or operate the radios.
 
 For a new training run, open the [BALANCED Kaggle notebook](current_system/Kaggle_P1_P5/balanced_2h/FYP_P1_P5_Kaggle_BALANCED_2_Hours.ipynb) and read its [run instructions](current_system/Kaggle_P1_P5/balanced_2h/START_HERE_BALANCED.md). Supply your own authorized input archive using the layout expected by the notebook. No dataset or private download link is provided here. The newer `robust_2h` notebook is an unverified proposal, not the source of the results above.
 
