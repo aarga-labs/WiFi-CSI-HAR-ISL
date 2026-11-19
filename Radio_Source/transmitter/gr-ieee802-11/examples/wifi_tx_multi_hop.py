@@ -1,0 +1,359 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+#
+# SPDX-License-Identifier: GPL-3.0
+#
+# GNU Radio Python Flow Graph
+# Title: WiFi TX
+# GNU Radio version: 3.10.11.0
+
+from PyQt5 import Qt
+from gnuradio import qtgui
+from datetime import datetime
+import os
+import sys
+sys.path.append(os.environ.get('GRC_HIER_PATH', os.path.expanduser('~/.grc_gnuradio')))
+
+from gnuradio import blocks
+from gnuradio import blocks, gr
+from gnuradio import gr
+from gnuradio.filter import firdes
+from gnuradio.fft import window
+import signal
+from PyQt5 import Qt
+from argparse import ArgumentParser
+from gnuradio.eng_arg import eng_float, intx
+from gnuradio import eng_notation
+from gnuradio import network
+from gnuradio import uhd
+import time
+from wifi_phy_hier import wifi_phy_hier  # grc-generated hier_block
+import foo
+import ieee802_11
+import threading
+
+CHANNELS = {
+    1: 2412e6,
+    6: 2437e6,
+    11: 2462e6,
+}
+
+DWELL_TIME = 0.5
+
+# Ordered channel list for synchronized hopping — both TX and RX compute
+# the same slot from wall-clock time so they are always on the same channel.
+# Requires both laptops to have NTP-synchronised clocks (±50 ms).
+CHANNELS_ORDER = [(1, 2412e6), (6, 2437e6), (11, 2462e6)]
+
+def current_hop_channel():
+    """Return (channel_number, freq_hz) for the current time slot."""
+    slot = int(time.time() / DWELL_TIME) % len(CHANNELS_ORDER)
+    return CHANNELS_ORDER[slot]
+
+def _env_channel():
+    """
+    Resolve TX_CHANNEL into a parked channel number, or None to hop.
+
+    Unset / empty / "hop" means hop. A channel number parks. ANYTHING else is
+    a typo (TX_CHANNEL=ch6, =2, =eleven) and aborts rather than silently
+    hopping. A transmitter that hops when the receiver is parked looks exactly
+    like a dead link — the RX sees the TX only 1/3 of the time and the capture
+    rate collapses — so this must fail loudly at startup, not at analysis time.
+    """
+    raw = os.environ.get("TX_CHANNEL", "").strip()
+
+    if raw in ("", "hop"):
+        return None
+
+    try:
+        chan = int(raw)
+    except ValueError:
+        chan = None
+
+    if chan not in CHANNELS:
+        sys.exit(
+            f"TX_CHANNEL must be one of {sorted(CHANNELS)} (or 'hop'/unset "
+            f"to hop) — got '{raw}'.\n"
+            f"Park the receiver on the same channel with CSI_CHANNEL."
+        )
+
+    return chan
+
+
+# TX_CHANNEL=1|6|11 parks the transmitter on one channel for the whole run.
+# Unset (or "hop") keeps the 1->6->11 wall-clock-synced hopping behaviour.
+#
+# ALWAYS park for activity-recognition captures, on the SAME channel the
+# receiver is parked on (CSI_CHANNEL). Hopping splits the packet stream across
+# three channels and costs ~60 ms of settling per 100 ms dwell on each side,
+# dropping usable CSI to ~2.4 Hz against the ~50 Hz human motion needs.
+# See doc/THREE_CHANNEL_ANALYSIS.md.
+PARKED_CHANNEL = _env_channel()
+
+# Which USRP to open, and how hard to drive it.
+#
+# NOTE ON THE ADDRESS: the transmitter USRP is at .7 and the receiver's is at
+# .9 — this is the reverse of what older revisions of TRANSMITTER.md claimed.
+# The value below is the one this flowgraph has always used. If your hardware
+# differs, set TX_ADDR rather than editing this file:
+#     TX_ADDR=192.168.10.9 python3 wifi_tx_multi_hop.py
+TX_ADDR = os.environ.get("TX_ADDR", "192.168.10.7").strip()
+
+# TX gain in dB. Raise it if the receiver sees too few frames; lower it if the
+# receiver's constellation looks saturated. Keep it FIXED for an entire
+# dataset — changing transmit power mid-collection is a distribution shift the
+# model will happily learn instead of the activity.
+TX_GAIN = float(os.environ.get("TX_GAIN", "30"))
+
+class wifi_tx(gr.top_block, Qt.QWidget):
+
+    def __init__(self):
+        gr.top_block.__init__(self, "WiFi TX", catch_exceptions=True)
+        self.running = True
+        Qt.QWidget.__init__(self)
+        self.setWindowTitle("WiFi TX")
+        qtgui.util.check_set_qss()
+        try:
+            self.setWindowIcon(Qt.QIcon.fromTheme('gnuradio-grc'))
+        except BaseException as exc:
+            print(f"Qt GUI: Could not set Icon: {str(exc)}", file=sys.stderr)
+        self.top_scroll_layout = Qt.QVBoxLayout()
+        self.setLayout(self.top_scroll_layout)
+        self.top_scroll = Qt.QScrollArea()
+        self.top_scroll.setFrameStyle(Qt.QFrame.NoFrame)
+        self.top_scroll_layout.addWidget(self.top_scroll)
+        self.top_scroll.setWidgetResizable(True)
+        self.top_widget = Qt.QWidget()
+        self.top_scroll.setWidget(self.top_widget)
+        self.top_layout = Qt.QVBoxLayout(self.top_widget)
+        self.top_grid_layout = Qt.QGridLayout()
+        self.top_layout.addLayout(self.top_grid_layout)
+
+        self.settings = Qt.QSettings("gnuradio/flowgraphs", "wifi_tx")
+
+        try:
+            geometry = self.settings.value("geometry")
+            if geometry:
+                self.restoreGeometry(geometry)
+        except BaseException as exc:
+            print(f"Qt GUI: Could not restore geometry: {str(exc)}", file=sys.stderr)
+        self.flowgraph_started = threading.Event()
+
+        ##################################################
+        # Variables
+        ##################################################
+        self.tx_gain = tx_gain = TX_GAIN
+        self.samp_rate = samp_rate = 20e6
+        self.packet_length = packet_length = 500
+        self.out_buf_size = out_buf_size = 98304
+        self.interval = interval = 20
+        # Start already tuned to the parked channel so a parked run never
+        # retunes — no LO settling transient at the head of the session.
+        self.freq = freq = CHANNELS[PARKED_CHANNEL] if PARKED_CHANNEL else 2412e6
+        self.encoding = encoding = ieee802_11.BPSK_1_2
+
+        ##################################################
+        # Blocks
+        ##################################################
+
+        self.wifi_phy_hier_0 = wifi_phy_hier(
+            bandwidth=samp_rate,
+            chan_est=ieee802_11.LS,
+            encoding=encoding,
+            frequency=freq,
+            sensitivity=0.56,
+        )
+        self.wifi_phy_hier_0.set_min_output_buffer(out_buf_size)
+        self.uhd_usrp_sink_0 = uhd.usrp_sink(
+            ",".join((f'addr={TX_ADDR}', '')),
+            uhd.stream_args(
+                cpu_format="fc32",
+                args='',
+                channels=list(range(0,1)),
+            ),
+            "",
+        )
+        self.uhd_usrp_sink_0.set_clock_source('internal', 0)
+        self.uhd_usrp_sink_0.set_samp_rate(samp_rate)
+        self.uhd_usrp_sink_0.set_time_now(uhd.time_spec(time.time()), uhd.ALL_MBOARDS)
+
+        self.uhd_usrp_sink_0.set_center_freq(freq, 0)
+        self.uhd_usrp_sink_0.set_antenna("TX/RX", 0)
+        self.uhd_usrp_sink_0.set_bandwidth(samp_rate, 0)
+        self.uhd_usrp_sink_0.set_gain(tx_gain, 0)
+        self.network_socket_pdu_0 = network.socket_pdu('TCP_SERVER', '', '52001', 10000, False)
+        self.ieee802_11_mac_0 = ieee802_11.mac([0x02,0x00,0x00,0x00,0x00,0x01], [0x02,0x00,0x00,0x00,0x00,0x02], [0xff,0xff,0xff,0xff,0xff,0xff])
+        self.foo_packet_pad2_0 = foo.packet_pad2(False, False, 0.001, 10000, 1000)
+        self.foo_packet_pad2_0.set_min_output_buffer(out_buf_size)
+        self.blocks_vector_source_x_0 = blocks.vector_source_c((0, 0, 0), True, 1, [])
+        self.blocks_multiply_const_vxx_0 = blocks.multiply_const_cc(0.8)
+        self.blocks_multiply_const_vxx_0.set_min_output_buffer(out_buf_size)
+        self.blocks_message_debug_1 = blocks.message_debug(True, gr.log_levels.info)
+        self.blocks_message_debug_0 = blocks.message_debug(True, gr.log_levels.info)
+
+
+        ##################################################
+        # Connections
+        ##################################################
+        self.msg_connect((self.ieee802_11_mac_0, 'phy out'), (self.blocks_message_debug_1, 'print'))
+        self.msg_connect((self.ieee802_11_mac_0, 'phy out'), (self.wifi_phy_hier_0, 'mac_in'))
+        self.msg_connect((self.network_socket_pdu_0, 'pdus'), (self.blocks_message_debug_0, 'print_pdu'))
+        self.msg_connect((self.network_socket_pdu_0, 'pdus'), (self.ieee802_11_mac_0, 'app in'))
+        self.msg_connect((self.wifi_phy_hier_0, 'mac_out'), (self.ieee802_11_mac_0, 'phy in'))
+        self.connect((self.blocks_multiply_const_vxx_0, 0), (self.foo_packet_pad2_0, 0))
+        self.connect((self.blocks_vector_source_x_0, 0), (self.wifi_phy_hier_0, 0))
+        self.connect((self.foo_packet_pad2_0, 0), (self.uhd_usrp_sink_0, 0))
+        self.connect((self.wifi_phy_hier_0, 0), (self.blocks_multiply_const_vxx_0, 0))
+
+    
+    def hop_channels(self):
+        """
+        Park on TX_CHANNEL if it names a channel, otherwise use
+        wall-clock-synchronized hopping (1 → 6 → 11).
+        """
+
+        if PARKED_CHANNEL:
+            # __init__ already tuned to this channel, so no set_freq() here —
+            # retuning now would reintroduce the settling transient we avoided.
+            print(
+                f"[{datetime.now().strftime('%H:%M:%S.%f')[:-3]}] "
+                f"PARKED on Channel {PARKED_CHANNEL} "
+                f"({CHANNELS[PARKED_CHANNEL]/1e6:.0f} MHz) — not hopping"
+            )
+            return
+
+        last_ch = None
+        print(
+            f"[{datetime.now().strftime('%H:%M:%S.%f')[:-3]}] "
+            f"Synchronized hopping started (DWELL_TIME={DWELL_TIME}s)"
+        )
+        while self.running:
+            ch_num, freq = current_hop_channel()
+            if ch_num != last_ch:
+                self.set_freq(freq)
+                print(
+                    f"[{datetime.now().strftime('%H:%M:%S.%f')[:-3]}] "
+                    f"Synced hop → Channel {ch_num} ({freq/1e6:.0f} MHz)"
+                )
+                last_ch = ch_num
+            time.sleep(0.01)  # poll every 10ms
+                
+    def closeEvent(self, event):
+        self.settings = Qt.QSettings("gnuradio/flowgraphs", "wifi_tx")
+        self.settings.setValue("geometry", self.saveGeometry())
+        self.running = False
+        self.stop()
+        self.wait()
+
+        event.accept()
+
+    def get_tx_gain(self):
+        return self.tx_gain
+
+    def set_tx_gain(self, tx_gain):
+        self.tx_gain = tx_gain
+        self.uhd_usrp_sink_0.set_gain(self.tx_gain, 0)
+
+    def get_samp_rate(self):
+        return self.samp_rate
+
+    def set_samp_rate(self, samp_rate):
+        self.samp_rate = samp_rate
+        self.uhd_usrp_sink_0.set_samp_rate(self.samp_rate)
+        self.uhd_usrp_sink_0.set_bandwidth(self.samp_rate, 0)
+        self.wifi_phy_hier_0.set_bandwidth(self.samp_rate)
+
+    def get_packet_length(self):
+        return self.packet_length
+
+    def set_packet_length(self, packet_length):
+        self.packet_length = packet_length
+
+    def get_out_buf_size(self):
+        return self.out_buf_size
+
+    def set_out_buf_size(self, out_buf_size):
+        self.out_buf_size = out_buf_size
+
+    def get_interval(self):
+        return self.interval
+
+    def set_interval(self, interval):
+        self.interval = interval
+
+    def get_freq(self):
+        return self.freq
+
+    def set_freq(self, freq):
+        self.freq = freq
+        self.uhd_usrp_sink_0.set_center_freq(self.freq, 0)
+        self.wifi_phy_hier_0.set_frequency(self.freq)
+
+    def get_encoding(self):
+        return self.encoding
+
+    def set_encoding(self, encoding):
+        self.encoding = encoding
+        self.wifi_phy_hier_0.set_encoding(self.encoding)
+
+
+
+
+def print_banner():
+    """Print every effective setting before the USRP is opened."""
+    mode = (f"PARKED on channel {PARKED_CHANNEL} "
+            f"({CHANNELS[PARKED_CHANNEL]/1e6:.0f} MHz)"
+            if PARKED_CHANNEL else
+            f"HOPPING 1/6/11, {DWELL_TIME}s dwell (wall-clock synced)")
+
+    print("=" * 62)
+    print(" wifi_tx_multi_hop")
+    print(f"   USRP address : {TX_ADDR}          (override: TX_ADDR=)")
+    print(f"   TX gain      : {TX_GAIN} dB           (override: TX_GAIN=)")
+    print(f"   mode         : {mode}")
+    print(f"   TA / RA      : 02:00:00:00:00:01 -> 02:00:00:00:00:02")
+    print("   Next: run packet_generator.py in a second terminal.")
+    if not PARKED_CHANNEL:
+        print("   WARNING: hopping yields ~2.4 Hz CSI at the receiver and is")
+        print("            unusable for activity recognition. Set TX_CHANNEL.")
+    print("=" * 62)
+
+
+def main(top_block_cls=wifi_tx, options=None):
+
+    print_banner()
+
+    qapp = Qt.QApplication(sys.argv)
+
+    tb = top_block_cls()
+
+    tb.start()
+    tb.flowgraph_started.set()
+    
+    hopper_thread = threading.Thread(
+    target=tb.hop_channels,
+    daemon=True,
+    )
+
+    hopper_thread.start()
+
+    tb.show()
+
+    def sig_handler(sig=None, frame=None):
+        tb.stop()
+        tb.wait()
+
+        Qt.QApplication.quit()
+
+    signal.signal(signal.SIGINT, sig_handler)
+    signal.signal(signal.SIGTERM, sig_handler)
+
+    timer = Qt.QTimer()
+    timer.start(500)
+    timer.timeout.connect(lambda: None)
+
+    qapp.exec_()
+
+if __name__ == '__main__':
+    main()

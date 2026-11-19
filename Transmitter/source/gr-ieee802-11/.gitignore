@@ -1,0 +1,17 @@
+examples/*.py
+# ...but these two are hand-written / hand-modified, not GRC output:
+# wifi_tx_multi_hop.py carries the hop loop and TX_CHANNEL parking, and
+# packet_generator.py is entirely hand-written. Both must be tracked.
+!examples/wifi_tx_multi_hop.py
+!examples/packet_generator.py
+.cproject
+.project
+.pydevproject
+.settings
+**/.DS_Store
+.clang_complete
+*~
+*.pyc
+*.pyo
+build*/
+examples/grc/*.py

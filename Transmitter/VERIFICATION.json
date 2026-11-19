@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-13",
+  "local_test_os": "Arch Linux",
+  "local_gnuradio": "3.10.12.0",
+  "local_python": "3.14.10",
+  "private_build_both_modules_passed": true,
+  "private_module_imports_passed": true,
+  "phy_mac_padding_construction_passed": true,
+  "shell_syntax_passed": true,
+  "fedora_package_install_executed": false,
+  "physical_TX_tested": true,
+  "radio_opened": false,
+  "receiver_sources_changed": false,
+  "bundled_text_crlf_normalized_to_lf": true,
+  "defaults": {
+    "tx_address": "192.168.10.9",
+    "rx_address_user_confirmed": "192.168.10.7",
+    "tx_channel": 1,
+    "tx_gain_db": 30,
+    "requested_pps": 200
+  },
+  "physical_test_scope": "Operator ran corrected continuous peak-normalized transmitter on Fedora; .7 receiver observed70.20s,199.47CSIrows/s,maxgap12.171ms,zero new UDPdrops with calibrated frontend notch.",
+  "stable_tx": {
+    "no_separate_packet_generator": true,
+    "baseband_complex_peak": 0.5,
+    "fixed_payload_and_mac_sequence": true,
+    "waveform_loopback_frames_passed": 20,
+    "waveform_loopback_total_frames": 20,
+    "legacy_burst_padding_payload_and_length_tags_tested": true,
+    "legacy_receive_dummy_throttle_preserves_encoded_samples": true,
+    "legacy_stream_patches_not_sufficient_to_fix_physical_underflows": true
+  }
+}

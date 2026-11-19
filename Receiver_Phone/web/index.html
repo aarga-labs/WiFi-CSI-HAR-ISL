@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>FYP · Phone Collector</title><link rel="stylesheet" href="/style.css"></head>
+<body><main>
+<header><div><p class="eyebrow">GROUP 067 · RESEARCH COLLECTION</p><h1>Phone Collector</h1><p>One operator. Clear prompts. A local copy on both devices.</p></div><span class="badge" id="connection">Waiting for phone</span></header>
+<div id="error" role="alert" hidden></div>
+<section id="pairing"><h2>1 · Connect your phone</h2><p>Install the APK, open it, enter the laptop address and pairing key below, then tap <strong>Connect / Ready</strong>. Keep the app notification enabled.</p>
+<div class="pairgrid"><label>Laptop address for USB<input readonly value="http://127.0.0.1:8765" id="address"></label><label>Pairing key<input readonly type="password" id="key"></label><button id="showkey">Show / hide key</button></div>
+<p class="muted">USB: use the USB launcher and allow debugging on the phone. Wi-Fi: use the Wi-Fi launcher, enter the laptop's local address, and keep both devices on the same trusted network. No internet upload.</p>
+<p id="phoneinfo" class="muted">Open the app to begin. A paired phone must report both motion sensors.</p></section>
+<div class="columns"><section><h2>2 · Run one command</h2>
+<p>Start each recording from your receiver terminal. The command starts CSI and phone together. Keep this page open for the prompts.</p>
+<p><strong>No recording form to fill. No second Start button.</strong></p>
+<p id="runinfo">Waiting for a named run.</p>
+<table class="runcommands"><thead><tr><th>Run</th><th>Rishiikesh · P04</th><th>Adhikkesh · P05</th></tr></thead><tbody>
+<tr><td>Standing still · 120 s</td><td><code>p04_stand_still</code></td><td><code>p05_stand_still</code></td></tr>
+<tr><td>Seated still · 120 s</td><td><code>p04_sit_still</code></td><td><code>p05_sit_still</code></td></tr>
+<tr><td>Standing activities</td><td><code>p04_activities_stand</code></td><td><code>p05_activities_stand</code></td></tr>
+<tr><td>Seated activities</td><td><code>p04_activities_sit</code></td><td><code>p05_activities_sit</code></td></tr>
+<tr><td>Standing signs</td><td><code>p04_sign_stand</code></td><td><code>p05_sign_stand</code></td></tr>
+<tr><td>Seated signs</td><td><code>p04_sign_sit</code></td><td><code>p05_sign_sit</code></td></tr>
+<tr><td>Mixed activity + signs</td><td><code>p04_mixed_activity</code></td><td><code>p05_mixed_activity</code></td></tr>
+</tbody></table>
+<p class="muted">Activities and signs replay your earlier saved collection order. No added forearm movements, calibration tasks, or pilot classes. Wait for FINISHED in the terminal before starting the next command.</p>
+</section><section class="cuepanel" id="cuepanel" data-state="buffer"><h2>3 · Follow the prompt</h2>
+<div class="cue-tools"><button id="soundtest" type="button">Enable / test sound</button><button id="fullscreen" type="button">Full-screen prompts</button></div>
+<p id="soundstatus">Click the sound test: one beep = GO, then two beeps = STOP.</p>
+<p class="audio-note">Sound comes from this laptop. Mute the phone's media volume to avoid its separate start beep. Keep this page visible during collection.</p>
+<p id="sessionname" class="muted">No active session</p><p id="phase">BUFFER — GET READY</p><div id="cue">Connect the phone</div><div id="countdown">—</div><p id="progress">Red = preparation / rest · Green = event.</p>
+<button class="danger" id="stop" disabled>Stop and save now</button>
+<div class="flag"><label>Mark a mistake<input id="flagNote" placeholder="Example: wrong sign on trial 7"></label><button id="flag" disabled>Flag current trial</button></div>
+<p class="muted">If the connection drops, the phone continues its scheduled block locally. Reconnect to transfer it. Use Stop on the phone for an immediate local stop.</p>
+</section></div>
+<section><h2>4 · Saved recordings</h2><p class="muted">“Received” means the transfer and file checks passed. Review the quality report before using a recording for training.</p><div id="recordings">No recordings yet.</div></section>
+<footer id="system">Local collection · no account or cloud required</footer>
+</main><script src="/cues.js"></script><script src="/app.js"></script></body></html>

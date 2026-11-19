@@ -1,7 +1,0 @@
-build/
-__pycache__/
-*.pyc
-*.o
-*.so
-.vscode/
-.idea/

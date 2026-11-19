@@ -1,0 +1,23 @@
+FYP CURRENT COLLECTION — ONE COMMAND PER RUN
+
+Read RUN_COMMANDS.md. This replaces the earlier P00 pilot instructions.
+
+1. Save/stop any existing phone run; Ctrl+C any old CSI receiver and old controller.
+2. Terminal 1: ./START_WIFI.sh ; refresh website with Ctrl+Shift+R.
+3. Connect phone. Mute phone media. Enable/test laptop sound. Full-screen prompts.
+4. Terminal 2: source ./COMMANDS.sh P04 S01
+5. Run p04_stand_still. It starts BOTH CSI and phone and stops CSI after transfer.
+6. Wait for FINISHED, then p04_sit_still, p04_activities_stand,
+   p04_activities_sit, p04_sign_stand, p04_sign_sit, p04_mixed_activity.
+7. Repeat with p05_... commands for Adhikkesh.
+
+Stillness is 120 seconds each. Activity/sign order and counts follow the original
+P04/P05 labels. No additional timing movements or pilot events. All automatic
+between events: red=prepare/rest, green=perform, one beep=start, two=stop.
+
+Original recordings are retained. No APK reinstall is needed for these changes.
+
+
+Phone v1.1 update: see RECOVERY_AND_UPDATE.md. Install the updated APK in place, keep the app visible, then use p04_activities_stand_patch for the 45-trial makeup (455.5 seconds). Seventy original trials are recovered under recovery/P04_activities_standing_20261113_124340/. The dataset is not complete until makeup quality is checked.
+
+NEXT RUN UPDATE: run bash SETUP_RX_BUFFERS.sh once (sudo password needed). Named runs now gate CSI readiness and automatically write collection_quality.json plus usable_windows.csv. Success means reviewed two-second sample coverage, not gap-free whole trials. Next: p04_activities_sit.

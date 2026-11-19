@@ -1,0 +1,102 @@
+--- a/lib/extract_csi_impl.h
++++ b/lib/extract_csi_impl.h
+@@ -37,6 +37,8 @@
+     std::vector<gr_complex> d_csi;
+ 
+     std::ofstream d_csv;
++    std::ofstream d_timing;
++    uint64_t d_last_flush_ns = 0;
+     std::string d_csv_path;
+     uint64_t d_packet_counter;
+ 
+@@ -55,6 +57,7 @@
+     extract_csi_impl();
+     ~extract_csi_impl();
+ 
++    bool stop() override;
+     void handle_pdu(pmt::pmt_t pdu);
+ 
+     int work(int noutput_items,
+--- a/lib/extract_csi_impl.cc
++++ b/lib/extract_csi_impl.cc
+@@ -199,6 +199,13 @@
+         throw std::runtime_error(msg);
+     }
+ 
++    const auto timing = getenv_or("CSI_TIMING_OUT", "");
++    if (!timing.empty()) {
++        d_timing.exceptions(std::ios::failbit | std::ios::badbit);
++        d_timing.open(timing, std::ios::out);
++        d_timing << "Packet,Host_monotonic_ns" << std::endl;
++    }
++
+     if (need_header) {
+         d_csv << "Packet,Timestamp_us,Channel";
+ 
+@@ -226,6 +233,14 @@
+ 
+     std::cout << "extract_csi: total saved packets: " << d_packet_counter
+               << " (" << d_csv_path << ")" << std::endl;
++}
++
++bool extract_csi_impl::stop()
++{
++    d_csv.flush();
++    if (d_timing.is_open())
++        d_timing.flush();
++    return d_csv.good() && gr::sync_block::stop();
+ }
+ 
+ int extract_csi_impl::work(
+@@ -304,6 +319,10 @@
+     //----------------------------------------------------
+     uint64_t t_us = now_us();
+ 
++    const uint64_t monotonic_ns = std::chrono::duration_cast<std::chrono::nanoseconds>(
++        std::chrono::steady_clock::now().time_since_epoch()).count();
++    if (d_timing.is_open())
++        d_timing << d_packet_counter << "," << monotonic_ns << "\n";
+     d_csv << d_packet_counter++;
+     d_csv << "," << t_us;
+     d_csv << "," << d_current_channel;
+@@ -316,9 +335,15 @@
+ 
+     d_csv << "\n";
+ 
+-    // Flush every row: the match rate here is low enough that buffering
+-    // until 100 packets would leave the CSV looking empty for minutes.
+-    d_csv.flush();
++    // Keep live data visible while amortizing text writes during capture.
++    if (!d_timing.is_open() || monotonic_ns - d_last_flush_ns >= 25000000) {
++        d_csv.flush();
++        if (!d_csv)
++            throw std::runtime_error("CSI write failed: " + d_csv_path);
++        if (d_timing.is_open())
++            d_timing.flush();
++        d_last_flush_ns = monotonic_ns;
++    }
+ 
+     if (d_packet_counter % 100 == 0) {
+         double rate = 0.0;
+--- a/lib/frame_equalizer_impl.cc
++++ b/lib/frame_equalizer_impl.cc
+@@ -21,6 +21,7 @@
+ #include "equalizer/ls.h"
+ #include "equalizer/sta.h"
+ #include "frame_equalizer_impl.h"
++#include <cstdlib>
+ #include "utils.h"
+ #include <gnuradio/io_signature.h>
+ 
+@@ -249,8 +250,9 @@
+ 
+         if (d_current_symbol > 2) {
+             o++;
+-            pmt::pmt_t pdu = pmt::make_dict();
+-            message_port_pub(
++            static const bool emit_plot_symbols = std::getenv("CSI_DISABLE_PLOT_MESSAGES") == nullptr;
++            if (emit_plot_symbols)
++                message_port_pub(
+                 pmt::mp("symbols"),
+                 pmt::cons(pmt::make_dict(), pmt::init_c32vector(48, symbols)));
+         }
